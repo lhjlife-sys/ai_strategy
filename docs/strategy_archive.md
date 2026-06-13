@@ -1,15 +1,99 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-13 20:23 · Asia/Shanghai
-> 共 8 条策略
+> 自动生成 · 最后更新：2026-06-14 06:59 · Asia/Shanghai
+> 共 11 条策略
 
 ## 目录
 
-- [2026-06（8）](#2026-06)
+- [2026-06（11）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### AArt1552/向量化加密货币回测器
+
+- **收录时间**：2026-06-14 06:59
+- **发布时间**：2026-06-14 03:59
+- **作者**：AArt1552
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · crypto · global
+- **摘要**：这是一个高性能的向量化回测器，专为山寨币交易策略优化设计。它利用比特币价格变动和高级量化分析来驱动策略回测。该工具使用Python编写，支持多种加密货币交易策略的回测。它包含algotrading、altcoin、backtesting等多个主题标签。项目在GitHub上获得1颗星，表明其处于早期阶段。该回测器适用于加密货币量化交易研究和开发。它可能支持多种数据频率，但具体未明确说明。用户需要提供OHLCV数据来进行回测。该项目由AArt1552创建和维护。
+- **要点**：
+  - 向量化实现，提高回测速度。
+  - 专注于山寨币，利用比特币价格行动。
+  - 支持多种加密货币交易策略。
+  - Python编写，适合量化分析。
+- **回测线索**：Vectorized implementation for high-speed backtesting of multiple strategies.
+- **风险**：Backtesting risks include overfitting and look-ahead bias; performance may not reflect live trading.
+- **策略价值**：该工具为加密货币量化交易者提供了一个高效的回测平台，有助于快速验证和优化基于比特币走势的山寨币交易策略。
+- **筛选评分**：60
+- **原文**：[链接](https://github.com/AArt1552/Vectorized-Crypto-Backtester)
+
+---
+
+### Barrazar274/the-0050-project
+
+- **收录时间**：2026-06-14 06:59
+- **发布时间**：2026-06-14 05:12
+- **作者**：Barrazar274
+- **来源**：GitHub Quant Repos
+- **分类**：机器学习 · stock · global
+- **频率**：daily
+- **摘要**：一个量化交易项目，比较自定义机器学习策略（LightGBM）与台湾0050指数买入持有策略的表现。项目使用Python实现，包括回测和ETF轮动。作者将其标记为失败实验。
+- **要点**：
+  - 比较ML策略与0050买入持有。
+  - 使用LightGBM和ETF轮动。
+  - 项目被标记为失败实验，可能策略效果不佳。
+- **回测线索**：Backtested data comparing ML strategies vs. 0050 buy-and-hold; ETF rotation used; labeled as failed experiment.
+- **风险**：Project labeled as failed experiment; ML strategies underperformed or had issues; no live trading results.
+- **策略价值**：该实验记录了一种常见量化研究方法（ML对比基准），即使失败也有学习价值。
+- **筛选评分**：60
+- **原文**：[链接](https://github.com/Barrazar274/the-0050-project)
+
+---
+
+### 更新：抄底（2026年6月）——我们的交易与历史对比如何？
+
+- **收录时间**：2026-06-14 06:59
+- **发布时间**：2026-06-14 04:00
+- **作者**：medphysik
+- **来源**：Reddit r/algotrading
+- **分类**：均值回归 · stock · us
+- **频率**：daily
+- **摘要**：一位交易员更新了QQQ的抄底策略，该策略在-4.8%的下跌后触发。基于25年回测中21个相似案例（接近52周高点），策略在3个月内胜率80%，但平均最大回撤为-8.41%。当前交易正处于第5天，历史平均路径显示初期可能进一步下挫。回测统计包括各时间段平均回报和最大回撤分布。作者指出该策略在历史中具有韧性，但提醒短期波动风险。
+- **要点**：
+  - 策略条件: QQQ在52周高点5%以内时，买入单日-3.3%至-6.3%的跌幅。
+  - 25年回测显示3个月胜率80%，平均回报+4.68%。
+  - 平均最大回撤-8.41%，前1-2个月波动最大。
+- **回测线索**：25-year backtest with 21 instances, 1-month avg return +0.50% (70% win), 3-month +4.68% (80% win), average max drawdown -8.41%
+- **风险**：High volatility in first 1-2 months; average drawdown -8.41% before recovery; historical performance not guarantee of future results.
+- **策略价值**：该策略为利用市场短期恐慌提供量化依据，但需承受中期回撤风险。
+- **筛选评分**：85
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1u50l99/update_buying_the_dip_june_2026_how_is_our_trade/)
+
+---
+
+### 每日摆动预测智能体：从回测到小规模实盘测试。寻求反馈。
+
+- **收录时间**：2026-06-14 06:59
+- **发布时间**：2026-06-13 15:22
+- **作者**：SeanLeePeasant
+- **来源**：Reddit r/algotrading
+- **分类**：趋势跟踪 · stock · us
+- **频率**：daily
+- **摘要**：该智能体基于Python构建，用于预测每日蜡烛图的方向。系统分为规划层和执行层：规划层包含基础模型层、集成层和权限层（机制过滤器）。基础模型层产生多个方向预测，集成层根据概率和近期表现加权综合，权限层决定是否允许交易。回测超过4年，准确率55.54%，策略总收益329.48%。目前正用小资金进行实盘测试以发现执行错误。作者意识到回测与实盘差距，谨慎推进。
+- **要点**：
+  - 系统使用OHLCV数据预测每日方向，包含基础模型、集成和权限过滤三层。
+  - 回测覆盖4年，自信预测准确率55.54%，策略复合收益329.48%。
+  - 已过渡到小规模实盘测试，重点排查执行错误。
+- **回测线索**：Backtest over ~4 years positive with confident accuracy 55.54% and total strategy return 329.48% (compounded).
+- **风险**：Backtest performance not same as live; small equity test to fix execution bugs.
+- **策略价值**：展示了从回测到实盘的系统化过渡方法，强调回测局限性和小资金验证的必要性。
+- **筛选评分**：85
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1u4kdi7/daily_swing_prediction_agent_moving_from_backtest/)
+
+---
 
 ### 配对交易执行策略
 
@@ -129,27 +213,6 @@
 - **策略价值**：该仓库提供了一个多策略量化交易工具箱，适合初学者快速了解并实践不同交易逻辑。
 - **筛选评分**：80
 - **原文**：[链接](https://github.com/Krexind/quant-trading)
-
----
-
-### 每日摆动预测代理：从回测到小规模实盘测试，寻求反馈
-
-- **收录时间**：2026-06-13 19:31
-- **发布时间**：2026-06-13 15:22
-- **作者**：未知
-- **来源**：Reddit r/algotrading
-- **分类**：趋势跟踪 · stock · us
-- **频率**：daily
-- **摘要**：该系统基于日线OHLCV数据预测下一交易日的涨跌方向。包含规划层和执行层，规划层由基础模型、集成层和权限过滤器组成。回测四年表现积极，准确率约55.5%，但作者认识到回测不等于实盘。已开始用小资金进行实盘测试以发现执行问题。系统通过集成多个基础模型并动态调整权重来提高预测稳定性。权限层根据市场状态决定是否交易。回测中覆盖率为68.9%，但准确率仍有提升空间。作者欢迎社区反馈以改进系统。
-- **要点**：
-  - 系统由规划层和执行层组成，规划层包含基础模型、集成和权限过滤
-  - 回测四年，自信预测准确率55.5%，策略总回报3.29
-  - 已进入小规模实盘测试，重点排查执行漏洞
-- **回测线索**：Backtest over ~4 years: confident accuracy 0.555, total strategy return 3.29, compounded return 17.
-- **风险**：Backtest performance may not reflect live results; execution bugs; overfitting risk; low accuracy (55%)
-- **策略价值**：该代理展示了从回测到实盘过渡的实际案例，强调了回测与实盘之间可能存在的差距，对量化交易者具有借鉴意义。
-- **筛选评分**：85
-- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1u4kdi7/daily_swing_prediction_agent_moving_from_backtest/)
 
 ---
 

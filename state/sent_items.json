@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-13T12:12:56+00:00",
+  "updated_at": "2026-06-13T22:59:13+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -21,6 +21,26 @@
       "sig": "7bc7935d07ab4d57a38d8d72449261f6204f2436d85c1b21f19df37d37fa4c79",
       "url": "https://github.com/laurentvv/Trading-AI",
       "sent_at": "2026-06-13T12:12:56+00:00"
+    },
+    {
+      "sig": "30a5a55cf1f42dfc1423da110230873b203810424f76bb17e734476ea5ac6b15",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u50l99/update_buying_the_dip_june_2026_how_is_our_trade/",
+      "sent_at": "2026-06-13T22:59:13+00:00"
+    },
+    {
+      "sig": "adaf04c1fb17e4f0748a0e1640b65868e0d9ff5ad88bab3407f857a4ded8cbf5",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u4kdi7/daily_swing_prediction_agent_moving_from_backtest/",
+      "sent_at": "2026-06-13T22:59:13+00:00"
+    },
+    {
+      "sig": "3a76ce73debff8b57ba1b44bf396bdb8eb6249d3e4bfc18aa283ecfd146e53a5",
+      "url": "https://github.com/Barrazar274/the-0050-project",
+      "sent_at": "2026-06-13T22:59:13+00:00"
+    },
+    {
+      "sig": "45ade6eabaddb003676a86bc9c025371a62806a5c38a0a54fe3ea7971afc8242",
+      "url": "https://github.com/AArt1552/Vectorized-Crypto-Backtester",
+      "sent_at": "2026-06-13T22:59:13+00:00"
     }
   ]
 }
