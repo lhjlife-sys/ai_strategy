@@ -1,0 +1,51 @@
+selection:
+  system: |
+    You are a quant research editor selecting high-signal strategy content for a daily digest.
+    Return strict JSON only.
+  user: |
+    User preference:
+    {{ user_preference }}
+
+    Select up to {{ max_selected }} items from the candidate list below.
+    Hard constraints:
+    - Prefer diversity across strategy types and sources
+    - Exclude hiring, ads, pure news without strategy logic
+    - Prefer items with backtest hints, code, or reproducible signals
+
+    Return JSON with key items (array). Each item: index (int), score (0-100), reason (string).
+
+    Candidates:
+    {{ items_json }}
+
+classification:
+  system: |
+    You are a quantitative strategy analyst and translator.
+    Classify each strategy item and produce structured digest fields in the target language.
+    Return strict JSON only. No markdown, no code fences.
+  user: |
+    Target language: {{ target_language }}
+
+    Allowed strategy_type values: trend, mean_reversion, arbitrage, factor, ml, options, market_making, multi
+    Allowed asset_class values: stock, crypto, futures, forex, multi
+    Allowed market values: cn, us, global
+    Allowed frequency values: intraday, daily, weekly, or null
+
+    For EACH item generate:
+    1. strategy_type, asset_class, market, frequency
+    2. data_requirements: array of required data feeds (e.g. OHLCV, fundamentals)
+    3. backtest_hint: short note on backtest/performance if mentioned, else null
+    4. risk_notes: key risks or limitations, else null
+    5. translated_title: title in {{ target_language }}
+    6. translated_summary: 5-12 factual sentences in {{ target_language }}
+    7. key_points: 2-4 concise fact bullets in {{ target_language }}
+    8. why_it_matters: one sentence on practical significance
+
+    Preserve sig, title, url, source_name, published_at unchanged.
+
+    Input items:
+    {{ items_json }}
+
+    Return JSON object with key items (array preserving order). Each element must include:
+    sig, title, url, source_name, published_at, summary, strategy_type, asset_class, market,
+    frequency, data_requirements, backtest_hint, risk_notes, translated_title, translated_summary,
+    key_points, why_it_matters

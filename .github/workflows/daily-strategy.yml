@@ -1,0 +1,94 @@
+name: Daily Quant Strategy Digest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'   # 08:00 Asia/Shanghai (UTC+8)
+    - cron: '0 12 * * *'  # 20:00 Asia/Shanghai (UTC+8)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-quant-strategy-digest
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_BASE_URL: ${{ vars.OPENAI_BASE_URL || 'https://api.deepseek.com' }}
+      LLM_JSON_MODE: ${{ vars.LLM_JSON_MODE || 'json_object' }}
+      OPENAI_MAX_TOKENS: ${{ vars.OPENAI_MAX_TOKENS || '8192' }}
+      EMAIL_PROVIDER: smtp
+      SMTP_HOST: ${{ vars.SMTP_HOST || 'smtp.qq.com' }}
+      SMTP_PORT: ${{ vars.SMTP_PORT || '465' }}
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+      EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+      EMAIL_TO: ${{ secrets.EMAIL_TO }}
+      TARGET_LANGUAGE: ${{ vars.TARGET_LANGUAGE || 'zh-CN' }}
+      TIMEZONE: ${{ vars.TIMEZONE || 'Asia/Shanghai' }}
+      MAX_CANDIDATES: ${{ vars.MAX_CANDIDATES || '80' }}
+      MAX_SELECTED: ${{ vars.MAX_SELECTED || '15' }}
+      MIN_MATCH_SCORE: ${{ vars.MIN_MATCH_SCORE || '50' }}
+      MAX_PER_SOURCE: ${{ vars.MAX_PER_SOURCE || '2' }}
+      OPENAI_API_MODE: ${{ vars.OPENAI_API_MODE || 'chat' }}
+      SELECTION_MODEL: ${{ vars.SELECTION_MODEL || 'deepseek-v4-flash' }}
+      CLASSIFICATION_MODEL: ${{ vars.CLASSIFICATION_MODEL || 'deepseek-v4-flash' }}
+      TRANSLATION_MODEL: ${{ vars.TRANSLATION_MODEL || 'deepseek-v4-flash' }}
+      CLASSIFICATION_BATCH_SIZE: ${{ vars.CLASSIFICATION_BATCH_SIZE || '3' }}
+      USER_PREFERENCE: ${{ vars.USER_PREFERENCE }}
+      EMAIL_SUBJECT: ${{ vars.EMAIL_SUBJECT || 'Quant Strategy Digest' }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      DB_PATH: ${{ vars.DB_PATH || 'data/strategies.db' }}
+      DRY_RUN: ${{ vars.DRY_RUN || '0' }}
+      COMMIT_RUNTIME_STATE: ${{ vars.COMMIT_RUNTIME_STATE || '1' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync latest main
+        run: git pull --ff-only origin main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: python scripts/strategy_pipeline.py
+
+      - name: Upload digest artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: strategy-digest
+          path: |
+            out/strategy_digest.html
+            out/processed_strategies.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Commit state updates
+        if: env.DRY_RUN != '1' && env.COMMIT_RUNTIME_STATE == '1'
+        run: |
+          if git diff --quiet -- state/sent_items.json logs data/strategies.db; then
+            echo "No state changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/sent_items.json logs data/strategies.db
+          git commit -m "chore(state): update strategy digest state and logs"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main

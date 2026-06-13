@@ -1,0 +1,24 @@
+pipeline:
+  user_preference: >
+    Prefer actionable quant strategies with clear logic, backtest hints, and reproducible signals.
+    Include A-share, US equities, crypto, and futures strategies when they contain executable ideas.
+    Deprioritize pure macro news, hiring posts, ads, and content without strategy details.
+  strategy_types:
+    - trend
+    - mean_reversion
+    - arbitrage
+    - factor
+    - ml
+    - options
+    - market_making
+    - multi
+  asset_classes:
+    - stock
+    - crypto
+    - futures
+    - forex
+    - multi
+  markets:
+    - cn
+    - us
+    - global

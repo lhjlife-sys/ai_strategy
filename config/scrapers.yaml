@@ -1,0 +1,28 @@
+github:
+  id: github_quant
+  name: "GitHub Quant Repos"
+  query: "quantitative trading strategy language:python"
+  per_page: 20
+
+joinquant:
+  id: joinquant_community
+  name: "JoinQuant Community"
+  list_url: "https://www.joinquant.com/view/community/list?listType=1"
+  max_items: 25
+  request_delay_sec: 2
+
+juejin:
+  id: juejin_quant
+  name: "Juejin Quant"
+  tag_id: "254700319141126"
+  api_url: "https://api.juejin.cn/content_api/v1/article/query_tag"
+  fallback_url: "https://juejin.cn/tag/%E9%87%8F%E5%8C%96"
+  max_items: 25
+  request_delay_sec: 2
+
+ricequant:
+  id: ricequant_community
+  name: "RiceQuant Community"
+  list_url: "https://www.ricequant.com/community/"
+  max_items: 25
+  request_delay_sec: 2

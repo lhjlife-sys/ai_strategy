@@ -1,0 +1,16 @@
+sources:
+  - id: arxiv_qfin
+    name: "arXiv Quantitative Finance"
+    url: "https://rss.arxiv.org/rss/q-fin"
+
+  - id: arxiv_qfin_tr
+    name: "arXiv q-fin.TR (Trading)"
+    url: "https://rss.arxiv.org/rss/q-fin.TR"
+
+  - id: quantconnect_blog
+    name: "QuantConnect Blog"
+    url: "https://www.quantconnect.com/blog/rss/"
+
+  - id: reddit_algotrading
+    name: "Reddit r/algotrading"
+    url: "https://www.reddit.com/r/algotrading/.rss"

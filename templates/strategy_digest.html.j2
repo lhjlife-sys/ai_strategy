@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ subject }}</title>
+  <style>
+    body { margin: 0; padding: 0; background: #EFF2F7; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; }
+    a { color: inherit; }
+    .outer { background: #EFF2F7; padding: 32px 16px 48px; }
+    .inner { max-width: 620px; margin: 0 auto; }
+    .hdr { background: #0F172A; border-radius: 14px 14px 0 0; padding: 28px 32px 26px; }
+    .hdr-eyebrow { color: #34D399; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin: 0 0 8px; }
+    .hdr-title { color: #F8FAFC; font-size: 26px; font-weight: 700; margin: 0 0 12px; }
+    .hdr-meta { color: #94A3B8; font-size: 12px; margin: 0; }
+    .body-card { background: #fff; border-radius: 0 0 14px 14px; overflow: hidden; }
+    .section-hdr { padding: 18px 32px 8px; background: #F8FAFC; border-top: 1px solid #E2E8F0; }
+    .section-hdr h2 { margin: 0; font-size: 14px; color: #059669; letter-spacing: 0.05em; }
+    .art { padding: 24px 32px 22px; border-top: 1px solid #F1F5F9; }
+    .art-meta { margin: 0 0 10px; }
+    .src-badge { display: inline-block; background: #ECFDF5; color: #047857; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 5px; }
+    .type-badge { display: inline-block; background: #EFF6FF; color: #1D4ED8; font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 5px; margin-left: 6px; }
+    .art-time { color: #94A3B8; font-size: 11px; margin-left: 8px; }
+    .art-title { margin: 0 0 3px; }
+    .art-title a { color: #0F172A; font-size: 17px; font-weight: 700; line-height: 1.45; text-decoration: none; }
+    .art-orig { color: #94A3B8; font-size: 12px; margin: 0 0 12px; font-style: italic; }
+    .art-summary { color: #334155; font-size: 14px; line-height: 1.75; margin: 0 0 12px; }
+    .meta-row { color: #64748B; font-size: 12px; margin: 0 0 12px; }
+    .kp-list { margin: 0 0 12px; padding: 0; list-style: none; }
+    .kp-list li { color: #374151; font-size: 13px; line-height: 1.65; padding: 3px 0 3px 20px; position: relative; }
+    .kp-list li::before { content: "▸"; position: absolute; left: 0; color: #10B981; }
+    .callout { background: #F0FDF4; border-left: 3px solid #34D399; border-radius: 0 8px 8px 0; padding: 11px 14px; margin: 0 0 14px; }
+    .callout-label { color: #047857; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin: 0 0 4px; }
+    .callout-text { color: #064E3B; font-size: 13px; line-height: 1.6; margin: 0; }
+    .risk { background: #FEF2F2; border-left: 3px solid #F87171; padding: 10px 14px; margin: 0 0 14px; color: #991B1B; font-size: 12px; }
+    .read-more { color: #059669; font-size: 12px; font-weight: 600; text-decoration: none; }
+    .empty { padding: 40px 32px; text-align: center; color: #94A3B8; font-size: 14px; }
+    .ftr { margin-top: 16px; padding: 0 4px; }
+    .ftr p { color: #94A3B8; font-size: 11px; line-height: 1.6; margin: 0; text-align: center; }
+    .count-badge { display: inline-block; background: rgba(52,211,153,0.15); color: #34D399; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 20px; margin-left: 6px; }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="inner">
+      <div class="hdr">
+        <p class="hdr-eyebrow">Quant Strategy Digest</p>
+        <p class="hdr-title">量化策略精选
+          <span class="count-badge">{{ items | length }} 条</span>
+        </p>
+        <p class="hdr-meta"><b>{{ generated_at }}</b> · {{ timezone }}</p>
+      </div>
+
+      <div class="body-card">
+        {% if items | length == 0 %}
+          <div class="empty">本次暂无新高信号策略内容。<br>可调整源配置或降低 MIN_MATCH_SCORE。</div>
+        {% endif %}
+
+        {% for group in grouped_items %}
+        <div class="section-hdr">
+          <h2>{{ group.label }} ({{ group.entries | length }})</h2>
+        </div>
+        {% for it in group.entries %}
+        <div class="art">
+          <div class="art-meta">
+            <span class="src-badge">{{ it.source_name }}</span>
+            <span class="type-badge">{{ it.asset_class or 'multi' }} · {{ it.market or 'global' }}</span>
+            {% if it.published_at %}
+            <span class="art-time">{{ it.published_at[:10] }}</span>
+            {% endif %}
+          </div>
+          <p class="art-title"><a href="{{ it.url }}">{{ it.translated_title or it.title }}</a></p>
+          {% if it.translated_title and it.translated_title != it.title %}
+          <p class="art-orig">{{ it.title }}</p>
+          {% endif %}
+          {% if it.frequency or it.backtest_hint %}
+          <p class="meta-row">
+            {% if it.frequency %}频率: {{ it.frequency }}{% endif %}
+            {% if it.backtest_hint %} · 回测线索: {{ it.backtest_hint }}{% endif %}
+          </p>
+          {% endif %}
+          {% if it.translated_summary %}
+          <p class="art-summary">{{ it.translated_summary }}</p>
+          {% endif %}
+          {% if it.key_points %}
+          <ul class="kp-list">
+            {% for point in it.key_points %}<li>{{ point }}</li>{% endfor %}
+          </ul>
+          {% endif %}
+          {% if it.why_it_matters %}
+          <div class="callout">
+            <p class="callout-label">策略价值</p>
+            <p class="callout-text">{{ it.why_it_matters }}</p>
+          </div>
+          {% endif %}
+          {% if it.risk_notes %}
+          <div class="risk">风险提示：{{ it.risk_notes }}</div>
+          {% endif %}
+          <a href="{{ it.url }}" class="read-more">查看原文 →</a>
+        </div>
+        {% endfor %}
+        {% endfor %}
+      </div>
+
+      <div class="ftr">
+        <p>量化策略爬虫 · GitHub Actions 自动推送<br>
+        {% if token_usage_summary %}{{ token_usage_summary }}<br>{% endif %}
+        {% if schedule_summary %}{{ schedule_summary }}<br>{% endif %}
+        {{ generated_at }} 生成 · {{ timezone }}</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
