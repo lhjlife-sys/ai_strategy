@@ -9,6 +9,7 @@ import yaml
 from bs4 import BeautifulSoup
 from dateutil import parser as date_parser
 
+from ..author_extract import rss_entry_authors
 from .base import FetchReport, StrategyItem, USER_AGENT, is_low_quality_item
 
 
@@ -92,6 +93,7 @@ def fetch_all_rss(sources: Iterable[Source], timeout: int = 20) -> tuple[list[St
                     title=title,
                     published_at=published_at,
                     content_text=content_text,
+                    author=rss_entry_authors(e),
                 )
                 if is_low_quality_item(item):
                     continue

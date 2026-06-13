@@ -65,6 +65,9 @@ def fetch_github_repos(config_path: str, timeout: int = 20) -> tuple[list[Strate
             ).strip()
             if not url or not title:
                 continue
+            owner = str(repo.get("owner", {}).get("login") or "")
+            if not owner and "/" in title:
+                owner = title.split("/", 1)[0]
             item = StrategyItem(
                 source_id=source_id,
                 source_name=source_name,
@@ -72,6 +75,7 @@ def fetch_github_repos(config_path: str, timeout: int = 20) -> tuple[list[Strate
                 title=title,
                 published_at=published_at,
                 content_text=content_text,
+                author=owner or None,
             )
             if is_low_quality_item(item):
                 continue

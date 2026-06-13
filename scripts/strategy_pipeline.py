@@ -18,6 +18,8 @@ if str(REPO_ROOT) not in sys.path:
 load_dotenv(REPO_ROOT / ".env")
 
 from scripts.ai_processor import TokenUsage, classify_and_summarize, select_items  # noqa: E402
+from scripts.archive_renderer import render_strategy_archive_md  # noqa: E402
+from scripts.author_extract import infer_author, resolve_author  # noqa: E402
 from scripts.db_store import mark_emailed, upsert_strategies  # noqa: E402
 from scripts.email_renderer import render_digest_html  # noqa: E402
 from scripts.email_sender_smtp import send_email_smtp  # noqa: E402
@@ -312,6 +314,9 @@ def main() -> int:
 
         _log(f"Selected {len(selected)} items after LLM selection and source caps.")
 
+        for idx, it in enumerate(selected):
+            selected[idx] = {**it, "author": infer_author(it)}
+
         if selected:
             try:
                 class_res = classify_and_summarize(
@@ -347,6 +352,10 @@ def main() -> int:
                             "translated_summary": item.translated_summary,
                             "key_points": item.key_points,
                             "why_it_matters": item.why_it_matters,
+                            "author": resolve_author(
+                                llm_author=item.author,
+                                inferred=orig.get("author"),
+                            ),
                             "selection_score": orig.get("selection_score", 0),
                             "selection_reason": orig.get("selection_reason", ""),
                         }
@@ -369,6 +378,7 @@ def main() -> int:
                             "translated_summary": content,
                             "key_points": [],
                             "why_it_matters": None,
+                            "author": resolve_author(llm_author=None, inferred=it.get("author")),
                             "raw_content": it.get("content_text", ""),
                             "classification_error": str(e),
                         }
@@ -376,6 +386,14 @@ def main() -> int:
 
             db_count = upsert_strategies(db_path, classified)
             _log(f"Upserted {db_count} rows into {db_path}.")
+
+    archive_path = getenv_str("ARCHIVE_PATH", str(REPO_ROOT / "docs" / "strategy_archive.md"))
+    archive_count = render_strategy_archive_md(
+        db_path,
+        timezone=timezone_name,
+        output_path=archive_path,
+    )
+    _log(f"Updated archive: {archive_path} ({archive_count} strategies)")
 
     processed = classified
     subject_date = utc_now_iso()[:10]

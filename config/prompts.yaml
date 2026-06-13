@@ -39,6 +39,7 @@ classification:
     6. translated_summary: 5-12 factual sentences in {{ target_language }}
     7. key_points: 2-4 concise fact bullets in {{ target_language }}
     8. why_it_matters: one sentence on practical significance
+    9. author: original author or publisher name if identifiable, else null
 
     Preserve sig, title, url, source_name, published_at unchanged.
 
@@ -47,5 +48,5 @@ classification:
 
     Return JSON object with key items (array preserving order). Each element must include:
     sig, title, url, source_name, published_at, summary, strategy_type, asset_class, market,
-    frequency, data_requirements, backtest_hint, risk_notes, translated_title, translated_summary,
+    frequency, data_requirements, backtest_hint, risk_notes, author, translated_title, translated_summary,
     key_points, why_it_matters

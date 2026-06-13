@@ -8,6 +8,8 @@ from openai import OpenAI
 from pydantic import BaseModel, Field
 from tenacity import retry, stop_after_attempt, wait_exponential
 
+from .author_extract import infer_author
+
 
 class TokenUsage(BaseModel):
     input_tokens: int = 0
@@ -45,6 +47,7 @@ class ClassifiedStrategyItem(BaseModel):
     data_requirements: list[str] = Field(default_factory=list)
     backtest_hint: str | None = None
     risk_notes: str | None = None
+    author: str | None = None
     translated_title: str
     translated_summary: str
     key_points: list[str] = Field(default_factory=list)
@@ -104,6 +107,7 @@ CLASSIFICATION_RESPONSE_SCHEMA: dict[str, Any] = {
                     "data_requirements": {"type": "array", "items": {"type": "string"}},
                     "backtest_hint": {"type": ["string", "null"]},
                     "risk_notes": {"type": ["string", "null"]},
+                    "author": {"type": ["string", "null"]},
                     "translated_title": {"type": "string"},
                     "translated_summary": {"type": "string"},
                     "key_points": {"type": "array", "items": {"type": "string"}},
@@ -112,7 +116,7 @@ CLASSIFICATION_RESPONSE_SCHEMA: dict[str, Any] = {
                 "required": [
                     "sig", "title", "url", "source_name", "published_at", "summary",
                     "strategy_type", "asset_class", "market", "frequency", "data_requirements",
-                    "backtest_hint", "risk_notes", "translated_title", "translated_summary",
+                    "backtest_hint", "risk_notes", "author", "translated_title", "translated_summary",
                     "key_points", "why_it_matters",
                 ],
             },
@@ -380,6 +384,7 @@ def classify_and_summarize(
                     "source_name": str(it.get("source_name") or ""),
                     "published_at": it.get("published_at"),
                     "content": (it.get("content_text", "") or "")[:2000],
+                    "author_hint": it.get("author") or infer_author(it),
                 }
             )
         return payload
@@ -425,6 +430,7 @@ def classify_and_summarize(
             source_name=str(it.get("source_name") or ""),
             published_at=it.get("published_at"),
             summary="",
+            author=it.get("author"),
             translated_title=str(it.get("title") or ""),
             translated_summary=str(content),
             key_points=[],

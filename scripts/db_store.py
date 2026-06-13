@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import sqlite3
 from pathlib import Path
-from typing import Iterable
+from typing import Any, Iterable
 
 from .utils import utc_now_iso
 
@@ -31,13 +31,26 @@ CREATE TABLE IF NOT EXISTS strategies (
     why_it_matters TEXT,
     selection_score INTEGER,
     selection_reason TEXT,
+    author TEXT,
     fetched_at TEXT,
     processed_at TEXT,
     emailed_at TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_strategies_published ON strategies(published_at);
 CREATE INDEX IF NOT EXISTS idx_strategies_type ON strategies(strategy_type);
+CREATE INDEX IF NOT EXISTS idx_strategies_processed ON strategies(processed_at);
 """
+
+MIGRATION_COLUMNS = (
+    ("author", "TEXT"),
+)
+
+
+def _ensure_columns(conn: sqlite3.Connection) -> None:
+    existing = {row[1] for row in conn.execute("PRAGMA table_info(strategies)")}
+    for name, col_type in MIGRATION_COLUMNS:
+        if name not in existing:
+            conn.execute(f"ALTER TABLE strategies ADD COLUMN {name} {col_type}")
 
 
 def init_db(path: str | Path) -> None:
@@ -45,6 +58,31 @@ def init_db(path: str | Path) -> None:
     p.parent.mkdir(parents=True, exist_ok=True)
     with sqlite3.connect(p) as conn:
         conn.executescript(SCHEMA)
+        _ensure_columns(conn)
+        conn.commit()
+
+
+def fetch_all_strategies(path: str | Path) -> list[dict[str, Any]]:
+    init_db(path)
+    with sqlite3.connect(path) as conn:
+        conn.row_factory = sqlite3.Row
+        rows = conn.execute(
+            "SELECT * FROM strategies ORDER BY processed_at DESC, id DESC"
+        ).fetchall()
+    out: list[dict[str, Any]] = []
+    for row in rows:
+        item = dict(row)
+        for key in ("key_points", "data_requirements"):
+            raw = item.get(key)
+            if isinstance(raw, str):
+                try:
+                    item[key] = json.loads(raw)
+                except json.JSONDecodeError:
+                    item[key] = []
+            elif raw is None:
+                item[key] = []
+        out.append(item)
+    return out
 
 
 def upsert_strategies(path: str | Path, rows: Iterable[dict]) -> int:
@@ -52,6 +90,7 @@ def upsert_strategies(path: str | Path, rows: Iterable[dict]) -> int:
     now = utc_now_iso()
     count = 0
     with sqlite3.connect(path) as conn:
+        _ensure_columns(conn)
         for row in rows:
             sig = str(row.get("sig") or "")
             if not sig:
@@ -65,8 +104,8 @@ def upsert_strategies(path: str | Path, rows: Iterable[dict]) -> int:
                     strategy_type, asset_class, market, frequency, data_requirements,
                     backtest_hint, risk_notes, translated_title, translated_summary,
                     key_points, why_it_matters, selection_score, selection_reason,
-                    fetched_at, processed_at, emailed_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    author, fetched_at, processed_at, emailed_at
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(sig) DO UPDATE SET
                     source_id=excluded.source_id,
                     source_name=excluded.source_name,
@@ -87,6 +126,7 @@ def upsert_strategies(path: str | Path, rows: Iterable[dict]) -> int:
                     why_it_matters=excluded.why_it_matters,
                     selection_score=excluded.selection_score,
                     selection_reason=excluded.selection_reason,
+                    author=excluded.author,
                     processed_at=excluded.processed_at,
                     emailed_at=COALESCE(strategies.emailed_at, excluded.emailed_at)
                 """,
@@ -111,6 +151,7 @@ def upsert_strategies(path: str | Path, rows: Iterable[dict]) -> int:
                     row.get("why_it_matters"),
                     row.get("selection_score"),
                     row.get("selection_reason"),
+                    row.get("author"),
                     row.get("fetched_at") or now,
                     now,
                     row.get("emailed_at"),

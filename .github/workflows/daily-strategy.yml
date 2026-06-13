@@ -3,8 +3,8 @@ name: Daily Quant Strategy Digest
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'   # 08:00 Asia/Shanghai (UTC+8)
-    - cron: '0 12 * * *'  # 20:00 Asia/Shanghai (UTC+8)
+    - cron: '0 22 * * *'  # 06:00 Asia/Shanghai (UTC+8)
+    - cron: '0 10 * * *'  # 18:00 Asia/Shanghai (UTC+8)
 
 permissions:
   contents: write
@@ -43,6 +43,7 @@ jobs:
       EMAIL_SUBJECT: ${{ vars.EMAIL_SUBJECT || 'Quant Strategy Digest' }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       DB_PATH: ${{ vars.DB_PATH || 'data/strategies.db' }}
+      ARCHIVE_PATH: ${{ vars.ARCHIVE_PATH || 'docs/strategy_archive.md' }}
       DRY_RUN: ${{ vars.DRY_RUN || '0' }}
       COMMIT_RUNTIME_STATE: ${{ vars.COMMIT_RUNTIME_STATE || '1' }}
 
@@ -75,20 +76,21 @@ jobs:
           path: |
             out/strategy_digest.html
             out/processed_strategies.json
+            docs/strategy_archive.md
           if-no-files-found: ignore
           retention-days: 7
 
       - name: Commit state updates
         if: env.DRY_RUN != '1' && env.COMMIT_RUNTIME_STATE == '1'
         run: |
-          if git diff --quiet -- state/sent_items.json logs data/strategies.db; then
+          if git diff --quiet -- state/sent_items.json logs data/strategies.db docs/strategy_archive.md; then
             echo "No state changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state/sent_items.json logs data/strategies.db
-          git commit -m "chore(state): update strategy digest state and logs"
+          git add state/sent_items.json logs data/strategies.db docs/strategy_archive.md
+          git commit -m "chore(state): update strategy digest state, archive and logs"
           git fetch origin main
           git rebase origin/main
           git push origin HEAD:main

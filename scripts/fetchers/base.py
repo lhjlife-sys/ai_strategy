@@ -11,6 +11,7 @@ class StrategyItem:
     title: str
     published_at: str | None  # ISO-8601 UTC
     content_text: str
+    author: str | None = None
 
 
 @dataclass(frozen=True)
