@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-13T22:59:13+00:00",
+  "updated_at": "2026-06-14T11:54:47+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -41,6 +41,26 @@
       "sig": "45ade6eabaddb003676a86bc9c025371a62806a5c38a0a54fe3ea7971afc8242",
       "url": "https://github.com/AArt1552/Vectorized-Crypto-Backtester",
       "sent_at": "2026-06-13T22:59:13+00:00"
+    },
+    {
+      "sig": "c26f956cce44867969c91154e35db3e6e4f11ba323acedce82074da8002f14ab",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u55teb/potential_warning_after_a_roughly_5_drop_from/",
+      "sent_at": "2026-06-14T11:54:47+00:00"
+    },
+    {
+      "sig": "b2984ae9f676d0ef0a90badaf1d14c2de16d11f8d66e94940f8e366f2170712a",
+      "url": "https://github.com/jellyfishing2346/quantitative-finance",
+      "sent_at": "2026-06-14T11:54:47+00:00"
+    },
+    {
+      "sig": "1ba8ad78f739a80aac3e2624d06c996633bc6579b1533e26838d45549bc5774b",
+      "url": "https://github.com/Fast-meadowvole9864/Strategy-Factory",
+      "sent_at": "2026-06-14T11:54:47+00:00"
+    },
+    {
+      "sig": "16d91eaf1162cd30507d1d5cdb2ff8af1f159b0bc1add0adbd71d7c67cd20fe1",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u3y26m/i_built_a_tool_that_queries_sec_10k10q_filings_in/",
+      "sent_at": "2026-06-14T11:54:47+00:00"
     }
   ]
 }
