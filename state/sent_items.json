@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-14T11:54:47+00:00",
+  "updated_at": "2026-06-14T23:03:17+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -61,6 +61,26 @@
       "sig": "16d91eaf1162cd30507d1d5cdb2ff8af1f159b0bc1add0adbd71d7c67cd20fe1",
       "url": "https://www.reddit.com/r/algotrading/comments/1u3y26m/i_built_a_tool_that_queries_sec_10k10q_filings_in/",
       "sent_at": "2026-06-14T11:54:47+00:00"
+    },
+    {
+      "sig": "6739b879233dc6c5ff9a91337946e6494078d9b737c958e191675cab7ccef7a5",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u5knm1/projected_qqq_recovery_versus_current/",
+      "sent_at": "2026-06-14T23:03:17+00:00"
+    },
+    {
+      "sig": "f892c6954bd17aa927b3ef7b1d7fb443437fbc517dd9b1dcf152ed91df004dd6",
+      "url": "https://github.com/Krexibd/quant-trading",
+      "sent_at": "2026-06-14T23:03:17+00:00"
+    },
+    {
+      "sig": "8ee09e089915b7a5a30dd25ca07549cf17a65504f41c91d661f4b022697c5564",
+      "url": "https://github.com/Krexind/quant-trading",
+      "sent_at": "2026-06-14T23:03:17+00:00"
+    },
+    {
+      "sig": "16eec766b2aa858ee8f02647eb27fb7f12f5f1c262a4f46c61e4f5f8d2b125bf",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u54spe/futures_data_how_to_handle_rollovers/",
+      "sent_at": "2026-06-14T23:03:17+00:00"
     }
   ]
 }
