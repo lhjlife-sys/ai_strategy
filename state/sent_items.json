@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-15T15:44:21+00:00",
+  "updated_at": "2026-06-15T23:31:42+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -106,6 +106,41 @@
       "sig": "49d67d8d893ae6f4c82888544a8ff43fe42cc06d65b94d7240b2b6f5e375ad46",
       "url": "https://www.reddit.com/r/algotrading/comments/1u3q7ko/how_do_you_tell_a_strategy_is_actually_decaying/",
       "sent_at": "2026-06-15T15:44:21+00:00"
+    },
+    {
+      "sig": "3a7516a76bf91aea120897ed42e50524fdfeeb02beb6f2e8704fc6ecbf7319e3",
+      "url": "https://arxiv.org/abs/2512.23847",
+      "sent_at": "2026-06-15T23:31:42+00:00"
+    },
+    {
+      "sig": "fc9c9842d1262f7313f22fd098ca07f839d8e427918cd4ae93dae9d66e1f2db0",
+      "url": "https://github.com/LeFi8/autobacktest",
+      "sent_at": "2026-06-15T23:31:42+00:00"
+    },
+    {
+      "sig": "869c176be41b127e07cf41c2a3771b9c7a78f85b643aac578549b8fb7641f51b",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u6ucoe/secondary_flush_thesis_broken/",
+      "sent_at": "2026-06-15T23:31:42+00:00"
+    },
+    {
+      "sig": "cf65e8132cb3cc775182588a094d5bc4e16d24d6154321994e5ac4195c8c638b",
+      "url": "https://github.com/jzd101/breakout-follow-101",
+      "sent_at": "2026-06-15T23:31:42+00:00"
+    },
+    {
+      "sig": "b6ad5e975011eeb02bf1ed1ee51501005fc5386bfca523f487510711496606b0",
+      "url": "https://arxiv.org/abs/2606.13697",
+      "sent_at": "2026-06-15T23:31:42+00:00"
+    },
+    {
+      "sig": "c2d118ddbd1810f2e2f660b1c11c2830711ab4159ec2879c21c47f30e1d70a81",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u543cy/anyone_else_find_20232024_to_be_mostly_overnight/",
+      "sent_at": "2026-06-15T23:31:42+00:00"
+    },
+    {
+      "sig": "14227706e101cf604e6f5bc303924e72c8541f1f9f814dee8cd96216599d3f39",
+      "url": "https://arxiv.org/abs/2606.14182",
+      "sent_at": "2026-06-15T23:31:42+00:00"
     }
   ]
 }
