@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-14T23:03:17+00:00",
+  "updated_at": "2026-06-15T15:44:21+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -81,6 +81,31 @@
       "sig": "16eec766b2aa858ee8f02647eb27fb7f12f5f1c262a4f46c61e4f5f8d2b125bf",
       "url": "https://www.reddit.com/r/algotrading/comments/1u54spe/futures_data_how_to_handle_rollovers/",
       "sent_at": "2026-06-14T23:03:17+00:00"
+    },
+    {
+      "sig": "cb73c369df750b0ef8b781927f54f9e7fa1ac16ae12a179776bffd8f0a9a866c",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u6jpeo/discussion_of_my_methodology_and_learnings_for/",
+      "sent_at": "2026-06-15T15:44:21+00:00"
+    },
+    {
+      "sig": "0749ee1420cd67efa417f54cb25a3f88fe29970a0b9c3b7e72f72aba04aa2703",
+      "url": "https://github.com/lukaszkazala/orderbook-imbalance-backtester",
+      "sent_at": "2026-06-15T15:44:21+00:00"
+    },
+    {
+      "sig": "5fe86477f355c3ef8467956c325f263ce7fb511fa0e3df66e4614c34dfdf2eb3",
+      "url": "https://github.com/paappraiser/quantloop-top10",
+      "sent_at": "2026-06-15T15:44:21+00:00"
+    },
+    {
+      "sig": "6c07fa7a4a1788abd1069ab3389876cb7e22a120a733e76008d945490ebac4c7",
+      "url": "https://arxiv.org/abs/2601.14852",
+      "sent_at": "2026-06-15T15:44:21+00:00"
+    },
+    {
+      "sig": "49d67d8d893ae6f4c82888544a8ff43fe42cc06d65b94d7240b2b6f5e375ad46",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u3q7ko/how_do_you_tell_a_strategy_is_actually_decaying/",
+      "sent_at": "2026-06-15T15:44:21+00:00"
     }
   ]
 }
