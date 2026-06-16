@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-15T23:31:42+00:00",
+  "updated_at": "2026-06-16T15:09:43+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -141,6 +141,41 @@
       "sig": "14227706e101cf604e6f5bc303924e72c8541f1f9f814dee8cd96216599d3f39",
       "url": "https://arxiv.org/abs/2606.14182",
       "sent_at": "2026-06-15T23:31:42+00:00"
+    },
+    {
+      "sig": "9292e491558b816a4f336214103fa127aac3b821a4818a36014f609b5943abf3",
+      "url": "https://github.com/brokermr810/QuantDinger",
+      "sent_at": "2026-06-16T15:09:43+00:00"
+    },
+    {
+      "sig": "30d1a8713405ad2df3f971545cab4d9ca9e753b79a2450313a39780b6728d534",
+      "url": "https://arxiv.org/abs/2606.15715",
+      "sent_at": "2026-06-16T15:09:43+00:00"
+    },
+    {
+      "sig": "328fa3bfda74e0bff3b195548077a34bad44b1533962a7ee1dda5436c1519e97",
+      "url": "https://arxiv.org/abs/2508.20225",
+      "sent_at": "2026-06-16T15:09:43+00:00"
+    },
+    {
+      "sig": "c8e9731293485d8af1b6174db171dc06d57d89de935b3b72cdf9a52f6a98a3f7",
+      "url": "https://arxiv.org/abs/2606.15701",
+      "sent_at": "2026-06-16T15:09:43+00:00"
+    },
+    {
+      "sig": "8d46f3aff1aa537a609eca56bdd45fcefb1beae875893b2edf011ddf0f2283c2",
+      "url": "https://arxiv.org/abs/2606.09025",
+      "sent_at": "2026-06-16T15:09:43+00:00"
+    },
+    {
+      "sig": "9c3970f1c96196ea47c8ef9762ded90fbafd1a4d9a90dd76527d6da093861a8a",
+      "url": "https://github.com/alphanume-markets/Alphanume-Strategy-Lab",
+      "sent_at": "2026-06-16T15:09:43+00:00"
+    },
+    {
+      "sig": "ebc9f1efb90cf8e62b902dc4bc201c55e0783506ff752e511d499a2ba069a4e8",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u70v61/agentic_trading_day_1/",
+      "sent_at": "2026-06-16T15:09:43+00:00"
     }
   ]
 }
