@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-16T15:09:43+00:00",
+  "updated_at": "2026-06-16T23:20:54+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -176,6 +176,36 @@
       "sig": "ebc9f1efb90cf8e62b902dc4bc201c55e0783506ff752e511d499a2ba069a4e8",
       "url": "https://www.reddit.com/r/algotrading/comments/1u70v61/agentic_trading_day_1/",
       "sent_at": "2026-06-16T15:09:43+00:00"
+    },
+    {
+      "sig": "91e609f59f00059189a19c75ae50e59df2de4917803b23ce57ec5d97e223bf48",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u7rurc/ny_striker_v22_trailing_profits_on_mnq_to_secure/",
+      "sent_at": "2026-06-16T23:20:54+00:00"
+    },
+    {
+      "sig": "058afa258a3e253a1ad4b05bf6d954f35bf7bd04ab36c9834e5b244f9c797f56",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u7o1yw/spent_6_months_building_and_stresstesting_a/",
+      "sent_at": "2026-06-16T23:20:54+00:00"
+    },
+    {
+      "sig": "bd2426ac67ec62ec35702abb1db9a35261e85ee87ce0ed4396f1db71a1b10d2a",
+      "url": "https://arxiv.org/abs/2601.04608",
+      "sent_at": "2026-06-16T23:20:54+00:00"
+    },
+    {
+      "sig": "b074c1f092727f317c4f4dcf2e2befb196b71a21a040bbef4b8e110ef68f8d30",
+      "url": "https://arxiv.org/abs/2606.16961",
+      "sent_at": "2026-06-16T23:20:54+00:00"
+    },
+    {
+      "sig": "6ebffa8f6e4e873af10e7290c7b5323f2abf8bb1aeaca16afcc6cb907062a873",
+      "url": "https://github.com/VISHESH-53/market-sentiment-analyzer-2.0",
+      "sent_at": "2026-06-16T23:20:54+00:00"
+    },
+    {
+      "sig": "13ac70aeca7a77401e084fa4caae435a33eb478b02c4ed43cb3b3627ee1232ba",
+      "url": "https://github.com/paappraiser/Quantloopp-Top-stratagies",
+      "sent_at": "2026-06-16T23:20:54+00:00"
     }
   ]
 }
