@@ -1,15 +1,160 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-17 07:20 · Asia/Shanghai
-> 共 43 条策略
+> 自动生成 · 最后更新：2026-06-17 21:41 · Asia/Shanghai
+> 共 50 条策略
 
 ## 目录
 
-- [2026-06（43）](#2026-06)
+- [2026-06（50）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### OwenPetropulos/OPResearch
+
+- **收录时间**：2026-06-17 21:41
+- **发布时间**：2026-06-17 06:53
+- **作者**：OwenPetropulos
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · multi · global
+- **摘要**：这是一个专注于系统化投资策略和应用数据分析的量化金融与经济研究仓库。作者使用Python构建可复现的数据管道，处理市场、基本面及宏观数据，强调信号设计和回测的严谨性。兴趣领域涵盖资产管理、交易以及跨行业的股票研究。仓库以Python为主要编程语言，当前获得0星。
+- **要点**：
+  - 仓库提供可复现的Python数据管道，整合市场、基本面和宏观数据。
+  - 重点在于系统化投资策略的信号设计和严格回测。
+  - 涉及资产管理、交易和股票研究等领域。
+- **回测线索**：Repository emphasizes backtesting rigor.
+- **策略价值**：该仓库为量化研究者提供了一套完整的研究框架和工具，有助于提升策略开发的效率和可靠性。
+- **筛选评分**：50
+- **原文**：[链接](https://github.com/OwenPetropulos/OPResearch)
+
+---
+
+### 期权定价中计划事件风险的非跨越识别
+
+- **收录时间**：2026-06-17 21:41
+- **发布时间**：2026-06-17 12:00
+- **作者**：Tenghan Zhong
+- **来源**：arXiv Quantitative Finance
+- **分类**：期权 · options · us
+- **频率**：intraday
+- **摘要**：本文提出了一种非跨越识别方法，将计划事件（如FOMC、CPI、非农就业）风险与期权定价中的波动率曲面分离。利用2022年5月至2025年8月的标普500指数期权数据，高斯和混合跳跃模型改善了事件跨越期权的定价误差。对于CPI和FOMC事件的识别最强，而非农就业较弱。污染曲面压力测试表明，若允许事件跨越报价进入无事件曲面，会错误吸收事件溢价。该方法提供了一种在不依赖事件跨越到期日的情况下识别事件风险的途径。
+- **要点**：
+  - 提出非跨越识别协议，分离事件风险与波动率曲面。
+  - 高斯和混合跳跃模型在事件跨越期权定价中表现更好。
+  - CPI和FOMC事件识别最强，非农就业较弱。
+- **回测线索**：Backtest from May 2022 to August 2025 on SPX options shows that Gaussian and two-component mixture jumps improve held-out event-spanning pricing errors.
+- **风险**：Identification is weaker for NFP; contaminated-surface stress test shows risk of absorbing event premia incorrectly. Method relies on clean separation of event and no-event expiries.
+- **策略价值**：为期权交易者提供更精确的事件风险定价工具，有助于在宏观数据发布前评估期权溢价。
+- **筛选评分**：55
+- **原文**：[链接](https://arxiv.org/abs/2606.12872)
+
+---
+
+### 用黄金定价图表验证技术指标优于美元定价图表的算法
+
+- **收录时间**：2026-06-17 21:41
+- **发布时间**：2026-06-16 19:21
+- **作者**：whoamisri
+- **来源**：Reddit r/algotrading
+- **分类**：趋势跟踪 · multi · global
+- **摘要**：作者构建了一个算法，检验一个假设：以黄金计价的价格图表上的技术指标，优于以美元计价的图表上的指标。作者认为美元图表忽略了货币贬值和通胀，而黄金图表显示真实价值。该算法目前处于测试阶段，结果将发布在X平台上。尚未有公开的回测结果或详细数据。该假设挑战了传统技术分析中以美元为基础的做法。如果成立，可能改变交易者分析资产的方式。风险在于黄金价格本身可能不稳定。
+- **要点**：
+  - 核心假设：黄金计价图表能剔除货币贬值影响，使技术指标更有效。
+  - 算法已建成，但尚无回测结果公布。
+  - 结果将在X平台发布，目前信息有限。
+- **回测线索**：Results pending; author will post on X.
+- **风险**：Thesis assumes gold reflects true value; gold price can also be volatile. Historical outperformance may not persist.
+- **策略价值**：如果验证成功，将挑战传统技术分析定价基准，可能为跨境资产分析提供新视角。
+- **筛选评分**：60
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1u7apf7/built_an_algorithm_that_tests_a_thesis_i_had/)
+
+---
+
+### 口袋量化引擎
+
+- **收录时间**：2026-06-17 21:41
+- **发布时间**：2026-06-17 08:55
+- **作者**：earosenfeld
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · stock · us
+- **摘要**：这是一个免费数据的量化交易引擎，包含宏观崩盘风险评分、SEC 13F机构信号、基于规则的策略层以及Streamlit仪表盘。该引擎使用Python构建，旨在为散户提供机构级分析工具。宏观崩盘风险评分基于经济指标监测系统性风险。SEC 13F信号跟踪大型基金经理的持仓变化。规则策略层允许用户定义交易逻辑。仪表盘提供实时可视化。目前项目尚未有公开回测结果。数据来源全部免费，但可能影响数据质量。
+- **要点**：
+  - 集成了宏观风险评分、13F信号和规则策略三个模块。
+  - 使用免费数据源，适合个人交易者实验。
+  - 无回测结果披露，实际效果未知。
+- **风险**：Dependence on free data sources may limit reliability and coverage. No backtest performance reported.
+- **策略价值**：为个人交易者提供了整合宏观与机构信号的免费量化工具，降低了量化交易入门门槛。
+- **筛选评分**：65
+- **原文**：[链接](https://github.com/earosenfeld/pocket-quant)
+
+---
+
+### 基于LLM的多智能体系统用于自动化加密货币投资组合管理
+
+- **收录时间**：2026-06-17 21:41
+- **发布时间**：2026-06-17 12:00
+- **作者**：Yichen Luo, Yebo Feng, Jiahua Xu, Paolo Tasca, Yang Liu
+- **来源**：arXiv q-fin.TR (Trading)
+- **分类**：机器学习 · crypto · global
+- **频率**：daily
+- **摘要**：该论文提出一个多智能体框架，包含三个专门智能体：加密货币智能体、新闻智能体和交易智能体。分别处理市场动态、每周新闻情绪以及信号融合和投资组合执行。评估了四种能力配置：零样本、思维链、检索增强生成和技能增强。在2025年全年回测中，分层（技能）配置实现了133.52%的累积收益和1.502的夏普比率，优于单智能体和深度学习基线。消融研究表明加密货币智能体最为关键，其移除导致累积收益下降42.57个百分点。跨模型比较显示多智能体系统在GPT-4o、GPT-5和Claude Sonnet 4.5下均优于单智能体。每个决策都可追溯到明确的智能体推理，提供了可解释的加密货币投资组合管理方法。
+- **要点**：
+  - 多智能体系统融合价格、链上数据、新闻和技术指标
+  - 分层（技能）配置回测收益133.52%，夏普比率1.502
+  - 加密货币智能体最为关键
+  - 决策过程可解释
+- **回测线索**：52-week backtest over top 15 L1 crypto; best config cumulative return 133.52%, Sharpe 1.502; outperforms baselines.
+- **风险**：Dependence on LLM quality; multi-agent complexity; Crypto Agent critical; performance sensitive to configuration.
+- **策略价值**：展示了可解释的基于LLM的多智能体系统在加密货币管理中的有效性，克服了深度学习黑箱问题。
+- **筛选评分**：70
+- **原文**：[链接](https://arxiv.org/abs/2501.00826)
+
+---
+
+### 通过分类器模型的集成强化学习：提升交易策略的风险-收益权衡
+
+- **收录时间**：2026-06-17 21:41
+- **发布时间**：2026-06-17 12:00
+- **作者**：Zheli Xiong
+- **来源**：arXiv Quantitative Finance
+- **分类**：机器学习 · multi · global
+- **频率**：daily
+- **摘要**：本文研究集成强化学习模型在金融交易策略中的应用，使用分类器提升性能。结合A2C、PPO、SAC等强化学习算法与支持向量机、决策树、逻辑回归等传统分类器。评估不同集成方法，并与单一RL模型比较。实验表明集成方法在风险调整收益上通常优于基础模型。但性能对方差阈值、分类器组、RL-智能体对和市场范围敏感。重复实验证实集成选择能提高稳健性，但优势是有条件的。研究强调了RL与分类器结合的价值，适用于交易、机器人等领域。
+- **要点**：
+  - 集成RL与分类器可改善风险调整收益
+  - 性能敏感于多个参数选择
+  - 优势有条件，非自动适用于所有数据集
+  - 具有跨领域应用潜力
+- **回测线索**：Evaluated on financial metrics; performance sensitive to variance threshold, classifier group, RL-agent pair, and market universe.
+- **风险**：Ensemble performance conditional on parameters; may not generalize across all datasets; requires careful tuning.
+- **策略价值**：提供了一种可解释的强化学习交易策略增强方法，有助于在动态环境中做出更稳健的决策。
+- **筛选评分**：75
+- **原文**：[链接](https://arxiv.org/abs/2502.17518)
+
+---
+
+### 游戏开发者制作的加密货币交易机器人
+
+- **收录时间**：2026-06-17 21:41
+- **发布时间**：2026-06-17 00:46
+- **作者**：yaboiq27
+- **来源**：Reddit r/algotrading
+- **分类**：均值回归 · crypto · global
+- **频率**：intraday
+- **摘要**：该策略由一位游戏程序员开发，使用基于规则的周期系统。系统结合RSI、斐波那契水平、趋势/成交量/广度过滤器等指标。在4小时K线图上进行长期现货交易。参数通过遗传算法和walk-forward优化。过去5年回测显示训练币种回报504%，未训练币种回报250%。已在模拟交易中运行，即将在树莓派上实盘运行。使用CCXT获取数据和下单，FastAPI监控。策略非机器学习，而是基于规则的循环系统。作者强调进行了多轮测试，防止过拟合。
+- **要点**：
+  - 游戏程序员开发的加密货币交易机器人
+  - 基于RSI、斐波那契和趋势过滤器的规则系统
+  - 回测5年504%收益，250%在未见币种上
+  - 已模拟交易，准备实盘运行在树莓派上
+- **回测线索**：Backtested 504% return on trained coins, 250% on untrained coins; walk-forward optimization including 2022; realistic fees/slippage.
+- **风险**：Risk of overfitting due to parameter tuning on historical data; long-only spot limits opportunities; performance may vary live.
+- **策略价值**：展示了一个无需机器学习的规则系统也能取得高收益的案例，对业余交易者具有启发意义。
+- **筛选评分**：75
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1u7ixpv/game_developer_made_crypto_trading_bot/)
+
+---
 
 ### Quantloopp 顶级策略
 

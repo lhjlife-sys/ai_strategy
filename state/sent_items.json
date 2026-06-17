@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-16T23:20:54+00:00",
+  "updated_at": "2026-06-17T13:41:22+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -206,6 +206,41 @@
       "sig": "13ac70aeca7a77401e084fa4caae435a33eb478b02c4ed43cb3b3627ee1232ba",
       "url": "https://github.com/paappraiser/Quantloopp-Top-stratagies",
       "sent_at": "2026-06-16T23:20:54+00:00"
+    },
+    {
+      "sig": "5dc726fd626319cf6736580abc701697d0a17d4334e5dd3ebe24e7f8887659df",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u7ixpv/game_developer_made_crypto_trading_bot/",
+      "sent_at": "2026-06-17T13:41:22+00:00"
+    },
+    {
+      "sig": "ae69a2a4f19bbd3cef00676634ad0ade0a35d8800ab892a58699ad988bdf9e8b",
+      "url": "https://arxiv.org/abs/2502.17518",
+      "sent_at": "2026-06-17T13:41:22+00:00"
+    },
+    {
+      "sig": "9e7c7e11d3ac4056ec4785c26e3e0e67bef51f1506ad4180fdceb4c827cdf272",
+      "url": "https://arxiv.org/abs/2501.00826",
+      "sent_at": "2026-06-17T13:41:22+00:00"
+    },
+    {
+      "sig": "5c84ef8ef1b38d151952c80c916db06a815f4235fbad4340acde7a67630e4459",
+      "url": "https://github.com/earosenfeld/pocket-quant",
+      "sent_at": "2026-06-17T13:41:22+00:00"
+    },
+    {
+      "sig": "b23c74fd2e670e1c5dded2aeef96a7cd13ba03af562b68313f34ad857a4d1af7",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u7apf7/built_an_algorithm_that_tests_a_thesis_i_had/",
+      "sent_at": "2026-06-17T13:41:22+00:00"
+    },
+    {
+      "sig": "bc27907b6533c1a528de28d7482f4eb6ca858051eaea230d174eac0172a1153a",
+      "url": "https://arxiv.org/abs/2606.12872",
+      "sent_at": "2026-06-17T13:41:22+00:00"
+    },
+    {
+      "sig": "a3b0cfef13cad961b0c0cea6aeb6a7046dc0d3cda67df9484a192f584e8580a5",
+      "url": "https://github.com/OwenPetropulos/OPResearch",
+      "sent_at": "2026-06-17T13:41:22+00:00"
     }
   ]
 }
