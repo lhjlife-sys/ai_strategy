@@ -1,15 +1,142 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-17 21:41 · Asia/Shanghai
-> 共 50 条策略
+> 自动生成 · 最后更新：2026-06-18 07:20 · Asia/Shanghai
+> 共 56 条策略
 
 ## 目录
 
-- [2026-06（50）](#2026-06)
+- [2026-06（56）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### 德州转型中的电力市场价格形成因果结构映射
+
+- **收录时间**：2026-06-18 07:20
+- **发布时间**：2026-06-17 12:00
+- **作者**：Shiva Madadkhani, Nils Sturma, Mathias Drton, Svetlana Ikonnikova
+- **来源**：arXiv Quantitative Finance
+- **分类**：机器学习 · multi · us
+- **摘要**：该研究使用因果发现方法分析德州电力批发市场价格的演变。结果推翻了过去认为天然气价格主导市场的观点，发现风力发电已成为日前电价的最大因果驱动因素，其影响超过天然气的三倍。然而，在高峰时段，风能的压价效应正在减弱。风能增长还改变了阻塞成本分布，将其转移至远距离负荷中心。南德州和西德州负荷上升改变了系统价格和区域价差。研究揭示了新型发电和大型负荷的选址、速度和规模对未来电价风险和投资的关键作用。
+- **要点**：
+  - 风力发电取代天然气成为电价主要驱动因素
+  - 风能压价效应在高峰时段减弱
+  - 新能源布局改变阻塞成本分布
+  - 负荷增长中心转移影响区域电价
+- **风险**：市场转型可能导致历史因果关系失效，政策变化和容量投资决策影响未来价格动力。
+- **策略价值**：为电力市场参与者和投资者提供了基于因果关系的价格风险新视角，对新能源投资和电网规划有重要参考价值。
+- **筛选评分**：50
+- **原文**：[链接](https://arxiv.org/abs/2604.14257)
+
+---
+
+### 量化交易研究平台 - 多维度策略评估
+
+- **收录时间**：2026-06-18 07:20
+- **发布时间**：2026-06-18 00:27
+- **作者**：lguank
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · multi · multi
+- **摘要**：该平台是一个基于Python的量化交易研究框架，提供多个用于系统化策略评估的模块。它包含基准归因分析，帮助理解策略相对于基准的收益来源。向前验证模块用于评估策略在样本外数据的稳定性。回撤分析模块提供最大回撤、持续时间等关键指标。分散化诊断工具帮助优化资产配置。平台适用于多资产类别的策略研究。代码公开在GitHub上，供社区使用和改进。
+- **要点**：
+  - 集成基准归因、向前验证、回撤分析和分散化诊断
+  - 支持多种资产类别和市场的策略评估
+  - 采用Python编写，开源免费
+- **回测线索**：平台支持Walk-Forward验证和回撤分析，但未给出具体策略回测结果。
+- **风险**：平台本身无交易风险，但用户开发的策略需谨慎避免过拟合。
+- **策略价值**：提供了一个全面的量化策略评估工具箱，帮助研究者避免常见陷阱，提升策略稳健性。
+- **筛选评分**：50
+- **原文**：[链接](https://github.com/lguank/quantitative-trading-research-platform)
+
+---
+
+### 量化交易回测器 - MA50/MA200策略
+
+- **收录时间**：2026-06-18 07:20
+- **发布时间**：2026-06-18 02:29
+- **作者**：PhyuSin2026
+- **来源**：GitHub Quant Repos
+- **分类**：趋势跟踪 · stock · us
+- **频率**：daily
+- **摘要**：该项目是一个用Python实现的量化交易回测工具，专门针对SPY ETF应用MA50/MA200移动平均线交叉策略。回测旨在评估简单趋势跟踪策略的历史表现。代码实现了买入和卖出信号生成逻辑。回测结果可能用于比较不同市场条件下的策略有效性。该仓库目前处于初始阶段，仅有基本功能。适合初学者学习回测框架。
+- **要点**：
+  - 使用MA50和MA200移动平均线交叉作为交易信号
+  - 回测对象为SPY ETF，属于美国股票市场
+  - 采用日频数据进行策略回测
+  - 简单趋势跟踪策略，适合入门学习
+- **回测线索**：回测展示了简单均线交叉策略，但未提供具体业绩指标。
+- **风险**：震荡市场中易产生虚假信号，滞后性可能导致较大回撤。
+- **策略价值**：展示了经典均线策略在主流ETF上的实用性，为新手提供了量化回测的入门范例。
+- **筛选评分**：55
+- **原文**：[链接](https://github.com/PhyuSin2026/Quantitative-Trading-Backtester)
+
+---
+
+### PIVOT：通过可微分的J\"ackel算子桥接Black-Scholes隐含波动率与价格目标
+
+- **收录时间**：2026-06-18 07:20
+- **发布时间**：2026-06-17 12:00
+- **作者**：Raeid Saqur, Yannick Limmer, Anastasis Kratsios, Blanka Horvath, Hans Buehler
+- **来源**：arXiv Quantitative Finance
+- **分类**：期权 · stock · us
+- **频率**：daily
+- **摘要**：本文提出PIVOT，一个可微分层，用于连接Black-Scholes隐含波动率空间和价格空间。它保留了“Let's Be Rational”求解器的前向传递，并通过隐式微分实现后向传递，同时引入门控机制处理低vega区域。在单个H100 GPU上，融合Triton内核达到了17.9亿波动率/秒的计算速度，精度达到机器精度。在SPX数据上，PIVOT增强的目标函数将持有期价格MAE最多降低了43.4%，并在RUT、VIX和NDX上分别实现了40.1%、24.2%和16.7%的价格MAE改善。门控机制被证明是正确性合约而非调节旋钮。
+- **要点**：
+  - 可微分层连接隐含波动率和价格空间，保留LBR求解器前向传递。
+  - 隐式微分后向传递，门控机制处理低vega奇异点。
+  - 在SPX上价格MAE降低43.4%，跨资产表现优异。
+  - 高性能实现：17.9亿波动率/秒，机器精度。
+- **回测线索**：Tested on SPX OptionMetrics data: Pareto-dominated baselines with up to 43.4% reduction in price MAE; cross-asset gains of 40.1% (RUT), 24.2% (VIX), 16.7% (NDX) in price MAE.
+- **风险**：Low-vega regime singularity requires careful gating; performance depends on quality of input data; computational overhead compared to non-differentiable methods.
+- **策略价值**：PIVOT使得基于梯度的优化可以直接应用于期权定价和波动率曲面建模，有助于提升期权交易策略和风险管理模型的精度。
+- **筛选评分**：60
+- **原文**：[链接](https://arxiv.org/abs/2606.17065)
+
+---
+
+### 免费数据集：Polymarket 5分钟加密货币涨跌订单簿，逐秒数据（约2680万样本）
+
+- **收录时间**：2026-06-18 07:20
+- **发布时间**：2026-06-18 00:55
+- **作者**：File-Environmental
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · crypto · global
+- **频率**：intraday
+- **摘要**：该数据集记录了Polymarket上5分钟加密货币涨跌市场的订单簿数据，涵盖BTC、ETH、SOL、XRP、DOGE、HYPE、BNB等货币对。数据以每秒频率采集，包含最佳买/卖价、数量以及买方的深度信息。时间范围从2026年3月至5月，总共约2680万个样本。数据格式为Parquet，采用CC0许可协议，可在Hugging Face和Kaggle上获取。作者希望研究者利用该数据集探索订单簿是否能在5分钟时间窗口内领先现货价格。
+- **要点**：
+  - 覆盖7种加密货币的涨跌市场订单簿数据。
+  - 逐秒频率，包含最佳买/卖价及深度。
+  - 约2680万样本，2026年3月至5月。
+  - 免费公开，CC0许可。
+- **风险**：Data limited to March-May 2026; only top-of-book; only for specific crypto pairs; markets may have low liquidity.
+- **策略价值**：该数据集为高频预测市场研究提供了宝贵的订单簿数据，有助于探索市场微观结构与短期价格预测。
+- **筛选评分**：80
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1u8fsg7/free_dataset_polymarket_5min_crypto_updown_order/)
+
+---
+
+### 25个代码年的前向测试能否赋予交易模型真正的可信度？
+
+- **收录时间**：2026-06-18 07:20
+- **发布时间**：2026-06-18 07:17
+- **作者**：_WARBUD_
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · stock · us
+- **频率**：daily
+- **摘要**：一位交易者分享其交易模型的开发进展，详细描述了多个代码在不同时间区间内的前向测试结果。他们声称模型未经过任何拟合，并询问25个代码年的前向测试是否足以证明模型的可靠性。模型在GME挤压窗口期间实现了58%的胜率和约21%的利润。最近对10个代码各5个月的前向测试平均胜率在53%至58%之间。目前正在进行更大的测试：5个代码各5年，总计25个代码年。他们强调未对原始代码进行任何修改。
+- **要点**：
+  - 模型在GME事件中取得58%胜率和21%利润。
+  - 10个代码各5个月的前向测试平均胜率53-58%。
+  - 当前正在进行5个代码各5年的前向测试。
+  - 声称未进行任何参数拟合。
+- **回测线索**：Forward test results: 58% win rate, ~21% profit on GME during squeeze; recent 10 tickers, 5 months each averaged 53-58% win rate; 25 ticker-year test in progress.
+- **风险**：Small sample size; potential survivorship bias; forward test not yet complete; lack of details on edge definitions.
+- **策略价值**：该讨论强调了在交易模型开发中，长期、多代码的前向测试对于验证策略稳健性的重要性。
+- **筛选评分**：85
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1u8pwb5/does_a_25_tickeryear_forward_test_give_a_trading/)
+
+---
 
 ### OwenPetropulos/OPResearch
 

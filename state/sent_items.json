@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-17T13:41:22+00:00",
+  "updated_at": "2026-06-17T23:20:15+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -241,6 +241,36 @@
       "sig": "a3b0cfef13cad961b0c0cea6aeb6a7046dc0d3cda67df9484a192f584e8580a5",
       "url": "https://github.com/OwenPetropulos/OPResearch",
       "sent_at": "2026-06-17T13:41:22+00:00"
+    },
+    {
+      "sig": "17040b65c627868fdbdff90a81968250b7a9d977c563a4822ebaa72ace996bf1",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u8pwb5/does_a_25_tickeryear_forward_test_give_a_trading/",
+      "sent_at": "2026-06-17T23:20:15+00:00"
+    },
+    {
+      "sig": "f004702a2c5f379b108ad0b1e005e85c15cc1fe493efdf766223eb99dd6a6baf",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u8fsg7/free_dataset_polymarket_5min_crypto_updown_order/",
+      "sent_at": "2026-06-17T23:20:15+00:00"
+    },
+    {
+      "sig": "931f858b9f6a6d7f35f990bad34cfda0bf7830fa4d3cec71920e58989c2ef5f2",
+      "url": "https://arxiv.org/abs/2606.17065",
+      "sent_at": "2026-06-17T23:20:15+00:00"
+    },
+    {
+      "sig": "417c29e8e5974f5b408af7f283f951d317e677aabbb4cf2c0f1f226d5a43e12d",
+      "url": "https://github.com/PhyuSin2026/Quantitative-Trading-Backtester",
+      "sent_at": "2026-06-17T23:20:15+00:00"
+    },
+    {
+      "sig": "640bf526c9b376d6a85050793ec6a5540300c47821702d515a8ed92a1bf84b37",
+      "url": "https://github.com/lguank/quantitative-trading-research-platform",
+      "sent_at": "2026-06-17T23:20:15+00:00"
+    },
+    {
+      "sig": "79744bd9daefc8af6f439e29626cda8f296cc6ed3a26473483090c5ce31664b6",
+      "url": "https://arxiv.org/abs/2604.14257",
+      "sent_at": "2026-06-17T23:20:15+00:00"
     }
   ]
 }
