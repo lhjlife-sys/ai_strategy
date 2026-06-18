@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-17T23:20:15+00:00",
+  "updated_at": "2026-06-18T12:50:49+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -271,6 +271,41 @@
       "sig": "79744bd9daefc8af6f439e29626cda8f296cc6ed3a26473483090c5ce31664b6",
       "url": "https://arxiv.org/abs/2604.14257",
       "sent_at": "2026-06-17T23:20:15+00:00"
+    },
+    {
+      "sig": "75193ade9157168e369830ad5f2791674562910bcda1c0e9b6661faa77c0c208",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u87hhg/found_this_gem_and_wanted_to_share/",
+      "sent_at": "2026-06-18T12:50:49+00:00"
+    },
+    {
+      "sig": "81e46a7d2751e88d3689df06e57434dedb7ae274329028e4861a84a2199d6088",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u8dkkb/how_would_you_further_validate_this_trading/",
+      "sent_at": "2026-06-18T12:50:49+00:00"
+    },
+    {
+      "sig": "9a18707bc81571d1237bf2f8f5711d4478002bb231e9433783c5a38f5ec5e2b1",
+      "url": "https://arxiv.org/abs/2605.30442",
+      "sent_at": "2026-06-18T12:50:49+00:00"
+    },
+    {
+      "sig": "bead9c357a595e1af680d0ee4111323252225db45ba5b1f34a050cfac1add6e3",
+      "url": "https://github.com/HaoweiChan/quant-engine",
+      "sent_at": "2026-06-18T12:50:49+00:00"
+    },
+    {
+      "sig": "d313a066c0bb74d16dea142a84dd5ccd0950df468af8a5b19906b97a74e64892",
+      "url": "https://arxiv.org/abs/2308.00805",
+      "sent_at": "2026-06-18T12:50:49+00:00"
+    },
+    {
+      "sig": "93d0f7ebcc15f8bc5934880e346c9e93e066c197dfe34baeffdbb51465cbb165",
+      "url": "https://arxiv.org/abs/2606.19318",
+      "sent_at": "2026-06-18T12:50:49+00:00"
+    },
+    {
+      "sig": "d27e4381897f03d3a11740063b0d989bfb8ff40d8ff136b4fa1ee6e9dc7278d6",
+      "url": "https://github.com/Algo-Ankit/AlphaSwarm",
+      "sent_at": "2026-06-18T12:50:49+00:00"
     }
   ]
 }
