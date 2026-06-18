@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-18T12:50:49+00:00",
+  "updated_at": "2026-06-18T23:31:53+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -306,6 +306,36 @@
       "sig": "d27e4381897f03d3a11740063b0d989bfb8ff40d8ff136b4fa1ee6e9dc7278d6",
       "url": "https://github.com/Algo-Ankit/AlphaSwarm",
       "sent_at": "2026-06-18T12:50:49+00:00"
+    },
+    {
+      "sig": "e33fe904665499cf545bc98b9da65d42ebb107d351a0cf015685209150d01c66",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u9br5g/stock_market_algo_stats_as_it_consistently_makes/",
+      "sent_at": "2026-06-18T23:31:53+00:00"
+    },
+    {
+      "sig": "729b719dfa8729e20360f15ac5ceb3a0bfd9f57c99d458151301b8e893b06a1f",
+      "url": "https://github.com/OnePunchMonk/AgentQuant",
+      "sent_at": "2026-06-18T23:31:53+00:00"
+    },
+    {
+      "sig": "72b615c41a2b2eb351abfe1c96ad76e48eea70ff2f578f3aa5818a13957953e6",
+      "url": "https://github.com/Jialei-Ni/factorlab",
+      "sent_at": "2026-06-18T23:31:53+00:00"
+    },
+    {
+      "sig": "7aaba2d6fc465f0619f9fea02c029efaadfb81154737afb28079e742a0c38256",
+      "url": "https://www.reddit.com/r/algotrading/comments/1u8s51y/need_some_help_figuring_out_what_tpsl_model_to/",
+      "sent_at": "2026-06-18T23:31:53+00:00"
+    },
+    {
+      "sig": "972163a991c347e4126f9233d0d3f5f9e0b72fe8afb3be8683f5ab41af7d2e60",
+      "url": "https://arxiv.org/abs/2606.18545",
+      "sent_at": "2026-06-18T23:31:53+00:00"
+    },
+    {
+      "sig": "0a1c5fcd994ab9791ea1d8f7c7771ca5aa91095884e1a0a57577fe676c396f9e",
+      "url": "https://arxiv.org/abs/2506.01101",
+      "sent_at": "2026-06-18T23:31:53+00:00"
     }
   ]
 }

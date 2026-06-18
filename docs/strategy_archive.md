@@ -1,15 +1,137 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-18 20:50 · Asia/Shanghai
-> 共 63 条策略
+> 自动生成 · 最后更新：2026-06-19 07:31 · Asia/Shanghai
+> 共 69 条策略
 
 ## 目录
 
-- [2026-06（63）](#2026-06)
+- [2026-06（69）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### 基于梯度的效用短缺风险随机优化
+
+- **收录时间**：2026-06-19 07:31
+- **发布时间**：2026-06-18 12:00
+- **作者**：Sumedh Gupte, Prashanth L. A., Sanjay P. Bhat
+- **来源**：arXiv Quantitative Finance
+- **分类**：机器学习 · multi · global
+- **摘要**：本文研究了效用短缺风险（UBSR）的估计与优化问题。作者将UBSR扩展到无界随机变量，并涵盖了熵风险、期望分位数风险、风险价值（VaR）和二次风险等特例。在估计方面，推导了样本均值逼近估计器的非渐近误差边界。在优化方面，给出了光滑参数化下UBSR梯度的闭式表达式。提出了梯度估计器并证明了其均方误差边界。将梯度估计器融入随机梯度算法，并推导了强凸、凸和非凸目标下的收敛速率。在金融应用中验证了算法的有效性。
+- **要点**：
+  - UBSR扩展至无界随机变量，涵盖多种常见风险度量
+  - 推导了UBSR的梯度解析表达式
+  - 提出随机梯度算法并证明其收敛边界
+- **回测线索**：论文通过金融应用实验展示了所提算法的性能。
+- **风险**：UBSR对尾部事件敏感，且算法收敛性依赖于凸性假设。
+- **策略价值**：为风险管理中的风险度量优化提供了可计算的梯度方法，有望应用于投资组合优化和风险控制。
+- **筛选评分**：60
+- **原文**：[链接](https://arxiv.org/abs/2506.01101)
+
+---
+
+### 基尼-贝叶斯连接：CAP斜率作为贝叶斯定理，及其在证据权重、Somers' D和校准中的应用
+
+- **收录时间**：2026-06-19 07:31
+- **发布时间**：2026-06-18 12:00
+- **作者**：Denis Burakov
+- **来源**：arXiv Quantitative Finance
+- **分类**：因子 · multi · global
+- **摘要**：本文建立了累积准确度曲线斜率与贝叶斯定理之间的明确联系。作者指出，标准化的违约概率是经过先验概率缩放的后验概率。证据权重（对数似然比）和基尼系数可以在CAP斜率框架下统一解释。论文展示了准确性比率、Somers' D和基尼系数本质上是相同指标的不同计算方式。通过比较实际结果与模型预测，可以诊断模型校准偏差。文中提供了离散和连续情况下的详细示例。该研究为信用风险评分模型评估提供了理论统一。
+- **要点**：
+  - CAP斜率等价于贝叶斯定理的累积坐标形式
+  - 证据权重和信息价值可统一在CAP斜率几何中
+  - 基尼系数、Somers' D和准确性比率是同一数值的三种计算
+- **回测线索**：论文通过一个五区间离散示例和核密度连续示例验证了所有推导。
+- **风险**：该方法依赖于模型校准质量，不准确的校准可能导致诊断偏差。
+- **策略价值**：该理论统一了信用评分中多个常用性能指标，有助于更深入理解模型诊断和校准。
+- **筛选评分**：65
+- **原文**：[链接](https://arxiv.org/abs/2606.18545)
+
+---
+
+### 需要帮助确定算法中使用的止盈止损模型
+
+- **收录时间**：2026-06-19 07:31
+- **发布时间**：2026-06-18 08:58
+- **作者**：SpectreIcarus
+- **来源**：Reddit r/algotrading
+- **分类**：趋势跟踪 · futures · us
+- **摘要**：用户在Reddit上寻求关于算法交易中止盈止损模型选择的建议。用户提供了一些策略统计指标，但未透露具体策略细节。用户倾向于使用15%止损和18%止盈的比例，以降低最大回撤。该策略将基于TopstepX API运行，这是一个期货交易平台。用户希望在不暴露交易策略核心的情况下获得模型选择建议。评论中可能包含多种止盈止损方法的讨论。
+- **要点**：
+  - 用户寻求止盈止损模型选择建议
+  - 倾向于15/18%的固定比例以控制回撤
+  - 策略计划通过TopstepX API在期货市场执行
+- **回测线索**：用户提到了部分统计数据，但未提供具体回测结果。
+- **风险**：止盈止损比例可能过于粗糙，需要根据具体策略和市场条件调整。
+- **策略价值**：止盈止损模型是算法交易中风险管理的核心，正确选择直接影响策略的收益和回撤表现。
+- **筛选评分**：70
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1u8s51y/need_some_help_figuring_out_what_tpsl_model_to/)
+
+---
+
+### factorlab – Laboratório de Fatores Quantitativos
+
+- **收录时间**：2026-06-19 07:31
+- **发布时间**：2026-06-19 03:19
+- **作者**：Jialei-Ni
+- **来源**：GitHub Quant Repos
+- **分类**：因子 · stock · us
+- **频率**：daily
+- **摘要**：factorlab é um projeto pessoal de pesquisa quantitativa focado na construção e teste de estratégias de trading baseadas em fatores. Utiliza indicadores financeiros e a biblioteca Alphalens para análise de fatores e avaliação de desempenho. O projeto é escrito em Python e ainda está em estágio inicial, sem estrelas no GitHub. Ele oferece um ambiente flexível e experimental para explorar comportamentos de sinais e métricas de avaliação.
+- **要点**：
+  - Foco em estratégias baseadas em fatores com Alphalens.
+  - Ambiente experimental para teste de indicadores financeiros.
+  - Projeto pessoal, ainda sem estrelas no GitHub.
+- **回测线索**：Inclui fluxos de trabalho básicos de backtesting e análise de fatores com Alphalens.
+- **风险**：Projeto experimental e pessoal; escalabilidade limitada.
+- **策略价值**：Oferece um framework simples e flexível para pesquisadores iniciantes explorarem fatores e backtesting.
+- **筛选评分**：85
+- **原文**：[链接](https://github.com/Jialei-Ni/factorlab)
+
+---
+
+### AgentQuant: 自主量化交易研究平台
+
+- **收录时间**：2026-06-19 07:31
+- **发布时间**：2026-06-19 00:57
+- **作者**：OnePunchMonk
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · stock · global
+- **摘要**：AgentQuant是一个自主量化交易研究平台。它可以将股票列表转化为完全回测过的策略。该平台使用AI代理、真实市场数据和数学公式。整个过程无需编写任何代码。平台集成了多种工具如yfinance和VectorBT。它支持代理AI、自主代理和金融科技等技术。项目语言为Python，目前在GitHub上有117颗星。该平台旨在降低量化研究的门槛。用户可以专注于策略逻辑而无需技术细节。
+- **要点**：
+  - 无需编码即可将股票列表转化为回测过的策略
+  - 集成AI代理、LangChain、LangGraph等先进技术
+  - 支持yfinance和VectorBT进行数据获取和回测
+- **回测线索**：Built-in backtesting via VectorBT and AI agents
+- **策略价值**：该平台显著降低了量化交易研究的门槛，使非程序员也能快速生成并回测策略。
+- **筛选评分**：90
+- **原文**：[链接](https://github.com/OnePunchMonk/AgentQuant)
+
+---
+
+### Algoritmo para Mercado de Ações com Estatísticas de Lucro Consistente
+
+- **收录时间**：2026-06-19 07:31
+- **发布时间**：2026-06-19 00:56
+- **作者**：DarkandBoring
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · stock · us
+- **频率**：intraday
+- **摘要**：Este post do Reddit apresenta os resultados de um algoritmo de trading que testa múltiplas estratégias no mercado de ações dos EUA. As estratégias incluem padrões de reversão como 'Double Bottom' e 'Liquidity Sweep', além de indicadores como Stochastic e RSI. A estratégia 'Double Bottom' obteve a maior taxa de acerto (75,7%) e retorno total de +1689,84. O algoritmo é projetado para operar apenas durante o pregão, sem posições overnight, utilizando a API Alpaca SIP. O autor disponibiliza um executável público básico para interessados. Há um risco de overfitting devido ao grande número de estratégias testadas.
+- **要点**：
+  - Testa 8 estratégias diferentes com dados históricos de ações dos EUA.
+  - Estratégia Double Bottom apresenta win rate de 75,7% e retorno total de +1689,84.
+  - Opera apenas intraday, sem posições overnight.
+  - Risco de overfitting devido à otimização excessiva.
+- **回测线索**：Apresenta resultados de backtest para 8 estratégias, com win rates entre 48% e 75,7% e total return de -69.62 a +1689.84.
+- **风险**：Risco de overfitting devido a múltiplas estratégias; limitado a ações dos EUA e sem posições overnight.
+- **策略价值**：Demonstra a importância de backtest sistemático e validação estatística para estratégias de trading algorítmico.
+- **筛选评分**：90
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1u9br5g/stock_market_algo_stats_as_it_consistently_makes/)
+
+---
 
 ### Algo-Ankit/AlphaSwarm
 
