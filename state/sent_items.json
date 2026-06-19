@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-18T23:31:53+00:00",
+  "updated_at": "2026-06-19T13:33:57+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -336,6 +336,31 @@
       "sig": "0a1c5fcd994ab9791ea1d8f7c7771ca5aa91095884e1a0a57577fe676c396f9e",
       "url": "https://arxiv.org/abs/2506.01101",
       "sent_at": "2026-06-18T23:31:53+00:00"
+    },
+    {
+      "sig": "7ad7906b2082ee3dc13a967915c640975c3973895b5e92602b0872883f1feac2",
+      "url": "https://arxiv.org/abs/2606.19517",
+      "sent_at": "2026-06-19T13:33:57+00:00"
+    },
+    {
+      "sig": "523c03d7c32a0187ad25bd72763a87367712dbd5d79a1789ff70e5118a1e1fdd",
+      "url": "https://github.com/sbauwow/schwagent",
+      "sent_at": "2026-06-19T13:33:57+00:00"
+    },
+    {
+      "sig": "64e90bf71e8e57f26a1a3ca188d2d54804713d6dda00d1e126862ed62dfe31f8",
+      "url": "https://github.com/Aiden0334/Machine-Learning-Enhanced-Alpha-Models",
+      "sent_at": "2026-06-19T13:33:57+00:00"
+    },
+    {
+      "sig": "2ca85663e8c8a917a09a5a9b1ef8cc183aacddc84d0ee67821bc1b0e2b3481e7",
+      "url": "https://arxiv.org/abs/2606.20145",
+      "sent_at": "2026-06-19T13:33:57+00:00"
+    },
+    {
+      "sig": "5b1c442b446110e61b0e4683b7ff877a65ec32c9cd516995c62ee01fda9dbe97",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ua12ok/ml_for_future_price_distribution/",
+      "sent_at": "2026-06-19T13:33:57+00:00"
     }
   ]
 }
