@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-19T13:33:57+00:00",
+  "updated_at": "2026-06-19T22:49:31+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -361,6 +361,31 @@
       "sig": "5b1c442b446110e61b0e4683b7ff877a65ec32c9cd516995c62ee01fda9dbe97",
       "url": "https://www.reddit.com/r/algotrading/comments/1ua12ok/ml_for_future_price_distribution/",
       "sent_at": "2026-06-19T13:33:57+00:00"
+    },
+    {
+      "sig": "fce60b20dd15fd8169f6f2d50755eb58e70ddeeb88fe8f7ab2c737dce8705e76",
+      "url": "https://arxiv.org/abs/2606.19550",
+      "sent_at": "2026-06-19T22:49:31+00:00"
+    },
+    {
+      "sig": "0adc968ed5b3e7de1b007c8251d8e4d9065b05b70f6bb816a1440b6d403cc157",
+      "url": "https://github.com/tradingstrategy-ai/trading-strategy",
+      "sent_at": "2026-06-19T22:49:31+00:00"
+    },
+    {
+      "sig": "5ca3b25834e693a4206258e31573924251dc444b9544c31d56ab08fc1ceb00d9",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uaao3b/strong_multiasset_backtest_and_montecarlo_results/",
+      "sent_at": "2026-06-19T22:49:31+00:00"
+    },
+    {
+      "sig": "eb6b30fc85f2a561c27f8a26b4cba61e16d65e4dd698f1caa3b11c6ded5c5517",
+      "url": "https://github.com/Ahmed-Eldabea/Automated-Algorithmic-Trading-XAUUSD",
+      "sent_at": "2026-06-19T22:49:31+00:00"
+    },
+    {
+      "sig": "d7db073cc8303ded252780ee07d4920d0774cd8dfae8896b7214f8c1e81e8eaf",
+      "url": "https://arxiv.org/abs/2606.20079",
+      "sent_at": "2026-06-19T22:49:31+00:00"
     }
   ]
 }
