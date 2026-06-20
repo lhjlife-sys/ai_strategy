@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-19T22:49:31+00:00",
+  "updated_at": "2026-06-20T11:55:01+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -386,6 +386,26 @@
       "sig": "d7db073cc8303ded252780ee07d4920d0774cd8dfae8896b7214f8c1e81e8eaf",
       "url": "https://arxiv.org/abs/2606.20079",
       "sent_at": "2026-06-19T22:49:31+00:00"
+    },
+    {
+      "sig": "5cc91074825e7d64c3f46f2b0a589616a81a76494f191c33403491e0095d6859",
+      "url": "https://github.com/MarcosACH/quant-strategies",
+      "sent_at": "2026-06-20T11:55:01+00:00"
+    },
+    {
+      "sig": "dc2e0f1ce04e9ef47a78dec98ff9172d1d1c7f562dd18a4ac3acc7038c03cca4",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uass5b/looks_like_a_winner_but_is_it_a_winner/",
+      "sent_at": "2026-06-20T11:55:01+00:00"
+    },
+    {
+      "sig": "5f52b41eb884816640d5c6f91b4804ab7ed5baca61c8ace4d03fbd6ba557c573",
+      "url": "https://github.com/Yuyutsu01/Project_Aegis",
+      "sent_at": "2026-06-20T11:55:01+00:00"
+    },
+    {
+      "sig": "93819d55ca7f4ab25393ed872649d8ea067913a3fd2f3c3229cd929f0eefd2de",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uahbuk/dca_strategy_question/",
+      "sent_at": "2026-06-20T11:55:01+00:00"
     }
   ]
 }

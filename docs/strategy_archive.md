@@ -1,15 +1,94 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-20 06:49 · Asia/Shanghai
-> 共 79 条策略
+> 自动生成 · 最后更新：2026-06-20 19:54 · Asia/Shanghai
+> 共 82 条策略
 
 ## 目录
 
-- [2026-06（79）](#2026-06)
+- [2026-06（82）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### DCA策略问题
+
+- **收录时间**：2026-06-20 19:54
+- **发布时间**：2026-06-20 07:41
+- **作者**：Aggressive_Ad1599
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · stock · us
+- **频率**：intraday
+- **摘要**：一位交易者发现了一个具有60%胜率和1:1风险回报比的交易优势，并在特定时间执行交易。他引入DCA方法，将风险分成三次入场，使盈利交易的利润翻倍。但一些交易直接达到止盈，未触发DCA，只能获得DCA盈利的三分之一。亏损交易则始终承担全部风险，导致这类直接盈利交易的风险回报比为负。该交易者询问如何弥补这些低风险盈利交易，或这是否是DCA策略的固有缺陷。帖子来自Reddit的algotrading板块，由用户Aggressive_Ad1599提交。
+- **要点**：
+  - 60%胜率和1:1风险回报比的交易优势基础。
+  - DCA将风险分成三次入场，使整体盈利交易利润翻倍。
+  - 直接达到止盈的盈利交易仅获得DCA盈利的三分之一，且亏损交易承担全部风险。
+  - 此类直接盈利交易的风险回报比为负，需要应对。
+- **风险**：DCA策略中，直接达到止盈的交易仅获得三分之一利润，而亏损交易承担全部风险，导致部分交易的风险回报比为负。
+- **策略价值**：该问题探讨了DCA策略在提高胜率的同时可能带来的风险回报不均衡，对优化交易管理具有实际意义。
+- **筛选评分**：60
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uahbuk/dca_strategy_question/)
+
+---
+
+### 看起来是赢家，但真的是赢家吗？
+
+- **收录时间**：2026-06-20 19:54
+- **发布时间**：2026-06-20 18:04
+- **作者**：EaZyRecipeZ
+- **来源**：Reddit r/algotrading
+- **分类**：均值回归 · stock · us
+- **频率**：daily
+- **摘要**：该策略是一个纯Python脚本，每天开盘第一秒进行交易，通过平衡ETF组合来操作。没有使用人工智能或机器学习方法。回测中假设无滑点，但作者承认缺乏开盘后30分钟的数据来优化进场时间。回测指标显示夏普比率在2.35到3.36之间，最大回撤从2.39%到24.34%不等，净收益从29.52%到167.82%。不同的配置参数产生了显著不同的结果，暗示可能存在过度拟合。作者在征求社区意见，并考虑将代码开源。该策略强调了简单再平衡策略在回测中的潜力，但需要谨慎评估实盘中的滑点和交易成本。
+- **要点**：
+  - 每日开盘一次性交易，通过平衡ETF组合实现策略。
+  - 回测假设无滑点，夏普比率较高（2.35-3.36）。
+  - 不同配置参数下表现差异大，存在过度拟合风险。
+  - 作者考虑开源代码并征求改进意见。
+- **回测线索**：Backtest shows high Sharpe ratios (2.35-3.36) and net profit (30-168%), but no slippage included. Multiple configurations tested, raising overfitting risk.
+- **风险**：No slippage or transaction costs assumed; backtest likely overfitted due to many parameter configurations; performance may not translate to live trading.
+- **策略价值**：此案例说明，即使是简单的ETF平衡策略在回测中也可能看似优秀，但必须注意滑点和过度拟合对实盘表现的潜在影响。
+- **筛选评分**：70
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uass5b/looks_like_a_winner_but_is_it_a_winner/)
+
+---
+
+### MarcosACH/quant-strategies
+
+- **收录时间**：2026-06-20 19:54
+- **发布时间**：2026-06-19 21:29
+- **作者**：MarcosACH
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · multi · global
+- **摘要**：A comprehensive framework for developing and backtesting quantitative trading strategies.
+Topics: algorithmic-trading, backtesting, backtesting-engine, backtesting-trading-strategies, optuna, optuna-optimization, quantitative-finance, vectorbt
+Language: Python
+Stars: 1
+- **筛选评分**：75
+- **原文**：[链接](https://github.com/MarcosACH/quant-strategies)
+
+---
+
+### Project_Aegis
+
+- **收录时间**：2026-06-20 19:54
+- **发布时间**：2026-06-20 02:08
+- **作者**：Yuyutsu01
+- **来源**：GitHub Quant Repos
+- **分类**：机器学习 · multi · global
+- **摘要**：Project AEGIS（高级执行与梯度提升智能策略）是一个研究级的量化交易框架。它实现了混合元策略架构。标准的强化学习模型在非平稳金融环境中常因噪声信号比过高而表现不佳。AEGIS通过解耦策略与执行来解决这一问题。该框架使用Python编写。旨在提高强化学习在交易中的稳健性。仓库当前获得2颗星。项目仍处于早期研究阶段。它探索了强化学习在量化领域的应用。
+- **要点**：
+  - 实现混合元策略架构以应对非平稳市场。
+  - 解耦策略与执行，降低噪声干扰。
+  - 基于强化学习的研究级量化框架。
+  - 目前获得2颗星，作者为Yuyutsu01。
+- **风险**：强化学习模型在非平稳金融环境中容易过拟合，高噪声信号比可能导致策略失效。
+- **策略价值**：该框架为强化学习在量化交易中的实际应用提供了新的解决思路，有助于提高策略在复杂市场环境下的适应性。
+- **筛选评分**：70
+- **原文**：[链接](https://github.com/Yuyutsu01/Project_Aegis)
+
+---
 
 ### 如何发现异常值：一种集成异常检测框架
 
@@ -1573,25 +1652,6 @@ Stars: 0
 - **策略价值**：可靠的破产预测可改进信用风险评估和量化策略中的因子构建。
 - **筛选评分**：90
 - **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1u4ogml/walkforward_bankruptcy_prediction_with_lightgbm/)
-
----
-
-### Yuyutsu01/项目Aegis
-
-- **收录时间**：2026-06-13 20:14
-- **发布时间**：2026-06-12 22:59
-- **作者**：未知
-- **来源**：GitHub Quant Repos
-- **分类**：机器学习 · multi · global
-- **摘要**：Project AEGIS是一个研究级量化交易框架，实现了混合元策略架构。标准强化学习模型在非平稳金融环境中常因高噪声信号比而效果不佳。AEGIS通过解耦策略执行和优化来解决这一问题。框架使用Python编写，属于GitHub上的量化交易项目。目前该项目已获得2个星标。它结合了梯度提升和强化学习来提高策略的适应性。该框架旨在为高频交易和复杂市场环境提供更稳健的执行方案。
-- **要点**：
-  - AEGIS采用混合元策略架构，将强化学习与梯度提升结合。
-  - 针对金融市场的非平稳性，通过解耦设计提升模型鲁棒性。
-  - 项目目前处于研究阶段，仅在GitHub上获得2个星标。
-- **风险**：强化学习模型在非平稳金融环境中容易过拟合，且高噪声信号比可能导致策略不稳定。
-- **策略价值**：该框架为处理高噪声金融数据提供了新的方法，有望提升量化策略在复杂环境下的执行效果。
-- **筛选评分**：80
-- **原文**：[链接](https://github.com/Yuyutsu01/Project_Aegis)
 
 ---
 
