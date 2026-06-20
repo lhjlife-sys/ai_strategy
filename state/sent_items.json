@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-20T11:55:01+00:00",
+  "updated_at": "2026-06-20T23:01:54+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -406,6 +406,26 @@
       "sig": "93819d55ca7f4ab25393ed872649d8ea067913a3fd2f3c3229cd929f0eefd2de",
       "url": "https://www.reddit.com/r/algotrading/comments/1uahbuk/dca_strategy_question/",
       "sent_at": "2026-06-20T11:55:01+00:00"
+    },
+    {
+      "sig": "d2bf33ac80d3e18111aad3a8fea2bde6c91d480fbbdc8ad73a52ad1c470c53b3",
+      "url": "https://github.com/je-suis-tm/quant-trading",
+      "sent_at": "2026-06-20T23:01:54+00:00"
+    },
+    {
+      "sig": "ec8f6bc5f0ddfef64a6b08b9dbcaed1cd09fc686f75d9d51ca8d294d9d00e6f4",
+      "url": "https://github.com/Ndima-Mdleleni/trading-ai",
+      "sent_at": "2026-06-20T23:01:54+00:00"
+    },
+    {
+      "sig": "35dd998aefe2855f33c6518c84c3b12c00c7b6833040825e2be7dd9216c340ed",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ub7zuc/precise_entry_model/",
+      "sent_at": "2026-06-20T23:01:54+00:00"
+    },
+    {
+      "sig": "8f31b82fd74f91e11671c1584b28b845df56adf13129d2fe878198e4c5e09d4e",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uareye/do_i_still_use_paper_money_or_start_live_trading/",
+      "sent_at": "2026-06-20T23:01:54+00:00"
     }
   ]
 }
