@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-21T12:10:17+00:00",
+  "updated_at": "2026-06-21T23:05:47+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -446,6 +446,21 @@
       "sig": "7f4095a312660fc41af85a99833fb11a9c6e6c55a904b4b52be0e0d1e8aeaece",
       "url": "https://www.reddit.com/r/algotrading/comments/1uaf09r/backtesting_journaling_as_a_single_workflow_does/",
       "sent_at": "2026-06-21T12:10:17+00:00"
+    },
+    {
+      "sig": "0b1e4a6ec16dbb3692e73517ba51df1b42a5ed1da9ed20f2ac4939838f85d2db",
+      "url": "https://github.com/SkyPiggy8/TnT_stock_analysis_with_EQS",
+      "sent_at": "2026-06-21T23:05:47+00:00"
+    },
+    {
+      "sig": "e0ef09cd47e0297d05d649debd4af9b97b72d72ab07c74d917c86aab8d2ea323",
+      "url": "https://github.com/Clappedbytxger/Backtests",
+      "sent_at": "2026-06-21T23:05:47+00:00"
+    },
+    {
+      "sig": "a4ef6378c7b9f856eaac1c730a200f3975404cbfdb7ee0ae62370c7854cc25ab",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ubzrie/ill_generate_a_trade_analysis_report_for_anyone/",
+      "sent_at": "2026-06-21T23:05:47+00:00"
     }
   ]
 }
