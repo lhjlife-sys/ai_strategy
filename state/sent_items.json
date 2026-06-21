@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-20T23:01:54+00:00",
+  "updated_at": "2026-06-21T12:10:17+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -426,6 +426,26 @@
       "sig": "8f31b82fd74f91e11671c1584b28b845df56adf13129d2fe878198e4c5e09d4e",
       "url": "https://www.reddit.com/r/algotrading/comments/1uareye/do_i_still_use_paper_money_or_start_live_trading/",
       "sent_at": "2026-06-20T23:01:54+00:00"
+    },
+    {
+      "sig": "d782f1ec8638a0f0267f2f7bdb503effc84ed3fdf59d58f42d1a190af222dd6a",
+      "url": "https://github.com/Suchismit4/NiftyOnTheMove",
+      "sent_at": "2026-06-21T12:10:17+00:00"
+    },
+    {
+      "sig": "ac2a1612e9cbb6728006727462492e5969c808bce18344423168ac0941a7926b",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ublsph/my_7_newssentiment_strategies_are_all_losing_to_a/",
+      "sent_at": "2026-06-21T12:10:17+00:00"
+    },
+    {
+      "sig": "38a76ee009c53877306be6ae9c68f27e8a694adf054975d626ac499e0bc3bc21",
+      "url": "https://github.com/puravi-predicts/quantedge",
+      "sent_at": "2026-06-21T12:10:17+00:00"
+    },
+    {
+      "sig": "7f4095a312660fc41af85a99833fb11a9c6e6c55a904b4b52be0e0d1e8aeaece",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uaf09r/backtesting_journaling_as_a_single_workflow_does/",
+      "sent_at": "2026-06-21T12:10:17+00:00"
     }
   ]
 }

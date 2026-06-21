@@ -1,15 +1,96 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-21 07:01 · Asia/Shanghai
-> 共 86 条策略
+> 自动生成 · 最后更新：2026-06-21 20:10 · Asia/Shanghai
+> 共 90 条策略
 
 ## 目录
 
-- [2026-06（86）](#2026-06)
+- [2026-06（90）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### 将回测与交易日志整合为单一工作流，有人这样做吗？
+
+- **收录时间**：2026-06-21 20:10
+- **发布时间**：2026-06-20 05:58
+- **作者**：MessPrestigious8035
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · multi · global
+- **摘要**：讨论了一种介于回测器和交易日志之间的工具类别。该工具可以导入实时执行数据，允许用户根据交易手册标记设置，逐笔回放交易，并在同一交易品种上对10年以上的历史数据回测相同的手册。对于系统化交易者而言，样本内回测表现与实时执行之间的差距通常不是策略问题，而是执行层问题。包括滑点、错失成交、过早退出以及在第二个入场信号上的犹豫。单独的回测器无法揭示这些，单独的日志也无法判断底层设置是否具有统计真实性。整合工作流程包括：在历史数据上回测手册获得基准期望，实时交易并针对同一手册记录每次执行，比较实时分布与回测分布。测试显示，纸面交易与实时表现之间60-70%的差距来自执行漂移（过早退出和跳过入场），而非策略失效。难点在于在比较双方拥有相同的手册结构。
+- **要点**：
+  - 回测与交易日志整合可发现执行漂移，这是纸面交易与实盘表现差距的主要原因。
+  - 执行漂移（过早退出、跳过入场）占差距的60-70%，并非策略失效。
+  - 需要统一的手册结构用于回测和实时交易，以便准确比较。
+- **回测线索**：Backtest playbook on historical data to get baseline expectancy; compare live distribution to backtest distribution to measure execution drift.
+- **风险**：Execution drift (early exits, skipped entries) accounts for 60-70% of paper-to-live performance gap; slippage, missed fills, hesitation on second entry signal.
+- **策略价值**：该工作流帮助系统化交易者识别并量化执行层的问题，从而缩小回测与实盘之间的绩效差距。
+- **筛选评分**：50
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uaf09r/backtesting_journaling_as_a_single_workflow_does/)
+
+---
+
+### puravi-predicts/quantedge
+
+- **收录时间**：2026-06-21 20:10
+- **发布时间**：2026-06-20 17:58
+- **作者**：puravi-predicts
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · multi · global
+- **摘要**：这是一个模块化的量化交易框架，包含回测管道，使用MLflow跟踪实验，并配有交互式Streamlit仪表盘用于策略评估。该框架支持多种数据源和策略类型，旨在简化量化研究和开发流程。项目语言为Python，尚未有公开的星标。仓库提供了基础的交易策略仿真功能，适合学习和初步测试。整体设计灵活，可扩展性高，但需要用户自行配置策略和数据管道。
+- **要点**：
+  - 模块化的量化交易框架，集成回测和MLflow跟踪。
+  - 提供Streamlit交互式仪表盘进行策略评估。
+  - 支持多种数据源和策略类型，灵活可扩展。
+- **回测线索**：Includes a backtesting pipeline integrated with MLflow for tracking experiments.
+- **策略价值**：该框架为量化开发者提供了一套标准化、可复用的工具链，有助于快速验证交易想法并管理实验记录。
+- **筛选评分**：60
+- **原文**：[链接](https://github.com/puravi-predicts/quantedge)
+
+---
+
+### 我7个新闻情绪策略全都跑输XBI基准。以下是我方法，请问哪里出了问题？
+
+- **收录时间**：2026-06-21 20:10
+- **发布时间**：2026-06-21 17:36
+- **作者**：Metathetical_Chemist
+- **来源**：Reddit r/algotrading
+- **分类**：因子 · stock · us
+- **频率**：daily
+- **摘要**：该策略基于LLM（DeepSeek/Gemini）对约350只生物科技股的新闻生成情绪评分（0-10分，分财务、技术、监管三个子项）。建立了7个仅做多的纸交易组合，包括综合、各子项、市场分歧、美国/欧洲区域筛选等。入场条件：情绪分>=7，且当日涨幅不超过1.5%。仓位按分数从$1k到$4k不等。出场条件：+20%止盈、-7%硬止损、-8%移动止损、14天时间止损（若不盈利超1%）、或分数降至6以下。运行约一个月后，所有策略收益在+0.9%到-3.3%之间，而XBI上涨约6%。表现最差的策略是综合和市场分歧。作者认为可能的问题包括：在板块已大涨后追多情绪、情绪新闻可能已被定价、以及止损设计导致反复止损。作者疑问：LLM新闻情绪是否作为信号已过时？是否应使用变化率而非情绪水平？是否更适合做空信号？
+- **要点**：
+  - 基于LLM情绪评分的7个做多策略在生物科技板块均跑输XBI基准。
+  - 一个月纸交易中，所有策略收益为平盘至负，而XBI涨约6%。
+  - 作者怀疑买入时机滞后，止损设计在波动板块中导致反复亏损。
+- **回测线索**：Paper-trading experiment for one month; all strategies underperform XBI by approximately 6-9%.
+- **风险**：Long-only bias in a bullish sector; sentiment may be lagging; stop-losses cause whipsaw; signal may be priced in; public news sentiment may not be alpha.
+- **策略价值**：该实验揭示了基于公开新闻情绪做多策略在强势板块中的常见陷阱，提醒量化交易者注意信号滞后与策略设计风险。
+- **筛选评分**：70
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1ublsph/my_7_newssentiment_strategies_are_all_losing_to_a/)
+
+---
+
+### NiftyOnTheMove：基于Andreas Clenow动量策略的回测框架
+
+- **收录时间**：2026-06-21 20:10
+- **发布时间**：2026-06-21 11:49
+- **作者**：Suchismit4
+- **来源**：GitHub Quant Repos
+- **分类**：趋势跟踪 · stock · global
+- **频率**：daily
+- **摘要**：该仓库提供了一个基于Andreas Clenow动量策略的稳健回测框架。它专门用于模拟、分析和优化印度Nifty500股票的交易。框架采用Python实现，强调现实执行和全面报告。用户可以通过该框架对动量策略进行历史回测和参数优化。代码开源于GitHub，当前获得2颗星。该框架适合研究印度股票市场的动量效应。
+- **要点**：
+  - 基于Andreas Clenow的动量策略构建回测框架
+  - 专注于印度Nifty500股票的交易模拟与优化
+  - 支持现实执行和全面报告，使用Python语言
+- **回测线索**：框架支持现实执行的回测，包含全面报告和优化功能。
+- **风险**：动量策略可能在市场反转或震荡时表现不佳，需注意趋势衰竭风险。
+- **策略价值**：该框架为印度股票市场的动量策略提供了一套完整的回测和优化工具，有助于交易者量化评估策略表现。
+- **筛选评分**：75
+- **原文**：[链接](https://github.com/Suchismit4/NiftyOnTheMove)
+
+---
 
 ### 我该继续使用模拟资金还是开始实盘交易？
 
