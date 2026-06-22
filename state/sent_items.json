@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-22T15:21:02+00:00",
+  "updated_at": "2026-06-22T23:18:35+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -471,6 +471,21 @@
       "sig": "09778bac28c89f96b52445e4444cba8991d4999c67c959e71e121dfeef4b7662",
       "url": "https://github.com/Cornelius-Mulyo/quant-trading-research-platform",
       "sent_at": "2026-06-22T15:21:02+00:00"
+    },
+    {
+      "sig": "40cd58af5744ac5b5718747413116c8a6946b6032c4a22e84004bfcc3ad0f9f7",
+      "url": "https://github.com/krishna-ji/nepse-rl-agent-rbs-experiment",
+      "sent_at": "2026-06-22T23:18:35+00:00"
+    },
+    {
+      "sig": "3cb6bc41301d697b07fdfd167f7e3bdd6364409d201190c4407bb2eb9415e17a",
+      "url": "https://github.com/Avinash888/Nifty-Backtesting-Engine",
+      "sent_at": "2026-06-22T23:18:35+00:00"
+    },
+    {
+      "sig": "b54676a9cbd32bfd049c789e0f186091729648713d67f36779ac6714931d6765",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ualjgw/prop_firm_pipeline_for_algo_execution/",
+      "sent_at": "2026-06-22T23:18:35+00:00"
     }
   ]
 }
