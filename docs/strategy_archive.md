@@ -1,15 +1,57 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-22 07:05 · Asia/Shanghai
-> 共 93 条策略
+> 自动生成 · 最后更新：2026-06-22 23:20 · Asia/Shanghai
+> 共 95 条策略
 
 ## 目录
 
-- [2026-06（93）](#2026-06)
+- [2026-06（95）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### Cornelius-Mulyo/量化交易研究平台
+
+- **收录时间**：2026-06-22 23:20
+- **发布时间**：2026-06-22 14:38
+- **作者**：Cornelius-Mulyo
+- **来源**：GitHub Quant Repos
+- **分类**：趋势跟踪 · stock · global
+- **频率**：daily
+- **摘要**：该项目是一个量化投资组合研究平台，使用Python和PostgreSQL实现。它支持动量策略回测、投资组合优化、风险分析以及有效前沿建模。平台旨在帮助研究不同投资组合配置下的风险收益特征。目前获得0个星标。
+- **要点**：
+  - 核心功能包括动量策略回测和有效前沿分析。
+  - 使用Python和PostgreSQL作为技术栈。
+  - 提供投资组合优化和风险分析工具。
+- **回测线索**：Focuses on momentum strategy backtesting with portfolio optimization and Efficient Frontier analysis.
+- **风险**：Momentum strategies can experience sharp drawdowns during trend reversals; overfitting risk in optimization.
+- **策略价值**：该平台为量化投资者提供了一个完整的投资组合研究流程，从策略回测到优化，便于在实践中配置资产。
+- **筛选评分**：85
+- **原文**：[链接](https://github.com/Cornelius-Mulyo/quant-trading-research-platform)
+
+---
+
+### jagdeepvirdi/ResidualEdge 多策略量化交易系统
+
+- **收录时间**：2026-06-22 23:20
+- **发布时间**：2026-06-22 13:14
+- **作者**：jagdeepvirdi
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · stock · global
+- **频率**：intraday
+- **摘要**：该项目是一个针对印度NSE/BSE股票市场的多策略量化研究与交易系统。它包括市场中性纸面策略、实盘资金复利器、日内研究回测器以及AI基础设施投资追踪器，并配有实时监控仪表盘。系统使用Python编写，目前获得0个星标。
+- **要点**：
+  - 涵盖市场中性、资金复利、日内回测和AI投资追踪等多种策略。
+  - 专为印度股票市场设计，使用Python实现。
+  - 提供实时监控仪表盘，便于交易跟踪。
+- **回测线索**：Includes intraday research backtester and paper strategy backtesting.
+- **风险**：Market-neutral strategies may suffer from basis risk and model overfitting; Indian market liquidity can be variable.
+- **策略价值**：该系统为印度市场提供了一个完整的量化交易基础设施，从回测到实盘监控，适合希望进入新兴市场的量化交易者。
+- **筛选评分**：85
+- **原文**：[链接](https://github.com/jagdeepvirdi/ResidualEdge)
+
+---
 
 ### 我会为任何发送交易日志的人生成交易分析报告。让我们开启一个线程来比较策略结果
 

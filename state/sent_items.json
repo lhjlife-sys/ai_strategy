@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-21T23:05:47+00:00",
+  "updated_at": "2026-06-22T15:21:02+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -461,6 +461,16 @@
       "sig": "a4ef6378c7b9f856eaac1c730a200f3975404cbfdb7ee0ae62370c7854cc25ab",
       "url": "https://www.reddit.com/r/algotrading/comments/1ubzrie/ill_generate_a_trade_analysis_report_for_anyone/",
       "sent_at": "2026-06-21T23:05:47+00:00"
+    },
+    {
+      "sig": "4d6d84a98239cc61266215e9b8fab488c121b821715b272ec10d835a75caf7c5",
+      "url": "https://github.com/jagdeepvirdi/ResidualEdge",
+      "sent_at": "2026-06-22T15:21:02+00:00"
+    },
+    {
+      "sig": "09778bac28c89f96b52445e4444cba8991d4999c67c959e71e121dfeef4b7662",
+      "url": "https://github.com/Cornelius-Mulyo/quant-trading-research-platform",
+      "sent_at": "2026-06-22T15:21:02+00:00"
     }
   ]
 }
