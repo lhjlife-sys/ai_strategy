@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-22T23:18:35+00:00",
+  "updated_at": "2026-06-23T12:31:51+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -486,6 +486,46 @@
       "sig": "b54676a9cbd32bfd049c789e0f186091729648713d67f36779ac6714931d6765",
       "url": "https://www.reddit.com/r/algotrading/comments/1ualjgw/prop_firm_pipeline_for_algo_execution/",
       "sent_at": "2026-06-22T23:18:35+00:00"
+    },
+    {
+      "sig": "b799718cda347d14f1f0ee8c7fd63623e6dc516f6a1a99cfd2cc685e9677d0b1",
+      "url": "https://www.reddit.com/r/algotrading/comments/1udcfu1/i_wrote_up_5_alternative_investment_strategies/",
+      "sent_at": "2026-06-23T12:31:51+00:00"
+    },
+    {
+      "sig": "baf8a914fe764a14637cc243f897f2df1e9b15f878a5641882d3b57b535c4911",
+      "url": "https://github.com/ashishcj/nifty_100_momentum_features",
+      "sent_at": "2026-06-23T12:31:51+00:00"
+    },
+    {
+      "sig": "0d9f7e78bc1ad7ceadd065aa1a53659ddbaca2346ef905f847f18d3589db8c74",
+      "url": "https://github.com/runchengxie/intraday-trader",
+      "sent_at": "2026-06-23T12:31:51+00:00"
+    },
+    {
+      "sig": "a6cca87c901085ffdb334fbd4dca49ba13398a417d6d743d48199c15121d7744",
+      "url": "https://www.reddit.com/r/algotrading/comments/1udfdlq/how_would_you_trade_off_sharpe_vs_cagr_for_an/",
+      "sent_at": "2026-06-23T12:31:51+00:00"
+    },
+    {
+      "sig": "e91db17cd73c3c41a7e9cb813832ef23c04352d98a260a7439130feaaa4a9c8b",
+      "url": "https://arxiv.org/abs/2606.23070",
+      "sent_at": "2026-06-23T12:31:51+00:00"
+    },
+    {
+      "sig": "15eeac4ba91dac10d69319b31ea3e479599eac1f14fa1a46e7cd6ba09715ee09",
+      "url": "https://arxiv.org/abs/2606.23596",
+      "sent_at": "2026-06-23T12:31:51+00:00"
+    },
+    {
+      "sig": "ccad62e2dca91686a94347bf89210a8771d82efacb641f80c3135d93fd7c27eb",
+      "url": "https://arxiv.org/abs/2606.21769",
+      "sent_at": "2026-06-23T12:31:51+00:00"
+    },
+    {
+      "sig": "5c495308c23454cd19dc9e9c6f77b6dc28f2d0cffc9d9a3f3cd069330d1a03ae",
+      "url": "https://arxiv.org/abs/2606.22719",
+      "sent_at": "2026-06-23T12:31:51+00:00"
     }
   ]
 }

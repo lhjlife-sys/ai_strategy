@@ -1,15 +1,178 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-23 07:18 · Asia/Shanghai
-> 共 98 条策略
+> 自动生成 · 最后更新：2026-06-23 20:31 · Asia/Shanghai
+> 共 106 条策略
 
 ## 目录
 
-- [2026-06（98）](#2026-06)
+- [2026-06（106）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### 考虑信息泄漏的LLM预测基准测试：实时预测作为决策时间输入用于宏观因子排序
+
+- **收录时间**：2026-06-23 20:31
+- **发布时间**：2026-06-23 12:00
+- **作者**：Mao Guan, Qian Chen
+- **来源**：arXiv Quantitative Finance
+- **分类**：因子 · stock · us
+- **摘要**：本文提出一种控制信息泄漏的LLM预测基准测试方法，应用于权益因子排序。使用检索增强的7B开源LLM预测器，仅依赖决策时间信息：滞后FRED宏观变量、近期宏观事件摘要以及克利夫兰联储发布的日常CPI实时预测。该流水线在2023年4月至2026年3月期间，每个月末产生七个美国权益风格因子的排名，中位数月度Spearman秩IC为+0.154。三个不重叠的12个月子窗口均显示正均值，但均值IC统计上不显著（bootstrap 95%置信区间包含零）。在相同决策时间约束下的非LLM基线（如kNN宏观模拟模型）恢复了可比的中位数IC，表明实时通胀信息和宏观相似性检索解释了大部分中位数信号。LLM流水线保留了更高的均值IC和更强的多空配置合理性检验，表明任何边际利益集中于驱动多空组合形成的极端排名。附录中包含36条评论规则和月度案例研究的描述性审计。
+- **要点**：
+  - LLM预测器内置信息泄漏控制，仅使用决策时可观测的实时数据。
+  - 中位数月度IC +0.154，但统计上不显著，非LLM模型表现类似。
+  - LLM的边际优势体现在极端排名中，可能改善多空组合构建。
+- **回测线索**：Median monthly Spearman IC +0.154, bootstrap CI includes zero; subwindow means all positive.
+- **风险**：Information leakage controlled but statistical significance low; marginal benefit may be limited to extreme rankings.
+- **策略价值**：为LLM在因子投资中的实际应用提供了泄漏感知评估框架，并揭示了实时宏观信息的重要性。
+- **筛选评分**：60
+- **原文**：[链接](https://arxiv.org/abs/2606.22719)
+
+---
+
+### 自动化做市商的最优动态费用：针对再平衡损失问题的随机控制方法
+
+- **收录时间**：2026-06-23 20:31
+- **发布时间**：2026-06-23 12:00
+- **作者**：Farbod Ghasemlu
+- **来源**：arXiv q-fin.TR (Trading)
+- **分类**：做市 · crypto · global
+- **摘要**：本文研究恒定乘积自动化做市商（AMM）中流动性提供者的最优费用政策，允许费用连续调整，采用随机控制方法。作者在Milionis等人（2022）的损失-再平衡（LVR）框架及其扩展到非零费用的基础上，将LP财富相对于连续再平衡基准建模为受控过程，其中费用通过两种对立力量影响：每笔非知情交易增加收入但抑制非知情交易量，同时扩大无套利区间从而降低套利者提取价值的速度。由于费用仅影响相对财富的漂移项而不影响扩散项，LP的期望效用问题简化为遍历控制问题，其解是逐点波动率反馈。作者证明，增长最优费用与LP财富和常数相对风险厌恶无关，在波动率为常数时退化为静态常数，并随瞬时方差严格递增，因此最优费用是顺周期的。当波动率随机时，通过标量遍历Hamilton-Jacobi-Bellman方程和线性Poisson方程刻画最优费用，并用有限差分法求解。进一步证明，对数偏好下最优费用对价格跳跃不变，将其与场所间的竞争模型关联，并通过脉冲控制死区处理Gas成本。校准到流动大型股条件，最优动态费用在每条模拟路径上弱占优于所有静态及波动率相关启发式费用，与最佳静态费用相比，LP增长率改善虽小但一致为正，死区使Gas成本可忽略。
+- **要点**：
+  - 增长最优费用独立于LP财富和风险厌恶，仅取决于瞬时波动率。
+  - 波动率恒定时代为静态，随机波动率时通过HJB方程求解最优动态费用。
+  - 动态费用在模拟中一致优于静态和波动率挂钩的启发式策略。
+- **回测线索**：Calibration to large-cap conditions shows dynamic fee weakly dominates static fees on simulated paths.
+- **风险**：Gas costs, arbitrage extraction, model risk from stochastic volatility assumptions.
+- **策略价值**：为AMM流动性提供者提供了理论最优的费用动态调整策略，可显著提升长期增长率。
+- **筛选评分**：60
+- **原文**：[链接](https://arxiv.org/abs/2606.21769)
+
+---
+
+### 市场解剖：因子模型的身体-尾部检验
+
+- **收录时间**：2026-06-23 20:31
+- **发布时间**：2026-06-23 12:00
+- **作者**：Useong Shin
+- **来源**：arXiv Quantitative Finance
+- **分类**：因子 · stock · us
+- **频率**：daily
+- **摘要**：该论文检验了因子模型是否同时能定价市场整体的内部组成部分。作者构建了CRSP可投资市场组合，并按其规模分为身体（大盘股）和尾部（小盘股）两部分。所有模型均能通过市场整体检验，但q5模型在身体部分产生负alpha，在尾部产生正alpha，两者相互抵消。随机分割样本则消除了这一拒绝现象。研究表明，市场看似被定价可能是因为内部定价误差的抵消。该发现质疑了因子模型定价表面有效性的稳健性。
+- **要点**：
+  - q5因子模型通过市场整体检验，但在身体和尾部产生相反的alpha
+  - 随机分割样本后，系统性的alpha消失
+  - 因子模型可能因内部误差抵消而表面定价有效
+- **风险**：Factor models may appear to price the market due to internal errors cancelling out; body-tail decomposition reveals model misspecification; results question reliability of factor-based pricing tests.
+- **策略价值**：揭示了因子模型看似定价有效但内部存在抵消性错误的风险。
+- **筛选评分**：65
+- **原文**：[链接](https://arxiv.org/abs/2606.23596)
+
+---
+
+### 通过动态费用缓解集中流动性AMM中的逆向选择：基于代理模型的仿真研究
+
+- **收录时间**：2026-06-23 20:31
+- **发布时间**：2026-06-23 12:00
+- **作者**：Daniele Maria Di Nosse, Fabrizio Lillo
+- **来源**：arXiv q-fin.TR (Trading)
+- **分类**：做市 · crypto · global
+- **频率**：intraday
+- **摘要**：该论文构建了Uniswap v3流动性池的精细代理模型，包含Heston随机波动率、区块传播、Mempool延迟、套利者、MEV搜索者等异构主体。设计了基于波动率和订单流毒性的动态费用方案，以补偿流动性提供者（LP）的逆向选择成本（即损失相对于再平衡策略LVR）。仿真结果表明，动态费用主要通过在价格陈旧风险较高时增加费用收入来提高LP的套期保值利润。当前结果支持动态费用对LVR的补偿作用，而非直接降低LVR。该研究为DeFi做市提供了量化风险管理工具。
+- **要点**：
+  - 动态费用基于波动率和订单流毒性调整，补偿LP逆向选择损失
+  - 仿真表明动态费用增加费用收入，但未显著降低LVR自身
+  - 模型重现了真实区块链微观结构，包括Mempool延迟和MEV
+- **回测线索**：Agent-based simulation with realistic blockchain microstructure (block propagation, mempool latency).
+- **风险**：Model may not capture all real-world blockchain behaviors; dynamic fee complexity could increase implementation risks; results depend on parameter choices.
+- **策略价值**：为DeFi流动性提供者提供了量化管理逆向选择风险的新方法。
+- **筛选评分**：65
+- **原文**：[链接](https://arxiv.org/abs/2606.23070)
+
+---
+
+### 如何在11年回测中权衡夏普比率和年化收益率？
+
+- **收录时间**：2026-06-23 20:31
+- **发布时间**：2026-06-23 20:09
+- **作者**：ItsmeK1
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · multi · us
+- **频率**：daily
+- **摘要**：该帖比较了四种策略的11年回测结果。策略A年化收益11.5%，夏普比率2.37，最大回撤10%。策略B年化12.3%，夏普1.20，回撤11%。策略C年化13.3%，夏普0.70，回撤24%。策略D年化15.4%，夏普0.82，回撤22%。作者倾向于策略A，认为其高夏普比率意味着更稳健的盈利能力和杠杆潜力。也有观点认为，若投资者能承受更大回撤，应选择更高年化收益的策略。讨论强调了夏普比率、年化收益和回撤之间的权衡。实际资产配置需考虑心理承受能力和资金规模。该分析提醒回测结果需要经过稳健性检验。
+- **要点**：
+  - 策略A夏普2.37，年化11.5%，回撤10%，风险调整后最优
+  - 策略D年化最高15.4%，但夏普0.82，回撤22%
+  - 高夏普可能表明策略有真实alpha，但需警惕过拟合
+- **回测线索**：Eleven-year backtest including transaction costs; comparison based on CAGR, Sharpe, and drawdown.
+- **风险**：Potential overfitting; survivorship bias; transaction costs may be underestimated; high Sharpe may not persist out-of-sample.
+- **策略价值**：帮助交易者在实际投资决策中平衡风险调整收益与绝对收益。
+- **筛选评分**：70
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1udfdlq/how_would_you_trade_off_sharpe_vs_cagr_for_an/)
+
+---
+
+### runchengxie/intraday-trader：日内量化交易项目
+
+- **收录时间**：2026-06-23 20:31
+- **发布时间**：2026-06-22 17:03
+- **作者**：runchengxie
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · stock · us
+- **频率**：intraday
+- **摘要**：这是一个日内量化交易项目，涵盖策略开发、历史回测、Alpaca纸交易集成，以及市场数据、交易记录和绩效数据的本地与数据库存储。项目使用Python编写，当前获得0星。它提供了一个完整的日内交易框架，适合在美股市场进行高频或日內策略研究。
+- **要点**：
+  - 支持Alpaca纸交易，可进行模拟实盘交易。
+  - 包含完整的本地和数据库存储方案，便于数据管理。
+  - 专注于日内交易，适合短周期策略开发和测试。
+- **回测线索**：Includes historical backtesting capability.
+- **风险**：日内交易风险高，依赖Alpaca API，可能出现滑点和流动性问题。
+- **策略价值**：为日内交易策略的快速开发和测试提供了现成的框架，降低了入门门槛。
+- **筛选评分**：80
+- **原文**：[链接](https://github.com/runchengxie/intraday-trader)
+
+---
+
+### ashishcj/nifty_100_momentum_features：基于Nifty 100指数的动量因子量化交易框架
+
+- **收录时间**：2026-06-23 20:31
+- **发布时间**：2026-06-22 18:22
+- **作者**：ashishcj
+- **来源**：GitHub Quant Repos
+- **分类**：趋势跟踪 · stock · global
+- **频率**：daily
+- **摘要**：该项目是一个基于印度Nifty 100成分股的系统性量化交易框架。使用ICICI Breeze API获取数据，支持历史数据下载、每日数据更新、策略回测和实时信号扫描。代码使用Python编写，当前获得0星关注。框架专注于动量因子，适用于指数成分股的趋势跟踪策略。
+- **要点**：
+  - 针对Nifty 100指数成分股，提供完整的回测和实盘交易流程。
+  - 依赖ICICI Breeze API获取市场数据，适合印度市场投资者。
+  - 采用动量因子策略，属于趋势跟踪类别。
+- **回测线索**：Framework supports backtesting strategies on historical data.
+- **风险**：India-specific market risks, API dependency, momentum strategy may suffer from sudden reversals.
+- **策略价值**：为印度市场的量化投资者提供了一个现成的动量策略框架，可直接用于Nifty 100成分股的回测和实盘。
+- **筛选评分**：80
+- **原文**：[链接](https://github.com/ashishcj/nifty_100_momentum_features)
+
+---
+
+### 我总结了五种可分散投资组合的另类投资策略
+
+- **收录时间**：2026-06-23 20:31
+- **发布时间**：2026-06-23 17:33
+- **作者**：Jera_Value
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · multi · global
+- **摘要**：作者延续了之前关于分散投资的讨论，提出了五种另类策略：趋势跟踪、套利（carry）、并购套利、巨灾债券和宏观相对价值。这些策略的收益来源与传统选股不同，能提供真正的分散化。趋势跟踪在趋势持续时获利，套利策略持有无人愿承担的风险，并购套利赌交易完成，巨灾债券承担保险灾难风险，宏观相对价值则押注资产关系的正常化。每种策略都有其独特的风险溢价。文章强调分散化不是拥有更多股票，而是拥有不同的风险敞口。这些策略虽然实施难度大、成本高或带有杠杆，但值得研究。作者提供了详细文章链接，并邀请社区讨论其他可能遗漏的好策略。
+- **要点**：
+  - 五种策略分别对应不同的风险因子：趋势、流动性、事件、灾难和相对价值。
+  - 每种策略都有其独特的收益驱动因素和风险特征。
+  - 这些策略通常与传统股票和债券组合相关性低，有助于分散风险。
+- **风险**：Some strategies are hard to access, expensive, leveraged, or carry specific risks like deal completion risk or catastrophe risk.
+- **策略价值**：了解这些另类策略可以帮助投资者构建更稳健、非传统的投资组合，降低整体波动。
+- **筛选评分**：85
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1udcfu1/i_wrote_up_5_alternative_investment_strategies/)
+
+---
 
 ### 自营公司算法执行管道搭建经验
 
