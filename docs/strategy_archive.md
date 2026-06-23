@@ -1,15 +1,97 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-23 20:31 · Asia/Shanghai
-> 共 106 条策略
+> 自动生成 · 最后更新：2026-06-24 07:03 · Asia/Shanghai
+> 共 110 条策略
 
 ## 目录
 
-- [2026-06（106）](#2026-06)
+- [2026-06（110）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### 预训练Transformer中的资产定价
+
+- **收录时间**：2026-06-24 07:03
+- **发布时间**：2026-06-23 12:00
+- **作者**：Shanyan Lai
+- **来源**：arXiv Quantitative Finance
+- **分类**：机器学习 · stock · us
+- **频率**：daily
+- **摘要**：本文提出了一种创新的Transformer模型SERT，用于美国大盘股定价，并应用于因子投资环境。模型在包含COVID-19全周期的三个时段中，与标准Transformer和仅编码器Transformer进行对比，检验极端市场波动下的适应性。SERT模型在极端波动期间实现了最高的样本外R²，分别为11.94%和11.47%，优于预训练Transformer模型的11.13%和9.72%。基于SERT的趋势跟踪策略在市场冲击中展示了出色的下行风险对冲能力。在静态交易成本场景下，SERT在等权组合中实现了比买入持有基准高47%的Sortino比率，在市值加权组合中高28%。研究发现，Transformer模型能够有效捕捉资产定价因子模型中的时间稀疏模式，特别是在高波动环境下。软最大信号过滤器作为Transformer模型的常见配置，仅消除了模型间差异，并未提升策略绩效。增加注意力头数对模型性能提升不显著，而采用“先层归一化”方法在本文案例中并未增强模型性能。
+- **要点**：
+  - SERT模型在COVID-19极端波动期间实现11.94%样本外R²，优于其他Transformer变体。
+  - 趋势跟踪策略基于SERT在等权组合中Sortino比率比买入持有高47%。
+  - 软最大信号过滤器不改善策略绩效，增加注意力头或层归一化顺序影响不显著。
+- **回测线索**：Out-of-sample R^2 up to 11.94% during COVID-19; Sortino ratio improvement 47% (equal-weighted) and 28% (value-weighted) over buy-and-hold.
+- **风险**：Model complexity may lead to overfitting; transaction costs considered only in static scenario; performance in calm markets not evaluated.
+- **策略价值**：该研究表明预训练Transformer能显著提升资产定价和趋势跟踪策略表现，为极端市场下的风险管理和投资组合优化提供新工具。
+- **筛选评分**：50
+- **原文**：[链接](https://arxiv.org/abs/2505.01575)
+
+---
+
+### 通过Chiarella模型重新审视过度波动之谜
+
+- **收录时间**：2026-06-24 07:03
+- **发布时间**：2026-06-23 12:00
+- **作者**：Jutta G. Kurth, Adam A. Majewski, Jean-Philippe Bouchaud
+- **来源**：arXiv q-fin.TR (Trading)
+- **分类**：因子 · multi · global
+- **摘要**：本文修正并扩展了Chiarella金融市场模型，以一致地处理任意长期价值漂移。改进了现有的校准方案，使得可以校准单个月度时间序列而非一类时间序列。该技术应用于从1800年至今的四种资产类别（股票指数、债券、商品、货币）的现货价格。校准直接输出所谓的基本价值，从而可以量化这些市场的过度波动程度，发现其很大（如股票指数约为4倍），并与先前估计一致。同时可以确定错误定价的分布，发现许多情况下是双峰的。这两个发现都与有效市场假说强烈矛盾。还详细研究了校准的‘邋遢性’，即参数空间中受数据约束弱的方向。主要结论在不同资产类别间高度一致，并强化了金融市场中期命运由趋势跟随者和基本面投资者之间的拔河决定的假说。
+- **要点**：
+  - 利用Chiarella模型校准四种资产类别从1800年至今的数据
+  - 发现过度波动程度很大，股票指数约4倍
+  - 错误定价分布常呈双峰，与有效市场假说矛盾
+  - 趋势跟随者与基本面投资者的博弈决定市场中长期走势
+- **风险**：Model calibration sloppiness; parameters weakly constrained; results depend on model assumptions.
+- **策略价值**：该研究提供了长期跨资产类别的过度波动量化证据，对理解市场非有效性及资产定价具有重要参考价值。
+- **筛选评分**：50
+- **原文**：[链接](https://arxiv.org/abs/2505.07820)
+
+---
+
+### 运行了三个独立策略，结果发现它们并不独立
+
+- **收录时间**：2026-06-24 07:03
+- **发布时间**：2026-06-23 17:29
+- **作者**：Thiru_7223
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · forex · global
+- **摘要**：作者在过去几个月构建了三个独立的交易系统，它们有不同的时间框架、逻辑和交易对。作者认为这些策略实现了多样化，并按照不相关风险对每个策略分配了头寸。出于好奇，作者将三条权益曲线并列查看，发现三个策略在完全相同的三天内发生了回撤。这表明不同的入场逻辑并不一定意味着不同的风险暴露，如果它们都对相同的波动率制度做出反应。作者实际上构建了一个穿着三件外衣的策略，却按照三个独立策略进行头寸规模分配。作者仍在寻找在实际交易前测试这种隐藏相关性的方法。
+- **要点**：
+  - 三个不同时间框架、逻辑和交易对的策略在同一三天内回撤。
+  - 不同入场逻辑的风险暴露可能因共同波动率制度而高度相关。
+  - 看似分散的投资组合可能实际上是一个单一的大赌注。
+- **风险**：Hidden correlation risk: strategies may appear independent but draw down simultaneously due to common volatility regime, leading to underestimated portfolio risk.
+- **策略价值**：该经验强调了在策略组合中识别隐藏相关性的重要性，以避免因低估尾部风险而导致严重损失。
+- **筛选评分**：55
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1udcdfz/ran_three_independent_strategies_turns_out_they/)
+
+---
+
+### 无模型估值方法的实证分析：对冲缺口、保守性与交易机会
+
+- **收录时间**：2026-06-24 07:03
+- **发布时间**：2026-06-23 12:00
+- **作者**：Zixing Chen, Yihan Qi, Shanlan Que, Julian Sester, Xiao Zhang
+- **来源**：arXiv q-fin.TR (Trading)
+- **分类**：期权 · stock · us
+- **频率**：daily
+- **摘要**：论文研究了无模型估值方法的质量，通过系统评估无模型超对冲策略与衍生品实际收益之间的差异，使用了2018-2022年标普500成分股的历史期权价格。研究发现无模型对冲方法仅比Heston模型等工业标准略保守，且无需模型假设。基于这一发现，构建了一个明确的交易策略，该策略可盈利地应用于金融市场，并具有明确的下行风险控制。统计描述和模型无关性使得策略具有优势。总之，无模型方法在实际中可行且有效。
+- **要点**：
+  - 无模型对冲方法仅略保守于Heston模型
+  - 构建的策略具有下行风险控制
+  - 实证基于2018-2022年标普500成分股期权数据
+  - 模型无关性降低模型风险
+- **回测线索**：Backtested on S&P 500 constituents from 2018-2022, showing profitable trading strategy with downside risk control.
+- **风险**：Model-free approach may be conservative; hedging gaps exist but are small relative to industry models.
+- **策略价值**：该研究提供了一种无需模型假设的衍生品估值与交易方法，可有效控制下行风险，具有重要实践意义。
+- **筛选评分**：60
+- **原文**：[链接](https://arxiv.org/abs/2508.16595)
+
+---
 
 ### 考虑信息泄漏的LLM预测基准测试：实时预测作为决策时间输入用于宏观因子排序
 

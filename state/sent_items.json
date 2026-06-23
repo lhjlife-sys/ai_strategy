@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-23T12:31:51+00:00",
+  "updated_at": "2026-06-23T23:03:56+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -526,6 +526,26 @@
       "sig": "5c495308c23454cd19dc9e9c6f77b6dc28f2d0cffc9d9a3f3cd069330d1a03ae",
       "url": "https://arxiv.org/abs/2606.22719",
       "sent_at": "2026-06-23T12:31:51+00:00"
+    },
+    {
+      "sig": "bf9c1c1b92b34dcea0207bb8fd690ebab81854a8a00159d4cc5caeb23d38a816",
+      "url": "https://arxiv.org/abs/2508.16595",
+      "sent_at": "2026-06-23T23:03:56+00:00"
+    },
+    {
+      "sig": "2a077b0cf38c94d76963ef0365d1f12eac3613a528366dd51af801e5d51d2a62",
+      "url": "https://www.reddit.com/r/algotrading/comments/1udcdfz/ran_three_independent_strategies_turns_out_they/",
+      "sent_at": "2026-06-23T23:03:56+00:00"
+    },
+    {
+      "sig": "738e071386b83ae160eb1909b341a03f9ef0630c455d1c7d4033d4b36e7511f2",
+      "url": "https://arxiv.org/abs/2505.07820",
+      "sent_at": "2026-06-23T23:03:56+00:00"
+    },
+    {
+      "sig": "611c3a6893a635d10e7f8fb1428be6082182fbb6c21173754c6fee2b39a95a4c",
+      "url": "https://arxiv.org/abs/2505.01575",
+      "sent_at": "2026-06-23T23:03:56+00:00"
     }
   ]
 }
