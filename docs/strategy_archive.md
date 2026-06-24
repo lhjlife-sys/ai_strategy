@@ -1,15 +1,124 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-24 20:18 · Asia/Shanghai
-> 共 117 条策略
+> 自动生成 · 最后更新：2026-06-25 07:02 · Asia/Shanghai
+> 共 123 条策略
 
 ## 目录
 
-- [2026-06（117）](#2026-06)
+- [2026-06（123）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### 路径空间鲁棒贝叶斯投资组合选择
+
+- **收录时间**：2026-06-25 07:02
+- **发布时间**：2026-06-24 12:00
+- **作者**：Andy Au
+- **来源**：arXiv Quantitative Finance
+- **分类**：机器学习 · stock · global
+- **摘要**：该论文提出一种鲁棒贝叶斯投资组合选择方法，投资者通过卡尔曼-布西滤波学习未知资产漂移并交易均值方差最优组合。模型允许对手方以相对熵为代价扭曲观测价格规律，使策略对模型误设具有鲁棒性。由于财富和信念由同一布朗运动驱动，单一扭曲同时影响交易利润和滤波结果。鲁棒策略及其价格可解析求解；至一阶近似，鲁棒性代价为非鲁棒投资者损失方差的一半。该策略通过立方修正项抑制大仓位。在已知漂移情况下，非鲁棒策略成本无限；而在学习环境下损失有限且成本可计算。鲁棒性的新结构源于惩罚项的缩放方式而非学习机制：价值缩放精确保持仿射策略。
+- **要点**：
+  - 通过卡尔曼滤波学习资产漂移，结合均值方差最优组合交易。
+  - 引入对手方扭曲价格观测规律，使策略对模型误设具有鲁棒性。
+  - 鲁棒策略解析解显示，代价为损失方差的一半，并通过立方项抑制大仓位。
+  - 学习环境使得非鲁棒策略的损失有界，鲁棒性成本有限。
+- **风险**：模型误设风险；对手方扭曲观测价格的风险；鲁棒性代价为损失方差的一半。
+- **策略价值**：该研究为贝叶斯投资者提供了一种可解析求解的鲁棒组合策略，有效应对模型误设风险。
+- **筛选评分**：50
+- **原文**：[链接](https://arxiv.org/abs/2606.24212)
+
+---
+
+### TIP-Search: Time-Predictable Inference Scheduling for Market Prediction under Uncertain Load
+
+- **收录时间**：2026-06-25 07:02
+- **发布时间**：2026-06-24 12:00
+- **作者**：Xibai Wang
+- **来源**：arXiv Quantitative Finance
+- **分类**：综合/其他 · multi · global
+- **摘要**：arXiv:2506.08026v4 Announce Type: replace-cross Abstract: Real-time market prediction services need correct predictions before a decision deadline; a correct prediction delivered late is not usable. TIP-Search studies time-predictable inference scheduling over fixed market predictors under uncertain load. It filters conformal latency-quantile feasible models, dispatches over finite workers, and uses shielded constrained online experts to trade accuracy, queue pressure, and deadline risk. On the 
+- **筛选评分**：55
+- **原文**：[链接](https://arxiv.org/abs/2506.08026)
+
+---
+
+### MT5 Backtest Analyser
+
+- **收录时间**：2026-06-25 07:02
+- **发布时间**：2026-06-23 19:00
+- **作者**：alexkyse
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · multi · global
+- **摘要**：Hey reddit, I'm a senior software developer and since long time ago I felt the process of analysing, sharing MT5 backtests and strategies with other members was always a hassle, screenshots, downloading html reports etc, so I decided to build StrategyLens. StrategyLens is free, allows you to analyse your strategies and create portfolios in local, everything stays in your computer, no cloud information is sent unless you decide to share the strategy with other people which has a feature to create
+- **筛选评分**：65
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uddzgz/mt5_backtest_analyser/)
+
+---
+
+### AI交易系统：多智能体LangGraph与事件驱动架构
+
+- **收录时间**：2026-06-25 07:02
+- **发布时间**：2026-06-23 22:46
+- **作者**：sdalli
+- **来源**：GitHub Quant Repos
+- **分类**：机器学习 · multi · global
+- **频率**：intraday
+- **摘要**：这是一个机构级 AI 交易系统，采用多智能体 LangGraph 工作流、TimescaleDB 时序数据库优化和事件驱动的微服务架构。系统设计用于高频市场数据摄入、量化策略执行和自动化投资组合管理，结合 LLM 进行基本面和技术分析。代码库使用 Python 编写，目前星级为 0。系统强调可扩展性和低延迟，适合专业交易环境。多智能体协作可处理复杂决策任务。事件驱动架构确保实时响应。
+- **要点**：
+  - 多智能体 LangGraph 工作流支持复杂决策。
+  - TimescaleDB 优化时序数据存储与查询。
+  - 事件驱动微服务架构适合高频交易。
+  - 集成 LLM 进行基本面和技术分析。
+- **风险**：Complex architecture may introduce latency; LLM-based decisions can be unpredictable; system requires significant infrastructure.
+- **策略价值**：该系统展示了如何将先进 AI 架构（多智能体、事件驱动）应用于量化交易，为构建高性能交易系统提供了参考。
+- **筛选评分**：75
+- **原文**：[链接](https://github.com/sdalli/ai-trading-system)
+
+---
+
+### FinSentQuant：基于FinBERT的量化交易平台
+
+- **收录时间**：2026-06-25 07:02
+- **发布时间**：2026-06-24 20:48
+- **作者**：harinivs20
+- **来源**：GitHub Quant Repos
+- **分类**：机器学习 · stock · global
+- **频率**：daily
+- **摘要**：FinSentQuant 是一个全栈量化交易平台，使用 FinBERT 分析金融新闻情绪并生成交易信号。它能够获取实时股票市场数据，执行基于情绪的策略回测，并与买入持有基准进行比较。平台采用 Python 开发，目前处于初始阶段。情绪分析模型基于 FinBERT，可对新闻文本进行情感分类。回测模块支持自定义策略参数。该平台有助于验证情绪因子在股票交易中的有效性。用户可以通过代码库进行部署和测试。
+- **要点**：
+  - 利用 FinBERT 进行金融新闻情绪分析。
+  - 支持实时数据获取和策略回测。
+  - 与买入持有基准进行绩效比较。
+  - Python 实现，开源可定制。
+- **回测线索**：Includes sentiment-driven strategy backtesting and comparison with buy and hold benchmark.
+- **风险**：Sentiment signals may be noisy and subject to news quality; backtest overfitting possible.
+- **策略价值**：该平台使交易者能够系统化地利用新闻情绪生成交易信号，提供从数据到回测的完整流程。
+- **筛选评分**：80
+- **原文**：[链接](https://github.com/harinivs20/FinSentQuant)
+
+---
+
+### 发布 pandas-ta-classic v0.6.52：新增SMC流动性扫荡指标 + Ichimoku/MACD修复
+
+- **收录时间**：2026-06-25 07:02
+- **发布时间**：2026-06-24 23:27
+- **作者**：AMGraduate564
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · multi · global
+- **摘要**：pandas-ta-classic v0.6.52 版本发布，这是一个社区维护的 pandas-ta 分支。新增了智能资金概念流动性扫荡指标，用于检测流动性扫荡蜡烛形态。该指标返回 +1（看涨扫荡）、-1（看跌扫荡）或 0（无扫荡）。还修复了 Ichimoku 指标的多处 bug，包括返回元组而非 DataFrame 的问题。MACD 扩展指标修复了静默回退的问题，现在会在无效 MA 类型时抛出错误。CPR 指标输出从字符串改为 int8，更便于数值计算。总共包含 193 个指标和 62 个原生 CDL 模式，无需 TA-Lib。安装简单，只需 pip install pandas-ta-classic。社区维护，欢迎反馈和 PR。
+- **要点**：
+  - 新增 SMC 流动性扫荡指标，参数可调。
+  - 修复 Ichimoku 和 MACD 扩展的多个 bug。
+  - CPR 输出从字符串改为 int8，提升兼容性。
+  - 无需 TA-Lib 即可使用所有形态识别。
+- **风险**：SMC indicators can lead to overfitting if parameters are not carefully chosen.
+- **策略价值**：该库为量化交易者提供了增强的技术分析工具集，尤其是 SMC 指标可应用于多种资产的回测与实盘。
+- **筛选评分**：90
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uegoa6/release_pandastaclassic_v0652_new_smc_liquidity/)
+
+---
 
 ### A-RYAN-KR/回测代理
 
