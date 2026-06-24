@@ -1,15 +1,159 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-24 07:03 · Asia/Shanghai
-> 共 110 条策略
+> 自动生成 · 最后更新：2026-06-24 20:18 · Asia/Shanghai
+> 共 117 条策略
 
 ## 目录
 
-- [2026-06（110）](#2026-06)
+- [2026-06（117）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### A-RYAN-KR/回测代理
+
+- **收录时间**：2026-06-24 20:18
+- **发布时间**：2026-06-23 20:18
+- **作者**：A-RYAN-KR
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · multi · global
+- **摘要**：该项目是一个AI驱动的回测和量化交易研究代理。它自动化策略测试、性能分析、风险评价和优化过程。利用大型语言模型驱动的工作流和金融分析技术。支持在历史市场数据上进行策略回测。项目主题包括智能体人工智能、算法交易、自动交易等。使用Python编程语言开发。目前获得0个星标。这是一个开源的回测工具。可以用于量化金融研究和策略开发。它整合了多种金融分析功能。
+- **要点**：
+  - 自动化回测与性能分析
+  - 使用LLM驱动的金融分析工作流
+  - 支持多种策略优化
+  - 基于Python的开源项目
+- **回测线索**：该项目利用LLM驱动的自动化回测和性能分析工作流，支持策略优化。
+- **策略价值**：该工具通过AI和LLM技术降低了量化策略回测和优化的门槛，提高了研究效率。
+- **筛选评分**：50
+- **原文**：[链接](https://github.com/A-RYAN-KR/Backtesting-Agent)
+
+---
+
+### NY Striker V2.2：慢速周后MNQ止损被触发
+
+- **收录时间**：2026-06-24 20:18
+- **发布时间**：2026-06-23 01:01
+- **作者**：B_Ware321
+- **来源**：Reddit r/algotrading
+- **分类**：趋势跟踪 · futures · us
+- **频率**：intraday
+- **摘要**：交易者报告了NY Striker V2.2策略在MNQ微型纳斯达克期货上的表现。策略上周大部分时间未交易，直到一次机会出现。虽然交易接近后止损被轻微触发，但之后价格朝预期方向移动。账户整体仍处于盈利状态，且得益于正滑点。该策略似乎交易频率较低，等待高概率机会。
+- **要点**：
+  - NY Striker V2.2策略交易MNQ期货，上周大部分时间未交易
+  - 一笔交易中，价格仅小幅触及止损后按预期方向运行
+  - 账户总体盈利，滑点带来了正向影响
+- **风险**：Stop loss clipping risk, slippage impact, low trading frequency may lead to inactivity periods
+- **策略价值**：展示了期货算法交易中止损设置与滑点管理的实际案例，对风险控制有参考意义。
+- **筛选评分**：70
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1ucqbu5/ny_striker_v22_after_a_slow_week_clipped_mnq_sl/)
+
+---
+
+### 当AI遇上金融（StockAgent）：基于大语言模型的模拟真实环境股票交易
+
+- **收录时间**：2026-06-24 20:18
+- **发布时间**：2026-06-24 12:00
+- **作者**：Chong Zhang, Xinyi Liu, Zhongmou Zhang, Mingyu Jin, Lingyao Li, Zhenting Wang, Wenyue Hua, Dong Shu, Suiyuan Zhu, Xiaobo Jin, Sujian Li, Mengnan Du, Yongfeng Zhang
+- **来源**：arXiv q-fin.TR (Trading)
+- **分类**：机器学习 · stock · global
+- **摘要**：该研究提出了StockAgent，一个基于大语言模型的多智能体AI系统，用于模拟投资者对真实股票市场的交易行为。系统允许用户评估宏观经济、政策变化、公司基本面等外部因素对交易行为的影响。StockAgent避免了现有模拟系统中的测试集泄露问题，防止模型利用与测试数据相关的先验知识。实验在不同LLM下进行，展示了关键外部因素对股票交易行为及价格波动规则的影响。研究为基于LLM的投资建议和股票推荐提供了有价值的见解。代码已开源。
+- **要点**：
+  - StockAgent是多智能体LLM系统，模拟投资者交易行为
+  - 支持评估多种外部因素对交易的影响
+  - 避免了测试集泄露，确保评估公正
+  - 为LLM驱动的投资建议提供新思路
+- **风险**：Model overfitting risk, reliance on LLM prior knowledge (mitigated by leakage avoidance), simulation realism limitations
+- **策略价值**：为利用LLM进行市场仿真和投资策略研究提供了开源框架，具有重要的实践和学术价值。
+- **筛选评分**：70
+- **原文**：[链接](https://arxiv.org/abs/2407.18957)
+
+---
+
+### Claude算法机器人第二周：100%胜率
+
+- **收录时间**：2026-06-24 20:18
+- **发布时间**：2026-06-23 06:39
+- **作者**：TastyTrading
+- **来源**：Reddit r/algotrading
+- **分类**：趋势跟踪 · stock · us
+- **频率**：daily
+- **摘要**：一位交易者分享了使用Claude MCP连接器和Robinhood代理交易机器人进行交易的经验。机器人每天仅交易一次，选择TQQQ或SQQQ之一，并采用严格的风险管理。在第二周，机器人实现了100%的日胜率，包括一天因市场跳空1.5%而选择不交易。回测结果显示年化收益率45%，最大回撤6.6%，夏普比率2.07。该策略通过简单规则过滤市场异常日，并已连续多日盈利。作者对代理交易机器人充满热情，并推荐其他人尝试。
+- **要点**：
+  - 机器人每天仅交易一次，使用TQQQ或SQQQ杠杆ETF
+  - 第二周实现100%胜率，避开市场跳空日
+  - 回测年化收益率45%，最大回撤6.6%，夏普比率2.07
+  - 使用Claude MCP和Robinhood的代理交易平台
+- **回测线索**：Annualized return: 45%, max drawdown: 6.6%, Sharpe ratio: 2.07 (half in-sample, half out-of-sample, averaged)
+- **风险**：Leverage risk from TQQQ/SQQQ, single trade per day increases idiosyncratic risk, gap risk due to overnight gaps, overfitting potential
+- **策略价值**：展示了结合LLM和简单规则的高胜率日内交易策略，具有实际参考价值。
+- **筛选评分**：75
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uczfiw/claude_algo_bot_week_2_100_wins/)
+
+---
+
+### 跨收益分布的投资组合管理
+
+- **收录时间**：2026-06-24 20:18
+- **发布时间**：2026-06-24 12:00
+- **作者**：Jozef Barunik, Lukas Janasek, Attila Sarkany
+- **来源**：arXiv Quantitative Finance
+- **分类**：因子 · stock · us
+- **频率**：daily
+- **摘要**：该研究提出了一个动态投资组合选择框架，投资者可以针对收益分布的特定区域进行优化。样本外测试显示，不同分位数策略形成有序前沿：专注于下行风险的策略提供最佳左尾保护和最高夏普比率，而专注于上分位数的策略获得最高平均收益。相比波动率管理组合，这些策略的优势集中在下行尾部分散度高的时期。来自收益、增长和下行保护产品的资金流证据支持将分位数指数视为简化的任务度量指标。该框架为投资者根据自身风险偏好定制投资组合提供了理论支持。
+- **要点**：
+  - 不同分位数策略形成有序前沿，下行策略夏普比率最高，上分位数策略收益最高。
+  - 策略优势主要出现在下行尾部波动较大的时期。
+  - 资金流数据验证了分位数指数的实际意义。
+- **回测线索**：Out-of-sample tests produce an ordered frontier: downside policy yields highest Sharpe; upper-quantile policy yields highest mean return.
+- **风险**：Gains are concentrated in periods of high downside-tail dispersion; performance may deteriorate in calm markets.
+- **策略价值**：该框架允许投资者根据其对收益分布不同区域的偏好来动态构建组合，为定制化风险管理提供了可行方法。
+- **筛选评分**：85
+- **原文**：[链接](https://arxiv.org/abs/2510.19271)
+
+---
+
+### 美国大盘股市场影响平方根定律的实证确认
+
+- **收录时间**：2026-06-24 20:18
+- **发布时间**：2026-06-24 12:00
+- **作者**：Aniket Vasaikar
+- **来源**：arXiv q-fin.TR (Trading)
+- **分类**：做市 · stock · us
+- **频率**：intraday
+- **摘要**：该研究利用纳斯达克TotalView-ITCH逐笔订单数据，对苹果公司股票在178个交易日内的市场影响平方根定律进行了实证检验。通过从匿名交易数据中重建元订单，研究将冲击标准化为I/σ_D = c (Q/V_D)^(1/2)，并固定指数为1/2。原始系数c_raw为0.69，偏差修正后c_eff为0.34，条件冲击随Q^(1/2)变化。订单规模分布的尾部指数β=1.54±0.15。模型比较明确偏好平方根形式，优于线性和对数冲击（ΔAIC=22）。交易符号打乱后定向冲击降至随机水平，事件顺序打乱则破坏平方根定律。底层订单流具有长记忆性（γ=0.66），而价格保持扩散性（Hurst指数0.49）。系数在32周滚动校准中保持稳定。
+- **要点**：
+  - 平方根定律在苹果公司股票上得到实证支持，系数c_raw=0.69。
+  - 模型比较显示平方根形式优于线性和对数形式。
+  - 订单流长记忆性与价格扩散性同时存在，符合理论预测。
+- **回测线索**：Square-root law confirmed on Apple stock; prefactor c_raw=0.69 stable across weekly walk-forward tests.
+- **风险**：Metaorder reconstruction from anonymous tape may introduce noise; results may not generalize to other stocks or market conditions.
+- **策略价值**：该研究为交易成本建模和最优执行策略提供了基于美国个股的实证基础，有助于量化交易者更准确地估计市场冲击。
+- **筛选评分**：85
+- **原文**：[链接](https://arxiv.org/abs/2606.24019)
+
+---
+
+### 机器学习分类与投资组合构建：损失函数重要吗？
+
+- **收录时间**：2026-06-24 20:18
+- **发布时间**：2026-06-24 12:00
+- **作者**：Yang Bai, Kuntara Pukthuanthong
+- **来源**：arXiv Quantitative Finance
+- **分类**：机器学习 · stock · us
+- **摘要**：该研究比较了分类与回归在投资组合构建中的表现，发现分类模型普遍优于回归模型。采用梯度提升树、随机森林和神经网络的堆叠集成模型，分类策略的年化夏普比率为1.83，而回归策略仅为1.11。这种优势在多分类设置、子样本以及扣除交易成本后依然存在。跨期测试表明，在控制回归后分类仍能产生显著的经济alpha，而回归的alpha在控制分类后大幅缩减。结果表明分类能从收益中提取更多有效信息。诊断分析将分类的优势归因于其对收益十分位更清晰和精确的分离。该研究为机器学习在量化投资中的损失函数选择提供了重要依据。
+- **要点**：
+  - 分类模型比回归模型在投资组合构建中表现更好，夏普比率更高。
+  - 堆叠集成模型（梯度提升树+随机森林+神经网络）表现最优。
+  - 分类的优势在于更精确地分离收益十分位。
+- **回测线索**：Classification models yield higher Sharpe ratios than regression in out-of-sample backtests, with a stacking ensemble achieving Sharpe 1.83 vs 1.11.
+- **风险**：Potential overfitting risk if not properly validated; results may depend on data period and market conditions.
+- **策略价值**：该研究为量化投资者在选择机器学习损失函数时提供了实证依据，表明分类目标比回归更能提升投资组合表现。
+- **筛选评分**：90
+- **原文**：[链接](https://arxiv.org/abs/2108.02283)
+
+---
 
 ### 预训练Transformer中的资产定价
 

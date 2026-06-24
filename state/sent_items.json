@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-23T23:03:56+00:00",
+  "updated_at": "2026-06-24T12:18:18+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -546,6 +546,41 @@
       "sig": "611c3a6893a635d10e7f8fb1428be6082182fbb6c21173754c6fee2b39a95a4c",
       "url": "https://arxiv.org/abs/2505.01575",
       "sent_at": "2026-06-23T23:03:56+00:00"
+    },
+    {
+      "sig": "245143929b12815b2ab57173df9b6650c879d3d56eeb2f787fbb4dea39242061",
+      "url": "https://arxiv.org/abs/2108.02283",
+      "sent_at": "2026-06-24T12:18:18+00:00"
+    },
+    {
+      "sig": "796ada5459adb03451c8d90f7133ad73de77291d9e65eff1b07d61df5245dcb9",
+      "url": "https://arxiv.org/abs/2606.24019",
+      "sent_at": "2026-06-24T12:18:18+00:00"
+    },
+    {
+      "sig": "f38c93ef25e57f08f50b820e9484fc5edf2ea50c72b1d5ea5a23312c7fe22fde",
+      "url": "https://arxiv.org/abs/2510.19271",
+      "sent_at": "2026-06-24T12:18:18+00:00"
+    },
+    {
+      "sig": "6eab28f4471b8f93791299a9ea758a8bedba40557407a2eb852581b2bf277b4a",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uczfiw/claude_algo_bot_week_2_100_wins/",
+      "sent_at": "2026-06-24T12:18:18+00:00"
+    },
+    {
+      "sig": "7ab5c2c33162572de56b6c7518ca545261a80e04dfb41feef94d4cfb3a78b8a5",
+      "url": "https://arxiv.org/abs/2407.18957",
+      "sent_at": "2026-06-24T12:18:18+00:00"
+    },
+    {
+      "sig": "5dd934183e7401ac92aa9f8d87bfee335d61b1085413a5d7dec5d288799f3f45",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ucqbu5/ny_striker_v22_after_a_slow_week_clipped_mnq_sl/",
+      "sent_at": "2026-06-24T12:18:18+00:00"
+    },
+    {
+      "sig": "ba3ed22586964d947eab85efc85259fd55f753977ad75d5b4f0dd71f4c082081",
+      "url": "https://github.com/A-RYAN-KR/Backtesting-Agent",
+      "sent_at": "2026-06-24T12:18:18+00:00"
     }
   ]
 }
