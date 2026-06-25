@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-25T12:15:33+00:00",
+  "updated_at": "2026-06-25T23:12:48+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -646,6 +646,41 @@
       "sig": "73bfc2db663c06d7e8466cf851c000f1ee65b1869ff34325c64e06afe638abb0",
       "url": "https://github.com/WolfpackOfOne/Q-agent",
       "sent_at": "2026-06-25T12:15:33+00:00"
+    },
+    {
+      "sig": "fa3ca62923815fd3e118cc236bea3e393e2122a98e730f72ed2cbb8f386736f5",
+      "url": "https://arxiv.org/abs/2606.25986",
+      "sent_at": "2026-06-25T23:12:48+00:00"
+    },
+    {
+      "sig": "30b2f076672982e073ada467301b465f1eb773933018581614e2296f0c7babfa",
+      "url": "https://arxiv.org/abs/2501.03658",
+      "sent_at": "2026-06-25T23:12:48+00:00"
+    },
+    {
+      "sig": "992450f4a70427f892252a708738c34a5f02b78674c954554154c93332a925ca",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ufhadr/how_to_deal_with_slippage_for_my_0dte_options_algo/",
+      "sent_at": "2026-06-25T23:12:48+00:00"
+    },
+    {
+      "sig": "c3eb039bc5810111d2d60b8d6951133a1272c80ed2424af9edad9f68c7971724",
+      "url": "https://github.com/Vinnnnnie21/quant-replay-collector",
+      "sent_at": "2026-06-25T23:12:48+00:00"
+    },
+    {
+      "sig": "7f9ff2d2391c6cf7b9352ac3b7fc69709aec39d00bfdc63c06a382b9dce5addb",
+      "url": "https://github.com/Maulikjain2407/QuantCore",
+      "sent_at": "2026-06-25T23:12:48+00:00"
+    },
+    {
+      "sig": "ae6f5bebdd921568dee73c6ca18c70b7c5f2b5dc4446afe5deb3531c6579a2f9",
+      "url": "https://arxiv.org/abs/2411.05470",
+      "sent_at": "2026-06-25T23:12:48+00:00"
+    },
+    {
+      "sig": "359cbada62b8f942340c5382ced5f70cce595e6bab2e8b55068854e059421afb",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ud4b1e/does_anyone_have_webull_level_2_api_plugged_in_to/",
+      "sent_at": "2026-06-25T23:12:48+00:00"
     }
   ]
 }
