@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-24T23:02:10+00:00",
+  "updated_at": "2026-06-25T12:15:33+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -611,6 +611,41 @@
       "sig": "cf09b5e09af531c6e8fcb0d2644a6d6ebe7c9e675a33b954d8f0debd72987495",
       "url": "https://arxiv.org/abs/2606.24212",
       "sent_at": "2026-06-24T23:02:10+00:00"
+    },
+    {
+      "sig": "8f08018aa90e58b2d89860cc7e287e04425a674e8de350ca442f812f3c666df8",
+      "url": "https://github.com/AlanFokCo/EasyQuant",
+      "sent_at": "2026-06-25T12:15:33+00:00"
+    },
+    {
+      "sig": "0842bba66e9875ca50629fc1284241cb2f2af2e70b9d8580cbde57240c363792",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uf0ztl/using_machine_learning_to_predict_whether_weekly/",
+      "sent_at": "2026-06-25T12:15:33+00:00"
+    },
+    {
+      "sig": "1d03915d27857220a56125a0eddab71c27f4b313732b6d2a0fe9744ad9471f61",
+      "url": "https://arxiv.org/abs/2606.25811",
+      "sent_at": "2026-06-25T12:15:33+00:00"
+    },
+    {
+      "sig": "04d50559364bc924e91064f199210a075cc842e1acd724a1b4ef67d064c52395",
+      "url": "https://arxiv.org/abs/2606.25466",
+      "sent_at": "2026-06-25T12:15:33+00:00"
+    },
+    {
+      "sig": "f30eb396bbdfbacaf50667175a7c33254f3161204f662c980131756fb33bba4a",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uf10vv/the_iran_strategy/",
+      "sent_at": "2026-06-25T12:15:33+00:00"
+    },
+    {
+      "sig": "67c6700c91194fa5ebf3e1912a4627b95041c4538f5bda327f96fbe9e1f7cc3a",
+      "url": "https://arxiv.org/abs/2606.25696",
+      "sent_at": "2026-06-25T12:15:33+00:00"
+    },
+    {
+      "sig": "73bfc2db663c06d7e8466cf851c000f1ee65b1869ff34325c64e06afe638abb0",
+      "url": "https://github.com/WolfpackOfOne/Q-agent",
+      "sent_at": "2026-06-25T12:15:33+00:00"
     }
   ]
 }

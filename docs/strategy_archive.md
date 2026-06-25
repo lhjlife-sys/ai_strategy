@@ -1,15 +1,157 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-25 07:02 · Asia/Shanghai
-> 共 123 条策略
+> 自动生成 · 最后更新：2026-06-25 20:15 · Asia/Shanghai
+> 共 130 条策略
 
 ## 目录
 
-- [2026-06（123）](#2026-06)
+- [2026-06（130）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### Q-agent
+
+- **收录时间**：2026-06-25 20:15
+- **发布时间**：2026-06-24 21:06
+- **作者**：WolfpackOfOne
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · multi · global
+- **摘要**：该框架是一个基于智能体的量化研究框架，专注于数据管道、笔记本和交易策略开发。使用Python语言实现。项目在GitHub上托管，目前获得4颗星。主题包括人工智能代理、Lean算法交易平台、QuantConnect平台以及量化金融。该框架支持多种资产类别和市场。它可作为开发各类量化策略的基础工具。框架设计强调模块化与可扩展性。适合研究者快速搭建量化研究环境。
+- **要点**：
+  - 项目提供智能体驱动的量化研究框架。
+  - 支持数据管道、笔记本和策略开发流程。
+  - 兼容Lean和QuantConnect等回测平台。
+  - 使用Python语言，适合量化研究快速迭代。
+- **策略价值**：该框架为量化研究人员提供了一个统一、灵活的智能体平台，可显著加速从研究到策略部署的周期。
+- **筛选评分**：60
+- **原文**：[链接](https://github.com/WolfpackOfOne/Q-agent)
+
+---
+
+### 面向可持续性感知的多空组合优化的两阶段决策支持系统
+
+- **收录时间**：2026-06-25 20:15
+- **发布时间**：2026-06-25 12:00
+- **作者**：Giacomo di Tollo, Massimiliano Kaucic, Filippo Piccotto
+- **来源**：arXiv Quantitative Finance
+- **分类**：因子 · stock · global
+- **频率**：daily
+- **摘要**：本文提出一个两阶段决策支持系统，用于在ESG约束下优化多空投资组合。第一阶段使用TODIMSort和MEREC方法对资产进行多标准分类，动态生成多空候选集。第二阶段构建最大化Omega比率的非凸优化模型，并采用自适应粒子群算法求解，该算法能从多种重组算子中选择最优算子，并辅以投影修复机制处理约束。实证基于STOXX Europe 600指数的421只股票。结果表明，引入ESG的多空组合在经风险调整后的收益上通常优于非ESG组合和市值加权基准。该系统能够根据市场环境和投资者偏好动态调整。
+- **要点**：
+  - 两阶段流程：先按ESG指标分类资产，再优化组合权重。
+  - 自适应粒子群求解器可动态选择最优算子，提高求解质量。
+  - ESG多空组合在STOXX Europe 600上表现优于传统基准。
+- **回测线索**：Empirical study on 421 stocks from STOXX Europe 600; ESG-enhanced long-short portfolios show competitive or superior performance versus non-ESG and market-value-weighted benchmarks.
+- **风险**：Model risk from multi-criteria sorting and particle swarm optimization; reliance on ESG data quality and availability; non-convex optimization may yield local optima.
+- **策略价值**：为可持续投资提供了系统化的量化框架，使投资者能在ESG约束下实现多空策略的优化配置。
+- **筛选评分**：65
+- **原文**：[链接](https://arxiv.org/abs/2606.25696)
+
+---
+
+### 伊朗策略
+
+- **收录时间**：2026-06-25 20:15
+- **发布时间**：2026-06-25 13:25
+- **作者**：Must_Dragonfruit
+- **来源**：Reddit r/algotrading
+- **分类**：因子 · stock · us
+- **频率**：daily
+- **摘要**：该策略名为“霍尔木兹海峡”，基于地缘政治事件（中东重建）构建主题投资组合。做多重建材料供应链中的股票（如骨料、水泥、钢铁、木材替代品、设备、工程总承包），同时做空SPY。交易为纸面仿真，起始于2026年6月1日，首日收益7%。回测显示年化收益率149%，夏普比率4.77，最大回撤-1.67%，但作者承认存在事后偏见。策略本质是叙事驱动，并非量化优势。持仓包括VMC、MLM、EXP等22只个股，每只权重4.5%，做空SPY权重100%。用户可调整权重和股票池来个性化策略。
+- **要点**：
+  - 基于中东重建主题，做多材料股、做空SPY。
+  - 首日纸面收益7%，但回测可能存在严重过拟合。
+  - 作者强调这是叙事倾斜，非可复制的量化策略。
+- **回测线索**：Illustrative backtest from 2026-06-01 shows CAGR 149.0, Sharpe 4.77, maxDD -1.67, but flagged as hindsight bias; forward paper trade returned +6.73% on first day.
+- **风险**：Geopolitical risk (Middle East conflict), narrative tilt without measured edge, high concentration in reconstruction sector, backtest overfitting potential.
+- **策略价值**：展示了如何将地缘政治事件快速转化为主题交易思路，但需警惕回测中的生存偏差和事后偏见。
+- **筛选评分**：70
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uf10vv/the_iran_strategy/)
+
+---
+
+### 基于高频收益的加密货币交互时间依赖加权有向网络
+
+- **收录时间**：2026-06-25 20:15
+- **发布时间**：2026-06-25 12:00
+- **作者**：Shubhangam Shukla, Mahesh Peyyala, Abhijit Chakraborty
+- **来源**：arXiv q-fin.TR (Trading)
+- **分类**：机器学习 · crypto · global
+- **频率**：intraday
+- **摘要**：本研究利用2020-2025年的高频价格数据，构建了加密货币市场的有向加权网络，以分析资产间的相互影响。通过统计显著的Granger因果关系量化了影响流。归一化收益呈现厚尾分布，符合金融市场典型特征。网络显示链接权重和节点强度的高度异质性，少数加密货币对市场动态贡献显著。基于节点出强度排名揭示了动态变化的层级结构。以太坊始终是最有影响力的资产，而比特币的重要性逐渐下降。排名结构随时间大幅变化，多种加密货币交替进入前列。结果表明加密货币生态系统竞争激烈且非稳定。
+- **要点**：
+  - 以太坊持续位居影响力榜首，比特币重要性下降。
+  - 网络链接权重分布不均，少数资产主导市场。
+  - 排名结构随时间高度动态，缺乏稳定层级。
+- **风险**：Model risk due to Granger causality assumptions; network inference may be sensitive to window length and significance thresholds; heavy-tailed distributions imply tail risk.
+- **策略价值**：该研究为理解加密货币市场影响力结构提供了量化框架，有助于识别系统性重要资产和风险传导路径。
+- **筛选评分**：75
+- **原文**：[链接](https://arxiv.org/abs/2606.25466)
+
+---
+
+### 用于商品期货市场日历价差策略的分层图学习
+
+- **收录时间**：2026-06-25 20:15
+- **发布时间**：2026-06-25 12:00
+- **作者**：Yoonsik Hong, Diego Klabjan
+- **来源**：arXiv q-fin.TR (Trading)
+- **分类**：套利 · futures · us
+- **摘要**：本文提出了一种分层图学习方法，用于商品期货市场的日历价差策略。商品期货可分层表示：上层为底层资产，下层为单个期货合约。不同层级间的边捕捉资产间相关性，跨层级边连接合约与其底层资产。作者首先从理论上证明日历价差策略具有比多头策略更高的风险调整收益和更低的风险。然后，他们设计了一种方法将学习预测转换为日历价差头寸。该模型利用到期日相关的相互关系预测期货价格波动。在芝加哥商品交易所（CME）集团的期货数据上，该方法在预测和交易表现上均优于基准模型。研究发现，到期日相关的相互关系对预测至关重要。基于分层图学习的日历价差交易可以有效进行统计套利。
+- **要点**：
+  - 提出分层图学习模型用于商品期货日历价差策略。
+  - 理论证明日历价差策略具有更高信息比率和更低风险。
+  - 在CME期货数据上表现优于基准，利用跨合约相关性。
+- **回测线索**：Empirical results on CME Group futures show superior prediction and trading performance.
+- **风险**：Complex model; may require high-frequency data; risk of overfitting to market microstructure.
+- **策略价值**：为期货市场统计套利提供了一种新颖的图学习方法，有效利用了合约间的到期日依赖关系。
+- **筛选评分**：80
+- **原文**：[链接](https://arxiv.org/abs/2606.25811)
+
+---
+
+### 使用机器学习预测周最高价是否超过周中位数高
+
+- **收录时间**：2026-06-25 20:15
+- **发布时间**：2026-06-25 13:23
+- **作者**：Expert_CBCD
+- **来源**：Reddit r/algotrading
+- **分类**：机器学习 · stock · us
+- **频率**：weekly
+- **摘要**：该模型使用机器学习预测某股票周最高价是否超过其中位数高（相对于周一开盘价）。模型使用少于10个变量，训练测试采用滚动10年/1个月周期。仅当预测概率大于60%或小于40%时才执行交易。在SPY上的回测显示，策略1（触及中位数高即卖出）胜率为70.18%，平均每笔收益0.26%。策略2（持有至周五收盘）胜率为57.89%，平均收益0.55%，年化收益率约28.6%。累计利润方面，策略1为54.02%，策略2为142.50%。基线策略（每周买入）胜率仅49.72%。模型在其它ETF和股票上也取得了类似结果。该方法仅基于价格数据，不依赖基本面信息。
+- **要点**：
+  - 预测周高是否超过中位数高，基于周开盘价。
+  - 使用滚动10年/1个月训练测试周期，仅交易高概率信号。
+  - SPY回测中策略2年化收益约28.6%，累进利润142.5%。
+- **回测线索**：Backtested on SPY from 2005 with rolling 10yr/1mo train-test, achieving 70% win rate on timing exits.
+- **风险**：Overfitting risk due to many custom parameters; only tested on SPY and some ETFs; no out-of-sample validation beyond what's shown.
+- **策略价值**：展示了一种简单的机器学习方法用于优化周内择时，可能显著提升持有期收益。
+- **筛选评分**：85
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uf0ztl/using_machine_learning_to_predict_whether_weekly/)
+
+---
+
+### EasyQuant 事件驱动量化交易框架
+
+- **收录时间**：2026-06-25 20:15
+- **发布时间**：2026-06-25 10:45
+- **作者**：AlanFokCo
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · stock · cn
+- **摘要**：EasyQuant 是一个针对中国A股市场的事件驱动量化交易框架。它支持策略回测、风险指标分析和实际部署。该框架使用 eqlib 核心库，便于快速开发。项目采用 Python 语言编写，开源且免费。目前拥有13个星标，社区较小但专注。其主要功能包括回测引擎和风险管理系统。该框架适合中国A股市场的个人和机构投资者。它可以帮助用户验证交易策略的有效性。框架的事件驱动模式能够模拟真实市场环境。
+- **要点**：
+  - 针对中国A股市场的开源量化交易框架。
+  - 支持事件驱动策略回测和风险管理。
+  - 使用 Python 编写，集成 eqlib 核心库。
+- **回测线索**：Framework supports backtesting and risk metric analysis.
+- **风险**：Open-source, limited user base (13 stars), may require customization.
+- **策略价值**：为A股投资者提供了一个免费、可定制的量化交易研究和部署平台。
+- **筛选评分**：90
+- **原文**：[链接](https://github.com/AlanFokCo/EasyQuant)
+
+---
 
 ### 路径空间鲁棒贝叶斯投资组合选择
 
