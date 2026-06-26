@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-25T23:12:48+00:00",
+  "updated_at": "2026-06-26T12:10:10+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -681,6 +681,36 @@
       "sig": "359cbada62b8f942340c5382ced5f70cce595e6bab2e8b55068854e059421afb",
       "url": "https://www.reddit.com/r/algotrading/comments/1ud4b1e/does_anyone_have_webull_level_2_api_plugged_in_to/",
       "sent_at": "2026-06-25T23:12:48+00:00"
+    },
+    {
+      "sig": "0c3bbf84dcfb7ef83e25281797925bd9f3b983cbd8ed1974c77b7c6a9d2b1858",
+      "url": "https://arxiv.org/abs/2606.04574",
+      "sent_at": "2026-06-26T12:10:10+00:00"
+    },
+    {
+      "sig": "6619e85e266f230ab2caa0fde043cad3f8715a305b18c4ff8e941892d71702c7",
+      "url": "https://github.com/Angad2005/Trading-Stratergy",
+      "sent_at": "2026-06-26T12:10:10+00:00"
+    },
+    {
+      "sig": "94616264c56b60ac2d02e56ba66377c2dcf6b07f29bd1024a3bbf147d80a39eb",
+      "url": "https://arxiv.org/abs/2606.27100",
+      "sent_at": "2026-06-26T12:10:10+00:00"
+    },
+    {
+      "sig": "e4bfa2d034f20fdb9494ae92affade5f0ce649bf8528512aa660fa6addcd4531",
+      "url": "https://arxiv.org/abs/2606.26625",
+      "sent_at": "2026-06-26T12:10:10+00:00"
+    },
+    {
+      "sig": "07d49f10ab2f3988207ae18d23989cb0cdbf1236eeee67339486c21f15937623",
+      "url": "https://github.com/zhangshujuan1314/quanttrader",
+      "sent_at": "2026-06-26T12:10:10+00:00"
+    },
+    {
+      "sig": "102c0f99fcfe929eb870a193e3b4ab558026f8e10a5ee93e27584ac939a989ca",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ufqqkl/some_pls_critique/",
+      "sent_at": "2026-06-26T12:10:10+00:00"
     }
   ]
 }
