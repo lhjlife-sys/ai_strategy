@@ -1,15 +1,91 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-26 20:10 · Asia/Shanghai
-> 共 143 条策略
+> 自动生成 · 最后更新：2026-06-27 07:01 · Asia/Shanghai
+> 共 147 条策略
 
 ## 目录
 
-- [2026-06（143）](#2026-06)
+- [2026-06（147）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### Option prices from operational-time reaction-boundary lattices
+
+- **收录时间**：2026-06-27 07:01
+- **发布时间**：2026-06-26 12:00
+- **作者**：Chris Angstmann, Tim Gebbie
+- **来源**：arXiv q-fin.TR (Trading)
+- **分类**：综合/其他 · multi · global
+- **摘要**：arXiv:2606.09564v2 Announce Type: replace-cross Abstract: We consider the role of a continuum operational time u and its mapping to calendar time t and how these relate to event time for option pricing problems. We derive option-pricing equations from an operational-time Markov lattice rather than from a calendar-time diffusion. The primitive model is a nearest-neighbour log-price lattice with state- and time-dependent transition probabilities. Its Chapman-Kolmogorov decomposition yields discret
+- **筛选评分**：50
+- **原文**：[链接](https://arxiv.org/abs/2606.09564)
+
+---
+
+### 影响算法交易的其他因素：应关注哪些股票
+
+- **收录时间**：2026-06-27 07:01
+- **发布时间**：2026-06-27 00:04
+- **作者**：MormonMoron
+- **来源**：Reddit r/algotrading
+- **分类**：因子 · stock · us
+- **频率**：weekly
+- **摘要**：作者运营一个每周优化约95只股票的算法交易系统。系统通过筛选和验证后通常保留45只股票。作者曾移除了SaaS股票，但因配置文件回滚导致意外重仓。该策略从2026年4月21日至回撤前获利13%，但NOW和CRM两只股票造成巨额亏损，最终净收益降至4.5%（基准VTI为3.75%）。在455笔交易中，453笔盈利共3400美元，2笔亏损共2300美元。作者正在寻找更有效的止损机制。
+- **要点**：
+  - 每周对约95只股票进行优化和筛选，保留约45只。
+  - 由于配置文件错误，重新引入了本应排除的SaaS股票。
+  - 两笔重大亏损几乎抵消了453笔盈利，强调了分散化和风险管理的重要性。
+- **回测线索**：Up 13% from 4/21/26 to peak, then dropped to 4.5% after two losses. Total 455 trades with 99.6% win rate but large average loss on losers.
+- **风险**：少数头寸可能造成巨大回撤，如案例中两个SaaS股票导致利润大幅缩水。需要更好的止损策略，但过紧的止损可能误伤盈利交易。
+- **策略价值**：凸显了股票筛选和风险管理在算法交易中的关键作用，以及配置管理失误可能带来的严重后果。
+- **筛选评分**：70
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1ugazs2/other_things_that_affect_algo_trading_which/)
+
+---
+
+### 今日的几笔盈利
+
+- **收录时间**：2026-06-27 07:01
+- **发布时间**：2026-06-26 05:22
+- **作者**：ilovezwatch
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · stock · us
+- **频率**：intraday
+- **摘要**：作者利用Claude（AI工具）和自身交易理论开发了一个算法交易系统。该系统经过反复回测和优化，目前能生成做多和做空信号。作者仍需手动输入交易，但计划次日实现自动下单。界面最初为终端，后来增加了网页显示。作者表示策略仍在改进中，并非完美。
+- **要点**：
+  - 使用AI工具Claude辅助开发算法交易策略。
+  - 经过回测和迭代优化，目前能捕捉多空信号。
+  - 计划从手动交易过渡到全自动化执行。
+- **回测线索**：Backtested and iteratively improved the strategy.
+- **风险**：目前仍需手动执行交易，存在操作延迟和错误风险。策略仍在开发中，尚未经过完全实盘验证。
+- **策略价值**：展示了个人交易者如何利用AI工具快速构建和迭代量化策略，并逐步实现自动化。
+- **筛选评分**：75
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1ufmzot/couple_wins_today/)
+
+---
+
+### USD/UZS交易回测引擎
+
+- **收录时间**：2026-06-27 07:01
+- **发布时间**：2026-06-26 18:02
+- **作者**：AdlTokhirov
+- **来源**：GitHub Quant Repos
+- **分类**：趋势跟踪 · forex · global
+- **频率**：daily
+- **摘要**：这是一个基于Python的开源量化回测引擎。它专注于美元兑乌兹别克斯坦苏姆（USD/UZS）汇率。该引擎采用移动平均线交叉策略生成交易信号。用户可以使用历史数据测试策略表现。项目源码托管在GitHub上，目前星标数为0。它提供了回测框架，但尚未包含实盘交易功能。
+- **要点**：
+  - 使用移动平均线交叉策略进行交易信号生成。
+  - 专注于美元兑乌兹别克斯坦苏姆（USD/UZS）这一小众外汇对。
+  - 基于Python开发，提供完整的回测框架。
+- **回测线索**：Backtesting engine for moving average crossover on USD/UZS
+- **风险**：Moving average crossover strategies can produce whipsaws and lag in trending markets.
+- **策略价值**：为新兴市场外汇对提供了可定制的量化回测工具，有助于探索非主流交易品种。
+- **筛选评分**：85
+- **原文**：[链接](https://github.com/AdlTokhirov/usd-uzs-trading-backtester)
+
+---
 
 ### 请批评我的黄金模型
 

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-26T12:10:10+00:00",
+  "updated_at": "2026-06-26T23:01:58+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -711,6 +711,26 @@
       "sig": "102c0f99fcfe929eb870a193e3b4ab558026f8e10a5ee93e27584ac939a989ca",
       "url": "https://www.reddit.com/r/algotrading/comments/1ufqqkl/some_pls_critique/",
       "sent_at": "2026-06-26T12:10:10+00:00"
+    },
+    {
+      "sig": "9b15c8e21e4e015c14ae824aa4a311995898aae66f25e1c683e03f15db56cd10",
+      "url": "https://github.com/AdlTokhirov/usd-uzs-trading-backtester",
+      "sent_at": "2026-06-26T23:01:58+00:00"
+    },
+    {
+      "sig": "f49bda0ba9fac9b381c4a553f4f23a6f8727913975e50e93ee2b0a750bde7576",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ufmzot/couple_wins_today/",
+      "sent_at": "2026-06-26T23:01:58+00:00"
+    },
+    {
+      "sig": "cf404115777529a279c4ed932a2479ae765abcb1e4b2145d9b00ebf98fa78c98",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ugazs2/other_things_that_affect_algo_trading_which/",
+      "sent_at": "2026-06-26T23:01:58+00:00"
+    },
+    {
+      "sig": "98ff6ae08d6bc93c021b817ab55b39925123c04c1e0d189dc19884562d637b62",
+      "url": "https://arxiv.org/abs/2606.09564",
+      "sent_at": "2026-06-26T23:01:58+00:00"
     }
   ]
 }
