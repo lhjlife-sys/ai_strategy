@@ -1,15 +1,95 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-27 07:01 · Asia/Shanghai
-> 共 147 条策略
+> 自动生成 · 最后更新：2026-06-27 19:25 · Asia/Shanghai
+> 共 151 条策略
 
 ## 目录
 
-- [2026-06（147）](#2026-06)
+- [2026-06（151）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### 外汇代理表现
+
+- **收录时间**：2026-06-27 19:25
+- **发布时间**：2026-06-24 22:35
+- **作者**：Actual_Resort1892
+- **来源**：Reddit r/algotrading
+- **分类**：趋势跟踪 · forex · global
+- **频率**：intraday
+- **摘要**：该策略在外汇市场上取得了显著收益。EURUSD达到38.7点盈利，CHFJPY盈利61.4点，NZDUSD盈利30.1点，GBPJPY盈利65.7点。交易在5分钟时间框架内执行。这些结果来自单一交易记录，缺乏历史回测验证。策略似乎基于趋势跟踪或动量突破。交易频率较高，属于日内交易。需要注意市场滑点和点差成本可能影响实际表现。该策略可能仅在特定市场条件下有效。用户需谨慎评估其稳健性。
+- **要点**：
+  - EURUSD盈利38.7点，CHFJPY盈利61.4点
+  - NZDUSD盈利30.1点，GBPJPY盈利65.7点
+  - 交易使用5分钟时间框架
+- **风险**：Potential overfitting to recent market conditions; slippage and spread costs on 5-minute timeframe may erode profits; sample size of trades is small.
+- **策略价值**：该策略展示了高频日内外汇交易中潜在的高收益机会，但需警惕过拟合和执行成本。
+- **筛选评分**：55
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uef9sk/fx_agent_performance/)
+
+---
+
+### Millan678/trading-research-platform
+
+- **收录时间**：2026-06-27 19:25
+- **发布时间**：2026-06-27 15:55
+- **作者**：Millan678
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · multi · global
+- **摘要**：这是一个自主的64阶段研究生态系统，用于系统化交易策略分析、验证和科学发现。平台专注于研究功能，不直接用于实盘交易。支持回测和因果推断。基于Python开发。当前获得0颗星。技术栈包括科学计算和量化分析工具。
+- **要点**：
+  - 64阶段自主研究生态系统
+  - 支持回测与因果推断
+  - 仅用于研究目的
+- **回测线索**：Supports backtesting and causal inference for strategy validation.
+- **风险**：Research-only platform, not intended for live trading. May lack real-time execution and risk controls.
+- **策略价值**：该平台为量化研究者提供了完整的策略验证框架，有助于科学发现和策略优化。
+- **筛选评分**：55
+- **原文**：[链接](https://github.com/Millan678/trading-research-platform)
+
+---
+
+### 每日开盘算法——今日交易
+
+- **收录时间**：2026-06-27 19:25
+- **发布时间**：2026-06-26 03:25
+- **作者**：Actual_Resort1892
+- **来源**：Reddit r/algotrading
+- **分类**：趋势跟踪 · forex · global
+- **频率**：daily
+- **摘要**：该策略基于每日开盘价进行交易。提交者展示了在CHFJPY、GBPJPY和US30上的盈利结果。CHFJPY获利62.2点，GBPJPY获利65.4点，US30获利48.93点。该策略最初流行于股票市场，但也适用于外汇和指数。策略思路是捕捉开盘后的短期动量。交易频率为每日一次。需要关注点差和滑点对收益的影响。
+- **要点**：
+  - 基于每日开盘价交易
+  - 适用于外汇和指数
+  - 当日表现盈利
+- **风险**：Performance may vary across different market conditions; slippage and spread impact real results. Only one session reported.
+- **策略价值**：每日开盘策略简单实用，可跨资产类别应用，适合日内交易者参考。
+- **筛选评分**：60
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1ufjvwe/daily_open_algo_todays_session/)
+
+---
+
+### Darkdemon55-cmd/Mylo
+
+- **收录时间**：2026-06-27 19:25
+- **发布时间**：2026-06-27 07:50
+- **作者**：Darkdemon55-cmd
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · multi · global
+- **摘要**：这是一个生产级的智能金融情报平台。它拥有三面板界面，包括AI聊天、策略编辑器和分析仪表盘。平台支持多LLM协调，用于交易算法和量化研究。包含模型路由、辩论系统、安全的Python沙箱。集成了vectorbt和backtrader用于回测。实现了风险控制功能。技术栈包括FastAPI、React、PostgreSQL和Weaviate。
+- **要点**：
+  - 三面板界面集成AI聊天、策略编辑和分析仪表盘
+  - 多LLM协调与辩论系统增强决策能力
+  - 内置安全沙箱和风险控制机制
+- **回测线索**：Supports backtesting via vectorbt and backtrader.
+- **风险**：Secure sandbox limits risk but agentic AI decisions may introduce unforeseen behaviors. Research-only platform not proven in live trading.
+- **策略价值**：该平台整合了多智能体AI与量化交易研究，提供了一站式的策略开发与回测环境。
+- **筛选评分**：75
+- **原文**：[链接](https://github.com/Darkdemon55-cmd/Mylo)
+
+---
 
 ### Option prices from operational-time reaction-boundary lattices
 

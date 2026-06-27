@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-26T23:01:58+00:00",
+  "updated_at": "2026-06-27T11:25:48+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -731,6 +731,26 @@
       "sig": "98ff6ae08d6bc93c021b817ab55b39925123c04c1e0d189dc19884562d637b62",
       "url": "https://arxiv.org/abs/2606.09564",
       "sent_at": "2026-06-26T23:01:58+00:00"
+    },
+    {
+      "sig": "5b9d661e9e4c11a51dbada4fc09f8aa2a628ff31f77333ed344f146e9f4898ac",
+      "url": "https://github.com/Darkdemon55-cmd/Mylo",
+      "sent_at": "2026-06-27T11:25:48+00:00"
+    },
+    {
+      "sig": "a7491161e6ce0cf60b544b3fd8a7c260c5d7e3a599b8cedcc00dc6c432527873",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ufjvwe/daily_open_algo_todays_session/",
+      "sent_at": "2026-06-27T11:25:48+00:00"
+    },
+    {
+      "sig": "64e3828507fbcf03a778eab962b0a5bc3775ee98ceb7bf4a69547300067052bc",
+      "url": "https://github.com/Millan678/trading-research-platform",
+      "sent_at": "2026-06-27T11:25:48+00:00"
+    },
+    {
+      "sig": "c592da4d3129554ab62f557f344968ef3f5b3e732d0383a14222060e061b70ef",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uef9sk/fx_agent_performance/",
+      "sent_at": "2026-06-27T11:25:48+00:00"
     }
   ]
 }
