@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-27T11:25:48+00:00",
+  "updated_at": "2026-06-27T22:58:38+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -751,6 +751,16 @@
       "sig": "c592da4d3129554ab62f557f344968ef3f5b3e732d0383a14222060e061b70ef",
       "url": "https://www.reddit.com/r/algotrading/comments/1uef9sk/fx_agent_performance/",
       "sent_at": "2026-06-27T11:25:48+00:00"
+    },
+    {
+      "sig": "a6851a0232b69b0c76da242f2197d2373281db4e5780c5cd19787d713a82ed02",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uhf90i/if_you_test_on_the_same_data_you_optimized_on_you/",
+      "sent_at": "2026-06-27T22:58:38+00:00"
+    },
+    {
+      "sig": "0822dcfd9934c86b6888abdea971d600f1c2ab5009efc0009e0580dda5626b3a",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uh2lyc/analyzing_2026_qqq_drawdown_and_secondary_shock/",
+      "sent_at": "2026-06-27T22:58:38+00:00"
     }
   ]
 }

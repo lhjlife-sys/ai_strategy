@@ -1,15 +1,48 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-27 19:25 · Asia/Shanghai
-> 共 151 条策略
+> 自动生成 · 最后更新：2026-06-28 06:58 · Asia/Shanghai
+> 共 153 条策略
 
 ## 目录
 
-- [2026-06（151）](#2026-06)
+- [2026-06（153）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### 2026年QQQ回撤与二次冲击恢复分析
+
+- **收录时间**：2026-06-28 06:58
+- **发布时间**：2026-06-27 21:19
+- **作者**：medphysik
+- **来源**：Reddit r/algotrading
+- **分类**：均值回归 · stock · us
+- **频率**：daily
+- **摘要**：该分析研究了2026年QQQ的回撤和二次冲击恢复模式，并与历史相似事件进行了对比。历史中，类似的市场冲击中初始回撤中位数为-12.3%，通常在18个交易日内触底。2026年回撤幅度为-12.0%，但下跌过程持续了103天，属于缓慢下跌而非快速暴跌。尽管如此，恢复力度强劲，当前价格已比危机前峰值高出11.5%，优于历史中位数的+8.2%。二次冲击（即反弹后的再次回调）的平均深度为-6.4%，持续时间中位数为17天，95%置信区间为-10.2%至-2.5%。典型历史范围显示，二次冲击深度通常在-3.0%至-8.5%之间，持续时间8至27天，回调幅度抹去此前反弹的25.5%至77.5%。截至2026年6月下旬，当前二次冲击深度为-5.2%，处于历史典型范围中心，表明市场可能正在接近调整尾声。该分析基于100,000次自举迭代的均值统计，提供了更紧致的置信区间。
+- **要点**：
+  - 2026年QQQ回撤幅度-12.0%，与历史中位数-12.3%接近，但耗时103天，远超中位数18天。
+  - 二次冲击平均深度-6.4%，95%置信区间-10.2%至-2.5%，持续时间中位数17天。
+  - 当前二次冲击深度-5.2%，处于历史典型范围（-3.0%至-8.5%）中心，可能接近调整结束。
+- **风险**：Historical patterns may not repeat; 2026 slow bleed deviated from typical flash crash; secondary shock depth and duration vary widely.
+- **策略价值**：该分析有助于量化市场在重大回撤后的恢复模式，为投资者提供择时和风险控制的统计参考。
+- **筛选评分**：75
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uh2lyc/analyzing_2026_qqq_drawdown_and_secondary_shock/)
+
+---
+
+### If you test on the same data you optimized on, you don't have a backtest
+
+- **收录时间**：2026-06-28 06:58
+- **发布时间**：2026-06-28 06:00
+- **作者**：Nvestiq
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · multi · global
+- **摘要**：This is the first thing we check when someone shows us a strategy, and it's where most "great" backtests fall apart. If you tune your parameters on a stretch of data and then measure performance on that same stretch, the result tells you nothing. The system didn't learn an edge, it fit the noise in that specific window. It'll look pristine in testing and unravel the moment it touches data it hasn't seen. So this is what discipline can help fix that: Carve off the last 20-30% of your data before 
+- **筛选评分**：80
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uhf90i/if_you_test_on_the_same_data_you_optimized_on_you/)
+
+---
 
 ### 外汇代理表现
 
