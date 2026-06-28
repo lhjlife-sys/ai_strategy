@@ -1,15 +1,56 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-28 06:58 · Asia/Shanghai
-> 共 153 条策略
+> 自动生成 · 最后更新：2026-06-28 19:45 · Asia/Shanghai
+> 共 155 条策略
 
 ## 目录
 
-- [2026-06（153）](#2026-06)
+- [2026-06（155）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### imlast999/MT5交易机器人
+
+- **收录时间**：2026-06-28 19:45
+- **发布时间**：2026-06-28 09:25
+- **作者**：imlast999
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · multi · global
+- **频率**：intraday
+- **摘要**：这是一个用Python开发的MetaTrader 5算法交易机器人。它集成了Discord通知功能。该机器人支持历史回测、滚动前测试、模拟交易和实盘执行。它提供了一个实时网页仪表板来监控交易。机器人包含高级风险管理功能。它针对EURUSD、XAUUSD和BTCEUR进行了量化策略验证。项目使用Python语言，当前星标数为1。
+- **要点**：
+  - 完整的交易生命周期支持：回测、模拟、实盘。
+  - 集成Discord通知和实时网页仪表板。
+  - 适用于外汇、黄金和加密货币交易对。
+- **回测线索**：Historical and walk-forward backtesting available.
+- **风险**：Risks include technical failures in live trading and overfitting during strategy validation.
+- **策略价值**：该机器人提供了一个易于使用的MT5自动化交易解决方案，适合个人交易者快速部署和测试策略。
+- **筛选评分**：90
+- **原文**：[链接](https://github.com/imlast999/BOT-MT5)
+
+---
+
+### GGTEFG/机器学习交易研究
+
+- **收录时间**：2026-06-28 19:45
+- **发布时间**：2026-06-28 18:53
+- **作者**：GGTEFG
+- **来源**：GitHub Quant Repos
+- **分类**：机器学习 · multi · global
+- **摘要**：这是一个用于交易的量化机器学习研究框架。它实现了诚实的滚动前验证，包括数据清洗和禁入期、缩减夏普比率和泄露检测。该框架支持XGBoost、CatBoost和PyTorch模型。它还包含一个策略生成器，可自动创建交易策略。框架生成MetaTrader 5的EA文件。项目使用Python语言开发，当前星标数为0。框架旨在提高量化交易研究的可靠性和严谨性。它提供了一系列工具来防止过拟合和数据泄露。
+- **要点**：
+  - 采用严格的滚动前验证方法，包括数据清洗和禁入期。
+  - 支持多种机器学习模型：XGBoost、CatBoost、PyTorch。
+  - 内置策略生成器，可自动生成MQL5 EA。
+- **回测线索**：Walk-forward validation with purge/embargo, deflated Sharpe ratio, and leakage detection.
+- **风险**：Risk of overfitting and model decay over time.
+- **策略价值**：该框架为机器学习交易研究提供了严谨的验证流程，有助于避免常见的数据泄露和过拟合问题。
+- **筛选评分**：95
+- **原文**：[链接](https://github.com/GGTEFG/ml-trading-research)
+
+---
 
 ### 2026年QQQ回撤与二次冲击恢复分析
 

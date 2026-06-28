@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-27T22:58:38+00:00",
+  "updated_at": "2026-06-28T11:45:22+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -761,6 +761,16 @@
       "sig": "0822dcfd9934c86b6888abdea971d600f1c2ab5009efc0009e0580dda5626b3a",
       "url": "https://www.reddit.com/r/algotrading/comments/1uh2lyc/analyzing_2026_qqq_drawdown_and_secondary_shock/",
       "sent_at": "2026-06-27T22:58:38+00:00"
+    },
+    {
+      "sig": "13575f025507d8dd3877b1df8051a772e38ea10bbafdc361b9878a6a8f143cc0",
+      "url": "https://github.com/GGTEFG/ml-trading-research",
+      "sent_at": "2026-06-28T11:45:22+00:00"
+    },
+    {
+      "sig": "bd335aa6c543159a88e43bde4cf0011c6a2cc51ffd2429cfd57d5449ddfd910a",
+      "url": "https://github.com/imlast999/BOT-MT5",
+      "sent_at": "2026-06-28T11:45:22+00:00"
     }
   ]
 }
