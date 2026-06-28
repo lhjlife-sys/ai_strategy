@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-28T11:45:22+00:00",
+  "updated_at": "2026-06-28T22:58:33+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -771,6 +771,21 @@
       "sig": "bd335aa6c543159a88e43bde4cf0011c6a2cc51ffd2429cfd57d5449ddfd910a",
       "url": "https://github.com/imlast999/BOT-MT5",
       "sent_at": "2026-06-28T11:45:22+00:00"
+    },
+    {
+      "sig": "98bcd532077ee82eed243d5b4d9aecf12e5937ffb90e60d0853edd58f998bfcb",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uhywj4/kept_hearing_monday_sets_the_tone_for_the_week_so/",
+      "sent_at": "2026-06-28T22:58:33+00:00"
+    },
+    {
+      "sig": "465866a3a6f28a9317ee421765d047f83a5bdd88e6bbe0e7b75067b7059d09be",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ui6zcw/building_a_simple_longshort_fractal_strategy_in/",
+      "sent_at": "2026-06-28T22:58:33+00:00"
+    },
+    {
+      "sig": "9e8e30831ab32bc1289eacb6fcc9a408ccd35a02ca7bdec0dc3214956fc77c2b",
+      "url": "https://github.com/CrayonDing0909/quant-binance-spot",
+      "sent_at": "2026-06-28T22:58:33+00:00"
     }
   ]
 }

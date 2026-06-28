@@ -1,15 +1,69 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-28 19:45 · Asia/Shanghai
-> 共 155 条策略
+> 自动生成 · 最后更新：2026-06-29 06:58 · Asia/Shanghai
+> 共 158 条策略
 
 ## 目录
 
-- [2026-06（155）](#2026-06)
+- [2026-06（158）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### CrayonDing0909/quant-binance-spot - 币安现货量化交易框架
+
+- **收录时间**：2026-06-29 06:58
+- **发布时间**：2026-06-29 02:04
+- **作者**：CrayonDing0909
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · crypto · global
+- **摘要**：1. 这是一个针对币安现货市场的量化交易框架。2. 支持回测、策略开发和实盘交易。3. 使用Python语言编写。4. 提供完整的交易功能模块。5. 适合加密货币量化交易者。6. 目前处于早期阶段，没有任何星标。7. 可能包含基本的风控和订单管理功能。
+- **要点**：
+  - 专为币安现货设计的量化框架，支持回测与实盘。
+  - 基于Python，易于扩展。
+  - 项目刚起步，需谨慎使用。
+- **回测线索**：Framework includes backtesting functionality.
+- **风险**：New repository (0 stars); limited documentation; untested in production; potential bugs.
+- **策略价值**：为加密货币量化交易者提供了一个可定制的现货交易框架，降低了开发门槛。
+- **筛选评分**：65
+- **原文**：[链接](https://github.com/CrayonDing0909/quant-binance-spot)
+
+---
+
+### Building a Simple LONG/SHORT Fractal Strategy in TradingView
+
+- **收录时间**：2026-06-29 06:58
+- **发布时间**：2026-06-29 03:54
+- **作者**：Droy-333
+- **来源**：Reddit r/algotrading
+- **分类**：综合/其他 · multi · global
+- **摘要**：Can someone help? I’m working on a fractal trading strategy and I want to code it properly in TradingView. The basic idea is simple: Higher timeframe gives the bias, lower timeframe gives the entry. I don’t want to overcomplicate it with too many concepts. The model is mainly: Daily /for bias 1H for swing entry 1h for structure sconfirmation Then only LONG or SHORT signals on the chart I’m trying to make it more mechanical so I can backtest it properly instead of just eyeballing setups. The part
+- **筛选评分**：70
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1ui6zcw/building_a_simple_longshort_fractal_strategy_in/)
+
+---
+
+### 关于“周一确立周基调”的16年NQ回测验证
+
+- **收录时间**：2026-06-29 06:58
+- **发布时间**：2026-06-28 22:36
+- **作者**：jjd1226
+- **来源**：Reddit r/algotrading
+- **分类**：趋势跟踪 · futures · us
+- **频率**：weekly
+- **摘要**：1. 研究者对NQ（纳斯达克100期货）进行了16年的回测，检验“周一确立周基调”的说法。2. 发现到周三时，价格相对周一开盘价的方向能预测周收盘方向，准确率约76%。3. 该结果在样本外数据中保持有效。4. 策略核心逻辑是观察周三价格高于或低于周一开盘价。5. 若周三价格高于周一开盘，则周收盘大概率高于周一开盘。6. 反之则周收盘低于周一开盘。7. 该模式在16年数据中持续有效。8. 未提及交易成本、滑点等因素。9. 仅适用于NQ单一品种。10. 需要警惕市场环境变化导致模式失效。
+- **要点**：
+  - 周三价格相对周一开盘的方向预测周收盘方向准确率达76%。
+  - 基于16年NQ数据，样本外验证有效。
+  - 策略简单，仅需每日开盘和收盘数据。
+- **回测线索**：16 years backtest on NQ; out-of-sample validation; 76% accuracy
+- **风险**：Single instrument tested; transaction costs and slippage not accounted; potential regime change; overfitting risk.
+- **策略价值**：提供了一个简单且历史验证有效的周度方向预测信号，可用于期货或指数交易。
+- **筛选评分**：90
+- **原文**：[链接](https://www.reddit.com/r/algotrading/comments/1uhywj4/kept_hearing_monday_sets_the_tone_for_the_week_so/)
+
+---
 
 ### imlast999/MT5交易机器人
 
