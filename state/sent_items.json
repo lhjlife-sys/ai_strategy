@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-28T22:58:33+00:00",
+  "updated_at": "2026-06-29T14:02:43+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -786,6 +786,26 @@
       "sig": "9e8e30831ab32bc1289eacb6fcc9a408ccd35a02ca7bdec0dc3214956fc77c2b",
       "url": "https://github.com/CrayonDing0909/quant-binance-spot",
       "sent_at": "2026-06-28T22:58:33+00:00"
+    },
+    {
+      "sig": "c01cc6bcac14e6c62c52a883f4d5a03a931a24b7946e2b56d40255845b74011b",
+      "url": "https://github.com/lenafilko/Momentum-Mean-Reversion-Quantitative-Trading-Strategy",
+      "sent_at": "2026-06-29T14:02:43+00:00"
+    },
+    {
+      "sig": "07456fe43adf56ba7bbb45793e6344211a121405a6af738dc8506053024c6491",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uigjwq/intraday_futures_backtest_metrics/",
+      "sent_at": "2026-06-29T14:02:43+00:00"
+    },
+    {
+      "sig": "e312fe053cbbf63a0b379bca70362020bb6b1c3cbff72fd7781cf0184fb1d192",
+      "url": "https://github.com/ShauryaGoel1305/Finance-Tools",
+      "sent_at": "2026-06-29T14:02:43+00:00"
+    },
+    {
+      "sig": "3953b7c8dea362925deb53ba71d43fba96458a4430085248d71b6ca3b57ee616",
+      "url": "https://www.reddit.com/r/algotrading/comments/1uib768/claude_algo_bot_2_weeks_0_losses/",
+      "sent_at": "2026-06-29T14:02:43+00:00"
     }
   ]
 }
