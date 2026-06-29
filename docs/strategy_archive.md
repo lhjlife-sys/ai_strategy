@@ -1,15 +1,95 @@
 # 量化策略汇总
 
-> 自动生成 · 最后更新：2026-06-29 22:02 · Asia/Shanghai
-> 共 162 条策略
+> 自动生成 · 最后更新：2026-06-30 06:51 · Asia/Shanghai
+> 共 166 条策略
 
 ## 目录
 
-- [2026-06（162）](#2026-06)
+- [2026-06（166）](#2026-06)
 
 ---
 
 ## 2026-06
+
+### HRP - 专业级量化研究平台
+
+- **收录时间**：2026-06-30 06:51
+- **发布时间**：2026-06-30 00:11
+- **作者**：fmag-labs
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · multi · global
+- **摘要**：HRP是一个个人使用的专业级量化研究平台。该平台专注于系统化交易策略的开发。项目使用Python语言编写。目前该项目在GitHub上获得了一颗星。它旨在为量化交易者提供全面的研究工具。平台可能包括数据获取、回测和策略分析等功能。HRP适合有一定编程基础的量化研究者。它可以帮助用户从想法到实现完整的策略。平台的设计强调专业性和可靠性。用户可以通过该平台进行策略的快速原型设计和测试。
+- **要点**：
+  - HRP是一个个人使用的专业级量化研究平台。
+  - 专注于系统化交易策略的开发，使用Python编写。
+  - 适合有一定编程基础的量化研究者。
+- **策略价值**：HRP为量化交易者提供了一个集成的研究环境，有助于加速策略开发流程。
+- **筛选评分**：55
+- **原文**：[链接](https://github.com/fmag-labs/HRP)
+
+---
+
+### QS-Trader：量化交易策略的回测框架
+
+- **收录时间**：2026-06-30 06:51
+- **发布时间**：2026-06-30 02:21
+- **作者**：QuantSpaceGit
+- **来源**：GitHub Quant Repos
+- **分类**：综合/其他 · multi · global
+- **摘要**：QS-Trader是一个基于Python的量化交易策略回测框架。该框架支持算法交易和金融市场分析。主要编程语言是Python。项目当前处于早期阶段，尚无星标。该框架旨在为量化交易者提供便捷的回测工具。目前缺乏文档和示例策略。用户可自行扩展策略逻辑和数据接口。
+- **要点**：
+  - Python实现的量化回测框架，支持多种策略。
+  - 项目初始阶段，无用户基础或经过验证的用例。
+  - 适合作为学习和快速原型开发的工具。
+- **回测线索**：Framework for backtesting; no strategy-specific performance reported.
+- **风险**：New repository with 0 stars; no evidence of robustness or support.
+- **策略价值**：为量化交易者提供开源回测工具，可降低策略开发门槛，但需谨慎评估其可靠性和成熟度。
+- **筛选评分**：60
+- **原文**：[链接](https://github.com/QuantSpaceGit/QS-Trader)
+
+---
+
+### 重尾分布下全局最小方差投资组合协方差估计的决策几何
+
+- **收录时间**：2026-06-30 06:51
+- **发布时间**：2026-06-29 12:00
+- **作者**：Xavier Fonseca
+- **来源**：arXiv Quantitative Finance
+- **分类**：因子 · stock · us
+- **频率**：daily
+- **摘要**：该论文研究了协方差估计误差如何影响全局最小方差投资组合的表现。作者证明了精确的遗憾恒等式和非渐近界限，表明决策遗憾只通过组合权重的作用依赖估计误差。他们推导了决策几何：GMVP遗憾对误差矩阵的(p-1)维投影不变，且对协方差尺度方向不变。该框架应用于重尾收益（尾指数在2到4之间），建立了遗憾收敛速率。通过偏t/t-copula模拟设计和预注册分析验证了理论。决策聚焦的优势在于更尖锐的常数和集中度折扣，而非更快的速率。该结果补充了决策聚焦学习方法的估计几何和一致性理论。
+- **要点**：
+  - 协方差估计误差对GMVP的影响可通过决策几何精确刻画，遗憾只与组合权重相关。
+  - 在重尾分布下，遗憾收敛速率由中心算子范数速率决定。
+  - 决策聚焦方法提供更优常数和集中度折扣，但速率不变。
+- **回测线索**：Simulation with skew-t/t-copula and pre-registered analysis confirms theoretical results.
+- **风险**：Heavy tails and high conditioning can significantly degrade performance; estimator choice matters less than decision geometry.
+- **策略价值**：该研究指导量化从业者应更关注组合权重对误差的敏感性，而非单纯追求协方差估计的精度，从而提升实盘表现。
+- **筛选评分**：80
+- **原文**：[链接](https://arxiv.org/abs/2606.27462)
+
+---
+
+### Grünwald-Letnikov分数导数检测的（非）有效市场状态与粗糙波动率
+
+- **收录时间**：2026-06-30 06:51
+- **发布时间**：2026-06-29 12:00
+- **作者**：Daniele Angelini
+- **来源**：arXiv Quantitative Finance
+- **分类**：因子 · stock · us
+- **频率**：daily
+- **摘要**：该论文提出了一种基于离散Grünwald-Letnikov分数导数的自适应Kolmogorov-Smirnov检测框架。该框架能够从单次观测轨迹中识别分数过程的自我相似性，克服了长期记忆下的相位转变问题。GL滤波器去除了低频长期记忆奇异性，同时保留了有限维H自相似性。作者推导了滤波后的经验过程极限，证明了Hurst估计量的一致性及局部渐近行为。通过蒙特卡洛模拟验证了方法的有效性。在金融应用中，该方法能检测到实现波动率和股指价格中的粗糙波动率及市场状态。该方法可识别持续性、反持续性及有效市场状态。论文为市场状态分类提供了新的统计工具。
+- **要点**：
+  - 引入基于Grünwald-Letnikov分数导数的自适应KS框架，克服了长期记忆下的相位转变。
+  - 证明了新Hurst估计量的一致性和局部渐近行为。
+  - 在实现波动率和股指价格中成功检测到粗糙波动率和不同市场状态。
+- **回测线索**：Monte Carlo simulations validate the method; applied to realized volatility and equity index prices.
+- **风险**：Method is statistical and may not directly translate to trading performance; long-memory assumptions may not hold in all regimes.
+- **策略价值**：该研究为量化交易者提供了一种新的统计工具，能够更准确地识别市场状态，从而优化风险管理与策略设计。
+- **筛选评分**：85
+- **原文**：[链接](https://arxiv.org/abs/2606.27932)
+
+---
 
 ### Claude算法交易机器人，2周零亏损
 

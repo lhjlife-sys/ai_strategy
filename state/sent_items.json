@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-29T14:02:43+00:00",
+  "updated_at": "2026-06-29T22:51:07+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -806,6 +806,26 @@
       "sig": "3953b7c8dea362925deb53ba71d43fba96458a4430085248d71b6ca3b57ee616",
       "url": "https://www.reddit.com/r/algotrading/comments/1uib768/claude_algo_bot_2_weeks_0_losses/",
       "sent_at": "2026-06-29T14:02:43+00:00"
+    },
+    {
+      "sig": "4d5e3dbd86cafd4f1883e64c455eafcddac33db53721deff15434a2cd02c7f4f",
+      "url": "https://arxiv.org/abs/2606.27932",
+      "sent_at": "2026-06-29T22:51:07+00:00"
+    },
+    {
+      "sig": "7d2da3c9ab105109db07ea06bfbe76ff5442f72b204b4b44d547f9d6c079bf94",
+      "url": "https://arxiv.org/abs/2606.27462",
+      "sent_at": "2026-06-29T22:51:07+00:00"
+    },
+    {
+      "sig": "aa33ca306256264d7d6fb7d020d2d3bb65ae08f78a8be468ee4d091af2ef0c8d",
+      "url": "https://github.com/QuantSpaceGit/QS-Trader",
+      "sent_at": "2026-06-29T22:51:07+00:00"
+    },
+    {
+      "sig": "f22f5650b1a9bc8d1ae748c4e476fdb4dc4a57b3f11f5b202176faae4fd26fba",
+      "url": "https://github.com/fmag-labs/HRP",
+      "sent_at": "2026-06-29T22:51:07+00:00"
     }
   ]
 }
