@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-29T22:51:07+00:00",
+  "updated_at": "2026-06-30T12:07:14+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -826,6 +826,31 @@
       "sig": "f22f5650b1a9bc8d1ae748c4e476fdb4dc4a57b3f11f5b202176faae4fd26fba",
       "url": "https://github.com/fmag-labs/HRP",
       "sent_at": "2026-06-29T22:51:07+00:00"
+    },
+    {
+      "sig": "a6b44d2a8741cac61ede655292461186547797cc4ecc8ab1a830d535dc52f51c",
+      "url": "https://arxiv.org/abs/2606.29591",
+      "sent_at": "2026-06-30T12:07:14+00:00"
+    },
+    {
+      "sig": "d595aa56ab7eb40c545a120e67703698c73a7da9d05cd3eb76a0119bf67ff068",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ujdmtd/running_100_strategy_per_coin_combos_on_paper/",
+      "sent_at": "2026-06-30T12:07:14+00:00"
+    },
+    {
+      "sig": "4d8bf629064c00b75e5d821a39c2e3e366446d31cdc46bdf728d6bd52e55ad6d",
+      "url": "https://arxiv.org/abs/2606.29290",
+      "sent_at": "2026-06-30T12:07:14+00:00"
+    },
+    {
+      "sig": "0bbe7372818d110b25f7e23924e1581d2b9674150b52e2ed74ace7a2f63acfbf",
+      "url": "https://arxiv.org/abs/2606.30583",
+      "sent_at": "2026-06-30T12:07:14+00:00"
+    },
+    {
+      "sig": "1d61c14e6a1928debb9846ea6fa207875fa31e8d68e4ab1fa64898c326f11687",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ujd2e6/lots_of_ai_strats_approach/",
+      "sent_at": "2026-06-30T12:07:14+00:00"
     }
   ]
 }
