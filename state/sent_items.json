@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-30T12:07:14+00:00",
+  "updated_at": "2026-06-30T23:06:23+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -851,6 +851,31 @@
       "sig": "1d61c14e6a1928debb9846ea6fa207875fa31e8d68e4ab1fa64898c326f11687",
       "url": "https://www.reddit.com/r/algotrading/comments/1ujd2e6/lots_of_ai_strats_approach/",
       "sent_at": "2026-06-30T12:07:14+00:00"
+    },
+    {
+      "sig": "29e88fd68ec3a37a56297476e07bab397a4eb4608bb6507f645926f97a4be980",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ujsw6m/my_polymarket_arb_bot_forced_me_to_take/",
+      "sent_at": "2026-06-30T23:06:23+00:00"
+    },
+    {
+      "sig": "eb16ad8a9b9f3491ea43726e887b4351c10616122e63f57101b49a08f7e1fbf0",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ujy65z/how_i_parse_sec_8k_filings_to_extract/",
+      "sent_at": "2026-06-30T23:06:23+00:00"
+    },
+    {
+      "sig": "acd911f74264a5b90eb25d3ac660fa4b97d51242e0834f1d1cd440f353a06b6c",
+      "url": "https://arxiv.org/abs/2410.06568",
+      "sent_at": "2026-06-30T23:06:23+00:00"
+    },
+    {
+      "sig": "72bada96788b63a4e5a6d479abca678e06b860bce11c7466c7e298ed4028730b",
+      "url": "https://arxiv.org/abs/2606.29018",
+      "sent_at": "2026-06-30T23:06:23+00:00"
+    },
+    {
+      "sig": "db66d210d90dc7cc6526258c7b4285e10347349b912f833c0d5ae52e0d18e8b7",
+      "url": "https://arxiv.org/abs/2606.21784",
+      "sent_at": "2026-06-30T23:06:23+00:00"
     }
   ]
 }
