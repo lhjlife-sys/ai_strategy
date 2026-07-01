@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-07-01T12:34:06+00:00",
+  "updated_at": "2026-07-01T23:08:10+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -911,6 +911,36 @@
       "sig": "8f2174bca135b50b45afb0e4856446d7e828d0282d98d5ac1a9cbed09f617d0c",
       "url": "https://github.com/unnolavo/xauusd_lab",
       "sent_at": "2026-07-01T12:34:06+00:00"
+    },
+    {
+      "sig": "0329f0eb303755bad5d178352da6897342939006367e9b53daaa63f26c35cf13",
+      "url": "https://github.com/garroshub/Quant_Sector_Rotation_Strategy",
+      "sent_at": "2026-07-01T23:08:10+00:00"
+    },
+    {
+      "sig": "5be7ba97fa47900994fea8e71749187879c1ad9e08969697c3602526353cf732",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ukux8w/early_backtesting_results_nq_hyperscalper/",
+      "sent_at": "2026-07-01T23:08:10+00:00"
+    },
+    {
+      "sig": "b78173c6c046afecd1563cbca401edcb3d05061d11991c7fe08b6b97bf61f06a",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ujz3c0/deploying_100cr_inr_in_indian_fno_strategy/",
+      "sent_at": "2026-07-01T23:08:10+00:00"
+    },
+    {
+      "sig": "633564ef430c10b4622af3cceeec396c77895afbcb2b9e7e1c1dc5d8e756696e",
+      "url": "https://arxiv.org/abs/2606.31675",
+      "sent_at": "2026-07-01T23:08:10+00:00"
+    },
+    {
+      "sig": "44226cd1e4aded7e451f0d99c618be46082a2249b3f147cc642ea1f531d3efc7",
+      "url": "https://arxiv.org/abs/2606.31475",
+      "sent_at": "2026-07-01T23:08:10+00:00"
+    },
+    {
+      "sig": "a3d58d7ed5bd31aed7e86865284f23327e425d1bad8afb934bdd5e41a9dcf8b2",
+      "url": "https://arxiv.org/abs/2606.31122",
+      "sent_at": "2026-07-01T23:08:10+00:00"
     }
   ]
 }
