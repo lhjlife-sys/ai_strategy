@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-30T23:06:23+00:00",
+  "updated_at": "2026-07-01T12:34:06+00:00",
   "items": [
     {
       "sig": "6def7701c2fe179a991b2d5ea24b2d1f3dd38c3caa57548a88da80dedc828353",
@@ -876,6 +876,41 @@
       "sig": "db66d210d90dc7cc6526258c7b4285e10347349b912f833c0d5ae52e0d18e8b7",
       "url": "https://arxiv.org/abs/2606.21784",
       "sent_at": "2026-06-30T23:06:23+00:00"
+    },
+    {
+      "sig": "3baf6f85c41412804b9c22c285d28b757c85c5861829dbbafabb235c888b2222",
+      "url": "https://arxiv.org/abs/2606.31387",
+      "sent_at": "2026-07-01T12:34:06+00:00"
+    },
+    {
+      "sig": "e43dc1d2a92fdd6eaed7d8c4b8034749f1cadd534502629c653d668f459985d3",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ukhgxe/title_2_years_building_a_multistrategy_algo/",
+      "sent_at": "2026-07-01T12:34:06+00:00"
+    },
+    {
+      "sig": "f53386cf04b3c0c30d5365498978ab1bb5ef36b842dbb91bf0a4adf8a7e7389b",
+      "url": "https://arxiv.org/abs/2606.31251",
+      "sent_at": "2026-07-01T12:34:06+00:00"
+    },
+    {
+      "sig": "4bd24efadedf768c9cff2d849d178e101effd45975a3ffe85527711b4a38ffdc",
+      "url": "https://arxiv.org/abs/2606.30685",
+      "sent_at": "2026-07-01T12:34:06+00:00"
+    },
+    {
+      "sig": "76e7b9c8e79aa47a02fd04d40589f4863e99eb053753454ba9c36670d0635f2e",
+      "url": "https://github.com/baobach/hft_papers",
+      "sent_at": "2026-07-01T12:34:06+00:00"
+    },
+    {
+      "sig": "3b4aa4e729815c034692bbc4f9443fb8818efc796cb5754d1d3ae71bb72de339",
+      "url": "https://www.reddit.com/r/algotrading/comments/1ukgzs3/just_finished_backtesting_a_fibo_h4_strategy_on/",
+      "sent_at": "2026-07-01T12:34:06+00:00"
+    },
+    {
+      "sig": "8f2174bca135b50b45afb0e4856446d7e828d0282d98d5ac1a9cbed09f617d0c",
+      "url": "https://github.com/unnolavo/xauusd_lab",
+      "sent_at": "2026-07-01T12:34:06+00:00"
     }
   ]
 }
